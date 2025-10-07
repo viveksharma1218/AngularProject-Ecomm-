@@ -1,0 +1,41 @@
+.headerBox{
+    display: flex;
+    height:40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoBox{
+    padding-left:2%;
+    width:10%;
+    color:brown;
+  
+}
+.logoBox h2{
+    margin:0;
+}
+.searchBox{
+    width:50%;
+
+}
+.searchBox input{
+    width:90%;
+}
+.linksBox{
+    width:20%;
+    display:flex;
+    gap:3%;
+}
+.linksBox button{
+    border:none;
+    background-color: rgb(191, 167, 213);
+    height: 30px;
+    width:50px;
+    border-radius:5px;
+}
+.linksBox button:hover{
+    background-color: rgb(163, 128, 195);
+    cursor:pointer;
+}
+.linksBox button:active{
+    background-color: rgb(191, 167, 213);
+}
