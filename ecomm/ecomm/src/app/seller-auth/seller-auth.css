@@ -1,0 +1,43 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.sellerAuthBox{
+    margin-top:100px;
+    margin-left:400px;
+    width:400px;
+}
+h1{
+  color:brown
+}
+.sellerAuthBox button{
+    border:none;
+    background-color: rgb(191, 167, 213);
+    height: 30px;
+    width:80px;
+    margin-top:20px;
+    margin-left:150px;
+    border-radius:5px;
+}
+.sellerAuthBox button:hover{
+    background-color: rgb(163, 128, 195);
+    cursor:pointer;
+}
+.sellerAuthBox button:active{
+    background-color: rgb(191, 167, 213);
+}
+.sellerAuthBox button:disabled{
+  background-color: #ccc; 
+  color: #666; 
+  cursor: not-allowed;
+}
+
+.passwordMismatch{
+  margin-top:-15px;
+  margin-bottom:5px;
+}

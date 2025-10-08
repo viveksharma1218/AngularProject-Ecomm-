@@ -1,1 +1,56 @@
-<p>seller-auth works!</p>
+
+<!-- <strong>formValues</strong>{{signUpForm.value | json}} -->
+
+<div class="sellerAuthBox">
+    <h1>Seller Registration Form</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="sellerSignUp()">
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" placeholder="Write Your Name Here" formControlName="name">
+                @if(signUpForm.get('name')?.hasError('required')){
+                    <mat-error>Name is required</mat-error>
+                }
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" >
+                <mat-label>Email</mat-label>
+                <input matInput type="email"  placeholder="Write Your Email Here" formControlName="email">
+                @if(signUpForm.get('email')?.hasError('email')){
+                    <mat-error>write correct Email Address</mat-error>
+                } 
+                
+            
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="Write Your Password Here" formControlName="password">
+                @if(signUpForm.get('password')?.hasError('required')){
+                    <mat-error>password is required</mat-error>
+                }
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" >
+                <mat-label>Repeat Password</mat-label>
+                <input type="password" matInput placeholder="Write Your Password Again" formControlName="repeatPassword">
+                
+            </mat-form-field>
+        </div>
+        <div class="passwordMismatch">
+            @if(signUpForm.hasError('passwordMismatch') ){
+                    <mat-error class="passwordMismatch">passwordMismatch</mat-error>
+            }
+        </div>
+        
+        <div>
+            <button type="submit" [disabled]="signUpForm.invalid">Submit</button>
+        </div>
+        
+       
+
+    </form>
+</div>
