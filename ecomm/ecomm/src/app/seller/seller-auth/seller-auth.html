@@ -1,7 +1,8 @@
 
 <!-- <strong>formValues</strong>{{signUpForm.value | json}} -->
-
-<div class="sellerAuthBox">
+<!-- This is Sign Up form for seller-->
+ @if(signUpVisible){
+    <div class="sellerAuthBox">
     <h1>Seller Registration Form</h1>
     <form [formGroup]="signUpForm" (ngSubmit)="sellerSignUp()">
         <div>
@@ -53,4 +54,57 @@
        
 
     </form>
+    <div class="alreadyRegistered">
+        <p >Already Registered :</p>
+        <div></div>
+        <button (click)="showLogInForm()" class="logInButton">logIn</button>
+    </div>
+    
+
 </div>
+
+ }
+
+<!--This is login form for seller-->
+{{logInForm.errors | json}}
+@if(logInVisible){
+    <div class="sellerAuthBox logInBox">
+    <h1>Seller Login Form</h1>
+    <form [formGroup]="logInForm" (ngSubmit)="sellerLogIn()">
+       
+        <div>
+            <mat-form-field class="example-full-width" >
+                <mat-label>Email</mat-label>
+                <input matInput type="email"  placeholder="Write Your Email Here" formControlName="email">
+                @if(logInForm.get('email')?.hasError('required')){
+                    <mat-error>Email is required</mat-error>
+                } 
+                
+            
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="Write Your Password Here" formControlName="password">
+                @if(logInForm.get('password')?.hasError('required')){
+                    <mat-error>password is required</mat-error>
+                }
+            </mat-form-field>
+        </div>
+
+        
+        <div>
+            <button type="submit" [disabled]="logInForm.invalid">LogIn</button>
+        </div>
+        
+       
+
+    </form>
+    <div class="alreadyRegistered">
+        <p >Don't have accout:</p>
+        <div></div>
+        <button (click)="showSignUpForm()" class="logInButton">signUp</button>
+    </div>
+</div>
+}
