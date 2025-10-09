@@ -1,11 +1,12 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,inject } from '@angular/core';
 import { FormBuilder,ReactiveFormsModule,FormControl, FormGroup, Validators } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 import { passwordMatcherValidator } from './passwordMatcherValidator';
-import { Seller } from '../services/seller';
+import { Seller } from '../../services/seller';
+import { Router } from '@angular/router';
 @Component({
   selector: 'ec-seller-auth',
   imports: [ReactiveFormsModule,MatInputModule,MatFormFieldModule,FormsModule],
@@ -14,6 +15,7 @@ import { Seller } from '../services/seller';
 })
 export class SellerAuth implements OnInit{
   signUpForm!:FormGroup;
+  router= inject(Router)
 constructor(private fb:FormBuilder,
             private sellerService:Seller
 ){}
@@ -30,8 +32,12 @@ ngOnInit(): void {
   sellerSignUp(){
     console.log(this.signUpForm.value);
     this.sellerService.signUp(this.signUpForm.value).subscribe((result)=>{
-      console.log(result);
+      console.log(result)
+      if(result){
+        this.router.navigate(['/seller-home']);
+      };
     });
+    
   }
   
 }
