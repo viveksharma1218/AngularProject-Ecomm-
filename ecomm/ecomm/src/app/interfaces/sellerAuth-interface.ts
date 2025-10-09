@@ -4,3 +4,7 @@ export interface SellerAuthInterface{
     password:string,
     repeatPassword:string,
 }
+export interface logIn{
+    email:string,
+    password:string
+}

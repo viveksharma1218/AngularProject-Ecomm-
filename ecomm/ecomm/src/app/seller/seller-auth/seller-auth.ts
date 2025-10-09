@@ -10,7 +10,7 @@ import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'ec-seller-auth',
-  imports: [ReactiveFormsModule,MatInputModule,MatFormFieldModule,FormsModule,JsonPipe],
+  imports: [ReactiveFormsModule,MatInputModule,MatFormFieldModule,FormsModule],
   templateUrl: './seller-auth.html',
   styleUrl: './seller-auth.css'
 })
@@ -50,7 +50,8 @@ export class SellerAuth implements OnInit{
     this.sellerService.signUp(this.signUpForm.value);
     }
     sellerLogIn(){
-      console.log(this.logInForm.value);
+      //console.log(this.logInForm.value);
+      this.sellerService.logIn(this.logInForm.value);
     }
     showLogInForm(){
       this.signUpVisible = false;

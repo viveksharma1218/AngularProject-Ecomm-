@@ -15,20 +15,6 @@
       "email": "admin@gmail.com"
     },
     {
-      "id": "a617",
-      "name": "newuser",
-      "email": "admin@gmail.com",
-      "password": "1234",
-      "repeatPassword": "1234"
-    },
-    {
-      "id": "9a97",
-      "name": "user",
-      "email": "admin@gmail.com",
-      "password": "1234",
-      "repeatPassword": "1234"
-    },
-    {
       "id": "ae82",
       "name": "vasdfasdf",
       "email": "fsfasd@gmail.com",
