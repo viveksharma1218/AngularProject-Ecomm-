@@ -3,10 +3,10 @@ import { FormBuilder,ReactiveFormsModule,FormControl, FormGroup, Validators } fr
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
-import { JsonPipe } from '@angular/common';
 import { passwordMatcherValidator } from './passwordMatcherValidator';
 import { Seller } from '../../services/seller';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'ec-seller-auth',
   imports: [ReactiveFormsModule,MatInputModule,MatFormFieldModule,FormsModule],
@@ -28,6 +28,7 @@ ngOnInit(): void {
     },{
       validators:passwordMatcherValidator
     });
+    this.sellerService.isSellerReg();
 }
   sellerSignUp(){
     console.log(this.signUpForm.value);

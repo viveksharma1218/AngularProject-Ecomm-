@@ -21,8 +21,15 @@ export class Seller {
       (result)=>{
         //console.log(result);
         this.isSellerLoggedin.next(true);
+        localStorage.setItem('seller', JSON.stringify(result.body))
         this.router.navigate(['/seller-home']);
       }
     )
+  }
+  isSellerReg(){
+    if(localStorage.getItem('seller')){
+      this.isSellerLoggedin.next(true);
+      this.router.navigate(['/seller-home']);
+    }
   }
 }
