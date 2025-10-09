@@ -31,13 +31,14 @@ ngOnInit(): void {
 }
   sellerSignUp(){
     console.log(this.signUpForm.value);
-    this.sellerService.signUp(this.signUpForm.value).subscribe((result)=>{
-      console.log(result)
-      if(result){
-        this.router.navigate(['/seller-home']);
-      };
-    });
-    
+    // this.sellerService.signUp(this.signUpForm.value).subscribe((result)=>{
+    //   console.log(result)
+    //   if(result){
+    //     this.router.navigate(['/seller-home']);
+    //   };
+    // });
+    // differet approach after applying canActivate Guard
+    this.sellerService.signUp(this.signUpForm.value);
   }
   
 }
