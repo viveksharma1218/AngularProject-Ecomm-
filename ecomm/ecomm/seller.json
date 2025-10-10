@@ -1,37 +1,23 @@
 {
   "seller": [
     {
-      "id": "4f16",
+      "id": "05d7",
+      "name": "vivek",
+      "email": "vivek@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "4688",
       "name": "user",
       "email": "user@gmail.com",
-      "password": "1234",
-      "repeatPassword": "1234"
-    },
-    {
-      "id": "ed07",
-      "name": "user",
-      "password": "1234",
-      "repeatPassword": "1234",
-      "email": "admin@gmail.com"
-    },
-    {
-      "id": "ae82",
-      "name": "vasdfasdf",
-      "email": "fsfasd@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     },
     {
-      "id": "ede8",
-      "name": "vivek",
-      "email": "vivek12@gmail.com",
-      "password": "1212",
-      "repeatPassword": "1212"
-    },
-    {
-      "id": "5327",
-      "name": "sfsdf",
-      "email": "asff@gmail.com",
+      "id": "2bac",
+      "name": "newUser",
+      "email": "newUser@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     }

@@ -9,6 +9,7 @@ import { filter } from 'rxjs';
 })
 export class Header implements OnInit{
   headerType = signal<'default' | 'seller'>('default')
+  sellerName:string = 'Profile';
   router = inject(Router);
 
   ngOnInit(): void {
@@ -23,15 +24,41 @@ export class Header implements OnInit{
         })).subscribe((event:NavigationEnd)=>{
           //console.log('Current Navigation URL',event.url)
           //we are checking if seller is already registered or login and current page is seller page
-         let seller = JSON.stringify(localStorage.getItem('seller'));
-          if(seller && event.url.includes('seller')){
+         
+          if(localStorage.getItem('seller') && event.url.includes('seller')){
             //console.log('seller view can be initialized');
             this.headerType.set('seller');
+            let sellerData = localStorage.getItem('seller');
+           let finalSellerObject: any;
+
+          if (sellerData) {
+            // 2. Parse the JSON string.
+            let parsedData = JSON.parse(sellerData);
+
+            // 3. Check if the parsed data is an array.
+            if (Array.isArray(parsedData) && parsedData.length > 0) {
+              // If it's an array, take the first object.
+              finalSellerObject = parsedData[0];
+            } else {
+              // Otherwise, assume it's the single object.
+              finalSellerObject = parsedData;
+            }
+          }
+          // 4. Safely access the 'name' property using optional chaining.
+          // This works whether finalSellerObject is an object or undefined.
+          const sellerName = finalSellerObject?.name;
+          this.sellerName = sellerName;
+          console.log(sellerName); // Outputs "Vivek" or undefined
+ 
           }
           else{
             //console.log('seller view cannot be initialized');
            this.headerType.set('default');
           }
         })
+  }
+  logout(){
+    localStorage.removeItem('seller');
+    this.router.navigate(['']);
   }
 }
