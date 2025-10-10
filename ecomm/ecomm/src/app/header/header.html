@@ -1,15 +1,27 @@
 <div class="headerBox">
-    <div class="logoBox">
+    <div class="logoBox" routerLink="">
         <h2>Ecomm</h2>
     </div>
-    <div class="searchBox">
-        <input type="search" placeholder="search product here">
-        <button>Search</button>
-    </div>
-    <div class="linksBox">
-        <button routerLink="seller-auth">Seller</button>
-        <button routerLink="">Home</button>
-        <button>Login</button>
-        <button>Cart</button>
-    </div>
+    @if(headerType() === 'default'){
+        <div class="searchBox">
+            <input type="search" placeholder="search product here">
+            <button>Search</button>
+        </div>
+        <div class="linksBox">
+            <button routerLink="seller-auth">Seller</button>
+            <button routerLink="">Home</button>
+            <button>Login</button>
+            <button>Cart</button>
+        </div>
+    }
+    @if(headerType() === 'seller'){
+        <div class="sellerlinksBox linksBox">
+            <button routerLink="">Home</button>
+            <button class="sellerlinksBoxButton">Add Product</button>
+            <button>List</button>
+            <button>Logout</button>
+            <button>Profile</button>
+        </div>
+    }
+    
 </div>

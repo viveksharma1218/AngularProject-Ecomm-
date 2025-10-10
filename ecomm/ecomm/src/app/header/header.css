@@ -10,6 +10,10 @@
     color:brown;
   
 }
+.logoBox:hover{
+    cursor:pointer;
+    opacity: .7;
+}
 .logoBox h2{
     margin:0;
 }
@@ -38,4 +42,12 @@
 }
 .linksBox button:active{
     background-color: rgb(191, 167, 213);
+}
+.sellerlinksBox{
+    width:30%;
+    justify-content: right;
+    padding-right: 1%;
+}
+.sellerlinksBoxButton{
+    width: 100px !important;;
 }
