@@ -1,22 +1,25 @@
-import { Component,inject,OnInit } from '@angular/core';
+import { Component,inject,OnInit,signal } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 import {ErrorStateMatcher} from '@angular/material/core';
+import { SellerAddProduct } from '../../services/seller-add-product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ec-add-product',
-  imports: [FormsModule, MatFormFieldModule, MatInputModule,ReactiveFormsModule,JsonPipe],
+  imports: [FormsModule, MatFormFieldModule, MatInputModule,ReactiveFormsModule],
   templateUrl: './add-product.html',
   styleUrl: './add-product.css'
 })
 export class AddProduct implements OnInit {
-
+  formSubmit=signal(true);
   fb:FormBuilder = inject(FormBuilder);
   sellerAddProductForm!:FormGroup;
-  constructor(){}
+  router = inject(Router);
+  constructor(private addProductServ:SellerAddProduct){}
 
   ngOnInit(): void {
       this.sellerAddProductForm = this.fb.group({
@@ -29,6 +32,15 @@ export class AddProduct implements OnInit {
       })
   }
   addProduct(){
-    console.log(this.sellerAddProductForm.value);
+    //console.log(this.sellerAddProductForm.value);
+    this.addProductServ.AddProduct(this.sellerAddProductForm.value).subscribe((data)=>{
+      console.log(data);
+      this.formSubmit.set(false)
+      setTimeout(() => {
+        this.formSubmit.set(true)
+        this.router.navigate(['seller-home']);
+      },2000);
+      
+    })
   }
 }

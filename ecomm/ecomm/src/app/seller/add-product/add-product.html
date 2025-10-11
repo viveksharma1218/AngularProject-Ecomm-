@@ -1,7 +1,8 @@
 
-{{sellerAddProductForm.value | json}}
-{{sellerAddProductForm.errors |json}}
-<div class="sellerAddProductFormBox">
+<!-- {{sellerAddProductForm.value | json}}
+{{sellerAddProductForm.errors |json}} -->
+@if(formSubmit()){
+    <div class="sellerAddProductFormBox">
     <h3>Add Product Here!</h3>
     <form [formGroup]="sellerAddProductForm" (ngSubmit)="addProduct()">
         <mat-form-field class="example-full-width">
@@ -49,3 +50,11 @@
         <button type="submit" [disabled]="sellerAddProductForm.invalid">Add Product</button>
     </form>
 </div>
+}
+@else{
+    <div class="productAddMessageBox">
+        <h2>Product added Successfully</h2>
+        <p>Redirecting to : Product List Page</p>
+    </div>
+
+}

@@ -31,3 +31,21 @@ button:disabled{
   color: #666; 
   cursor: not-allowed;
 }
+.productAddMessageBox{
+  position:fixed;
+  top:220px;
+  left:35%;
+  background-color: rgb(161, 161, 215);
+  width:350px;
+  height:110px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productAddMessageBox h2{
+  color:rgb(127, 61, 61);
+}
+.productAddMessageBox p{
+  margin:0;
+}

@@ -21,5 +21,16 @@
       "password": "1212",
       "repeatPassword": "1212"
     }
+  ],
+  "products": [
+    {
+      "id": "1955",
+      "name": "i phone17",
+      "price": "150000",
+      "category": "mobile",
+      "color": "white",
+      "imageUrl": "thisisUrl",
+      "description": "these are features"
+    }
   ]
 }
