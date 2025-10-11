@@ -1,0 +1,51 @@
+
+{{sellerAddProductForm.value | json}}
+{{sellerAddProductForm.errors |json}}
+<div class="sellerAddProductFormBox">
+    <h3>Add Product Here!</h3>
+    <form [formGroup]="sellerAddProductForm" (ngSubmit)="addProduct()">
+        <mat-form-field class="example-full-width">
+            <mat-label>Product Name</mat-label>
+            <input matInput placeholder="Enter Your Product Name" formControlName="name">
+            @if(sellerAddProductForm.get('name')?.hasError('required')){
+                <mat-error>Product Name is Required</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Product Price</mat-label>
+            <input matInput placeholder="Enter Your Product Price" formControlName="price">
+            @if(sellerAddProductForm.get('price')?.hasError('required')){
+                <mat-error>Product Price is Required</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Product Category</mat-label>
+            <input matInput placeholder="Enter Your Product Category" formControlName="category">
+            @if(sellerAddProductForm.get('category')?.hasError('required')){
+                <mat-error>Product Category is Required</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Product Color</mat-label>
+            <input matInput placeholder="Enter Your Product Color" formControlName="color">
+            @if(sellerAddProductForm.get('color')?.hasError('required')){
+                <mat-error>Product Color is Required</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Prduct Image URL</mat-label>
+            <input matInput placeholder="Enter Your Product Image URL" formControlName="imageUrl">
+            @if(sellerAddProductForm.get('imageUrl')?.hasError('required')){
+                <mat-error>Product Image Url is Required</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" placeholder="Ex. this product has these features"></textarea>
+            @if(sellerAddProductForm.get('description')?.hasError('required')){
+                <mat-error>Product Description is Required</mat-error>
+            }
+        </mat-form-field>
+        <button type="submit" [disabled]="sellerAddProductForm.invalid">Add Product</button>
+    </form>
+</div>

@@ -1,4 +1,4 @@
-import { Component,inject,OnInit,signal } from '@angular/core';
+import { Component,inject,OnInit,PLATFORM_ID,signal } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 @Component({
@@ -30,7 +30,7 @@ export class Header implements OnInit{
             this.headerType.set('seller');
             let sellerData = localStorage.getItem('seller');
            let finalSellerObject: any;
-
+          //there is three scenarios 1.data does not exist 2.data is Single Object 3. Data is an Array  
           if (sellerData) {
             // 2. Parse the JSON string.
             let parsedData = JSON.parse(sellerData);
@@ -48,7 +48,7 @@ export class Header implements OnInit{
           // This works whether finalSellerObject is an object or undefined.
           const sellerName = finalSellerObject?.name;
           this.sellerName = sellerName;
-          console.log(sellerName); // Outputs "Vivek" or undefined
+          //console.log(sellerName); // Outputs "Vivek" or undefined
  
           }
           else{

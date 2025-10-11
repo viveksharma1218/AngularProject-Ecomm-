@@ -17,8 +17,9 @@
     @if(headerType() === 'seller'){
         <div class="sellerlinksBox linksBox">
             <button routerLink="">Home</button>
-            <button class="sellerlinksBoxButton">Add Product</button>
-            <button>List</button>
+            <button class="sellerlinksBoxButton" routerLink="seller-add-product">Add Product</button>
+            <!--this is seller home-->
+            <button routerLink="seller-home">List</button>
             <button (click)="logout()">Logout</button>
             <button>{{sellerName}} </button>
         </div>

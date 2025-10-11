@@ -1,0 +1,33 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.sellerAddProductFormBox{
+    width:400px;
+    margin-left:350px;
+}
+ button{
+    border:none;
+    background-color: rgb(191, 167, 213);
+    height: 30px;
+    width:120px;
+    margin-left:150px;
+    border-radius:5px;
+}
+button:hover{
+    background-color: rgb(163, 128, 195);
+    cursor:pointer;
+}
+button:active{
+    background-color: rgb(191, 167, 213);
+}
+button:disabled{
+  background-color: #ccc; 
+  color: #666; 
+  cursor: not-allowed;
+}
