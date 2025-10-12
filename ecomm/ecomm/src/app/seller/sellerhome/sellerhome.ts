@@ -1,12 +1,13 @@
 import { Component,OnInit,signal } from '@angular/core';
 import { SellerAddProduct } from '../../services/seller-add-product';
 import { product } from '../../interfaces/sellerAuth-interface';
-import { error } from 'node:console';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faTrashCan} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
   selector: 'ec-sellerhome',
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './sellerhome.html',
   styleUrl: './sellerhome.css'
 })
@@ -14,7 +15,7 @@ export class Sellerhome implements OnInit{
   productList= signal<undefined | product[]>([])
   deleteMessage = signal<boolean>(false);
   deleteId = signal(0);
-
+  Icon = faTrashCan;
   constructor(private sellerProductServ:SellerAddProduct){}
 
   ngOnInit(): void {

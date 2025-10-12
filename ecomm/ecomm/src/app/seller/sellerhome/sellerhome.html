@@ -4,7 +4,8 @@
             
         <div class="Image">
             <img src="/iphone.webp"  alt="i phone image" class="image">
-            <button (click)="deleteProduct(product.id)" class="deleteButton">Delete</button>
+            <button (click)="deleteProduct(product.id)" class="deleteButton">
+                <fa-icon [icon]="Icon" />Delete</button>
             <p class="id">{{product.id}}</p>
            
         </div>
