@@ -14,5 +14,7 @@ export interface product{
     category:string,
     color:string,
     imageUrl:string,
-    description:string
+    description:string,
+    id:number
 }
+

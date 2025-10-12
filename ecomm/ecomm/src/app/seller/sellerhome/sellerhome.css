@@ -1,0 +1,80 @@
+.container{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:40px;
+}
+.box{
+    width:95%;
+    height:350px;
+    margin:10px;
+    
+    
+}
+.Image{
+    width:100%;
+    height:65%;
+    position:relative;
+}
+.image{
+    width:100%;
+}
+.Name{
+    color:brown;
+    font-size:20px;
+    font-weight: 600;
+}
+.Price ,.Color,.Category, .description{
+    margin:0;
+    font-size:12px;
+
+}
+.id{
+    position:absolute;
+    right:0;
+    top:0;
+    margin:0;
+}
+.deleteButton{
+    position:absolute;
+    right:0;
+    bottom:0;
+    border:none;
+    border-radius:3px;
+    background-color:rgb(68, 186, 186)
+}
+.deleteButton:hover{
+    cursor:pointer;
+    background-color: rgb(224, 58, 58);
+}
+
+.deleteProductMessageBox{
+  position:fixed;
+  top:220px;
+  left:35%;
+  background-color: rgb(161, 161, 215);
+  width:350px;
+  height:120px;
+  padding-top:10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+.deleteProductMessageBox h3{
+    margin-top:5px;
+}
+.buttonBox{
+    display:flex;
+    gap:50px;
+}
+.buttonBox button{
+    border:none;
+}
+.buttonBox button:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+    transition: .2s;
+}
