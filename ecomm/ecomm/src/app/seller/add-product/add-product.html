@@ -3,7 +3,7 @@
 {{sellerAddProductForm.errors |json}} -->
 @if(formSubmit()){
     <div class="sellerAddProductFormBox">
-    <h3>Add Product Here!</h3>
+    <h2>Add Product Here!</h2>
     <form [formGroup]="sellerAddProductForm" (ngSubmit)="addProduct()">
         <mat-form-field class="example-full-width">
             <mat-label>Product Name</mat-label>
@@ -52,8 +52,9 @@
 </div>
 }
 @else{
+    <div class="background"></div>
     <div class="productAddMessageBox">
-        <h2>Product added Successfully</h2>
+        <h3>Product added Successfully</h3>
         <p>Redirecting to : Product List Page</p>
     </div>
 
