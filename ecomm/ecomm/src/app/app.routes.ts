@@ -24,7 +24,7 @@ export const routes: Routes = [
         canActivate:[sellerAuthGuardGuard]
     },
     {
-        path:'seller-update-product',
+        path:'seller-update-product/:id',
         component:Update,
         canActivate:[sellerAuthGuardGuard]
     },
