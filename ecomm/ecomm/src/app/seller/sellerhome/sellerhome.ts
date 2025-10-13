@@ -2,12 +2,13 @@ import { Component,OnInit,signal } from '@angular/core';
 import { SellerAddProduct } from '../../services/seller-add-product';
 import { product } from '../../interfaces/sellerAuth-interface';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faTrashCan} from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan,faEdit} from '@fortawesome/free-solid-svg-icons';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'ec-sellerhome',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, RouterLink],
   templateUrl: './sellerhome.html',
   styleUrl: './sellerhome.css'
 })
@@ -16,6 +17,7 @@ export class Sellerhome implements OnInit{
   deleteMessage = signal<boolean>(false);
   deleteId = signal(0);
   Icon = faTrashCan;
+  editIcon = faEdit;
   constructor(private sellerProductServ:SellerAddProduct){}
 
   ngOnInit(): void {

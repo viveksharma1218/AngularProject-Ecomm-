@@ -6,6 +6,8 @@
             <img src="/iphone.webp"  alt="i phone image" class="image">
             <button (click)="deleteProduct(product.id)" class="deleteButton">
                 <fa-icon [icon]="Icon" />Delete</button>
+            <button  class="EditButton" routerLink="/seller-update-product">
+                <fa-icon [icon]="editIcon" />Edit</button>    
             <p class="id">{{product.id}}</p>
            
         </div>

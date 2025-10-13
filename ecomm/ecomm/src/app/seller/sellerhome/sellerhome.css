@@ -44,10 +44,20 @@
     border-radius:3px;
     background-color:rgb(68, 186, 186)
 }
-.deleteButton:hover{
+.deleteButton:hover, .EditButton:hover{
     cursor:pointer;
     background-color: rgb(224, 58, 58);
 }
+.EditButton{
+    position:absolute;
+    right:70px;
+    bottom:0;
+    height:30px;
+    border:none;
+    border-radius:3px;
+    background-color:rgb(68, 186, 186)
+}
+
 
 .deleteProductMessageBox{
   position:fixed;
