@@ -19,7 +19,7 @@ import { product } from '../../interfaces/sellerAuth-interface';
 })
 export class Update implements OnInit{
   productId  = signal('0');
-  productData :product | undefined;
+  productData!: product | null;
   updateForm!:FormGroup;
   productUpdated = signal(false);
   router = inject(Router);
@@ -30,13 +30,11 @@ export class Update implements OnInit{
     private productServ:SellerAddProduct
   ){}
 
-  ngOnInit(): void {
+   ngOnInit(): void {
     // non-null assertion = "Trust me, I know this will not be null at runtime."
     this.productId.set(this.currentRoute.snapshot.paramMap.get('id')!) ;
-    this.productServ.getOneProduct(this.productId()).subscribe((data)=>{
-      this.productData = data;
-    })
     this.updateForm = this.fb.group({
+        id:[{value:'',disabled:true}],
         name:['',Validators.required],
         price:['',Validators.required],
         category:['',Validators.required],
@@ -44,9 +42,25 @@ export class Update implements OnInit{
         imageUrl:['',Validators.required],
         description:['',Validators.required],
     })
+    this.productServ.getOneProduct(this.productId()).subscribe((data) => {
+      this.productData = data;
+      this.updateForm.setValue({
+        id:data.id,
+        name:data.name,
+        price:data.price,
+        category:data.category,
+        color:data.color,
+        imageUrl:data.imageUrl,
+        description:data.description
+      })
+    })
   }
+ 
   updateProduct(){
-    console.log(this.updateForm.value)
+
+    this.productServ.updateProduct(this.updateForm.getRawValue()).subscribe((data)=>{
+      console.log(data);
+    })
       this.productUpdated.set(true)
       setTimeout(() => {
         this.productUpdated.set(false)

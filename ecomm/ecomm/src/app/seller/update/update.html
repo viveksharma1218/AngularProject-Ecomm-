@@ -1,47 +1,52 @@
 
  <div class="updateProductFormBox">
-    {{productId()}}
+    <!-- {{productId()}} -->
     <h2>Update Product Info Here!</h2>
     <p>Already form filled with previous data</p>
     <form [formGroup]="updateForm" (ngSubmit)="updateProduct()">
         <mat-form-field class="example-full-width">
+            <mat-label>Product Id</mat-label>
+            <input matInput   formControlName="id">
+           
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
             <mat-label>Product Name</mat-label>
-            <input ngModel="{{productData?.name}}" matInput placeholder="Enter Your Product Name" formControlName="name">
+            <input matInput placeholder="Enter Your Product Name" formControlName="name">
             @if(updateForm.get('name')?.hasError('required')){
                 <mat-error>Product Name is Required</mat-error>
             }
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Product Price</mat-label>
-            <input ngModel="{{productData?.price}}" matInput placeholder="Enter Your Product Price" formControlName="price">
+            <input  matInput placeholder="Enter Your Product Price" formControlName="price">
             @if(updateForm.get('price')?.hasError('required')){
                 <mat-error>Product Price is Required</mat-error>
             }
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Product Category</mat-label>
-            <input ngModel="{{productData?.category}}" matInput placeholder="Enter Your Product Category" formControlName="category">
+            <input  matInput placeholder="Enter Your Product Category" formControlName="category">
             @if(updateForm.get('category')?.hasError('required')){
                 <mat-error>Product Category is Required</mat-error>
             }
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Product Color</mat-label>
-            <input matInput ngModel="{{productData?.color}}" placeholder="Enter Your Product Color" formControlName="color">
+            <input matInput  placeholder="Enter Your Product Color" formControlName="color">
             @if(updateForm.get('color')?.hasError('required')){
                 <mat-error>Product Color is Required</mat-error>
             }
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Prduct Image URL</mat-label>
-            <input ngModel="{{productData?.imageUrl}}" matInput placeholder="Enter Your Product Image URL" formControlName="imageUrl">
+            <input  matInput placeholder="Enter Your Product Image URL" formControlName="imageUrl">
             @if(updateForm.get('imageUrl')?.hasError('required')){
                 <mat-error>Product Image Url is Required</mat-error>
             }
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Description</mat-label>
-            <textarea ngModel="{{productData?.description}}" matInput formControlName="description" placeholder="Ex. this product has these features"></textarea>
+            <textarea  matInput formControlName="description" placeholder="Ex. this product has these features"></textarea>
             @if(updateForm.get('description')?.hasError('required')){
                 <mat-error>Product Description is Required</mat-error>
             }
@@ -51,6 +56,7 @@
 </div>
 
 @if(productUpdated()){
+    <div class="background"></div>
      <div class="UpdateProductMessageBox">
         <h2>Product updated Successfully</h2>
         <p>Redirecting to : Product List Page</p>
