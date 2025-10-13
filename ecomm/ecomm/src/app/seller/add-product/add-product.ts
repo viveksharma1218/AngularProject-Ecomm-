@@ -3,8 +3,6 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
-import { JsonPipe } from '@angular/common';
-import {ErrorStateMatcher} from '@angular/material/core';
 import { SellerAddProduct } from '../../services/seller-add-product';
 import { Router } from '@angular/router';
 
