@@ -17,4 +17,7 @@ export interface product{
     description:string,
     id:number
 }
-
+export interface productWithPic {
+  product: product;
+  picPath: string;
+}

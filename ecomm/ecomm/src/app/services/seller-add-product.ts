@@ -24,5 +24,9 @@ export class SellerAddProduct {
   updateProduct(product:product){
     return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
   }
+  // this url will get only products or 10 Objects 
+  popularProducts(){
+    return this.http.get<product[]>('http://localhost:3000/products/?_limit=10')
+  }
 }
  

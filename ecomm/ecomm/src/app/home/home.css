@@ -1,0 +1,26 @@
+.carousel-item{
+    width:70%;
+    height:500px;
+    margin-top:50px;
+    margin-left:17%;
+    
+}
+.crouselImage{
+    border-radius: 30px;
+    height:100%;
+}
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    background-color: rgb(137, 134, 134);
+    border-radius: 50%;
+}
+.carousel-caption{
+    background-color: blueviolet;
+    border-radius: 10px;
+    opacity: .8;
+}
+.carousel-caption ,h4 ,p {
+    margin:0;
+}
+strong{
+    margin-left: 20px;
+}
