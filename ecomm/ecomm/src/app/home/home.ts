@@ -9,7 +9,7 @@ import { SellerAddProduct } from '../services/seller-add-product';
   styleUrl: './home.css'
 })
 export class Home implements OnInit{
-  
+  AllProducts!:product[] | undefined;
   popularProducts!:product[];
   productPics:string[] = [
     '1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'
@@ -20,10 +20,16 @@ export class Home implements OnInit{
   ngOnInit(): void {
       this.getProduct();
       this.combineProduct();
+      this.getAllProduct();
   }
   getProduct(){
     this.productServ.popularProducts().subscribe((data)=>{
       this.popularProducts = data;
+    })
+  }
+  getAllProduct(){
+    this.productServ.productList().subscribe((data)=>{
+      this.AllProducts = data;
     })
   }
   combineProduct(){

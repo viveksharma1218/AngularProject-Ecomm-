@@ -32,3 +32,19 @@
   </button>
 </div>
 
+<div class="container" >
+    @for(product of AllProducts;track $index){
+        <div class="box" >
+            
+        <div class="Image">
+            <img src="/3.jpg"  alt="i phone image" class="image">
+        </div>
+        <div class="Name">{{product.name}}</div>
+        <div class="Price"><strong>Price:</strong>{{product.price}}</div>
+        <div class="Color"><strong>Color:</strong>{{product.color}}</div>
+        <div class="Category"><strong>Category:</strong>{{product.category}}</div>
+        <div class="description"><strong>Description:</strong>{{product.description}}</div>
+    </div>
+    }
+   
+</div>
