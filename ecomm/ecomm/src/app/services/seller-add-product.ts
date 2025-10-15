@@ -28,5 +28,6 @@ export class SellerAddProduct {
   popularProducts(){
     return this.http.get<product[]>('http://localhost:3000/products/?_limit=10')
   }
-}
+  // here _like making search caseinsensitive and _limit helping getting only 5 results
  
+}

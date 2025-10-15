@@ -1,16 +1,23 @@
-import { Component,inject,OnInit,PLATFORM_ID,signal } from '@angular/core';
+import { Component,inject,OnInit,OnChanges,signal, SimpleChanges } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
+import { SellerAddProduct } from '../services/seller-add-product';
+import {FormsModule } from '@angular/forms';
+import { product } from '../interfaces/sellerAuth-interface';
 @Component({
   selector: 'ec-header',
-  imports: [RouterLink],
+  imports: [RouterLink, FormsModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
-export class Header implements OnInit{
+export class Header implements OnInit ,OnChanges{
+  searchValue :string = '';
   headerType = signal<'default' | 'seller'>('default')
   sellerName:string = 'Profile';
+  allProducts: product[] | undefined;
+  filterProducts: product[] | undefined = [];
   router = inject(Router);
+  constructor(private productServ:SellerAddProduct){}
 
   ngOnInit(): void {
       //this.router.events.subscribe((events:any)=>{
@@ -56,9 +63,52 @@ export class Header implements OnInit{
            this.headerType.set('default');
           }
         })
+        this.getAllProducts();
+        
+       
+  }
+  ngOnChanges(changes: SimpleChanges): void {
+      
   }
   logout(){
     localStorage.removeItem('seller');
     this.router.navigate(['']);
   }
+  searchFilter(query:KeyboardEvent){
+    let element = query.target as HTMLInputElement;
+    this.searchValue = element.value;
+    console.log(this.searchValue);
+    this.getfilterProducts();
+    console.log(this.filterProducts)
+  }
+  getAllProducts(){
+    this.productServ.productList().subscribe((data)=>{
+      this.allProducts = data;
+    })
+  }
+  getfilterProducts(){
+     if (!this.allProducts || this.allProducts.length === 0) {
+      this.filterProducts = [];
+      return;
+    }
+
+    if (!this.searchValue?.trim()) {
+      this.filterProducts = this.allProducts.slice(0, 5);
+      return;
+    }
+
+    const lowerCaseQuery = this.searchValue.toLowerCase().trim();
+    
+    this.filterProducts = this.allProducts.filter((product) => {
+      return (
+        product.name?.toLowerCase().includes(lowerCaseQuery) ||
+        product.color?.toLowerCase().includes(lowerCaseQuery) ||
+        product.category?.toLowerCase().includes(lowerCaseQuery) ||
+        product.description?.toLowerCase().includes(lowerCaseQuery)
+      );
+    }).slice(0, 5);
+  }
+
+    
+  
 }

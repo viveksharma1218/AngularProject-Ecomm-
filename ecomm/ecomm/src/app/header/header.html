@@ -4,7 +4,8 @@
     </div>
     @if(headerType() === 'default'){
         <div class="searchBox">
-            <input type="search" placeholder="search product here">
+            <input type="text" class="form-control" (keyup)="searchFilter($event)"
+             placeholder="search product here" aria-label="Username" aria-describedby="basic-addon1">
             <button>Search</button>
         </div>
         <div class="linksBox">
@@ -26,3 +27,13 @@
     }
     
 </div>
+@if(searchValue){
+    <div class="searchFilter">
+    @for(product of filterProducts; track product.id){
+        <p>{{product.name}}</p>
+    }
+    
+</div>
+}
+
+

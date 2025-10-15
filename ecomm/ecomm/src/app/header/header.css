@@ -25,10 +25,15 @@
 }
 .searchBox{
     width:50%;
-
+    display: flex;
+    gap:3px;
 }
 .searchBox input{
-    width:90%;
+    width:80%;
+    border:none;
+}
+.searchBox button{
+    border:none;
 }
 .linksBox{
     width:20%;
@@ -56,4 +61,13 @@
 }
 .sellerlinksBoxButton{
     width: 100px !important;;
+}
+.searchFilter{
+    position:fixed;
+    width:400px;
+    top:40px;
+    left:250px;
+    height:200px;
+    z-index: 1000;
+    background-color: white;
 }

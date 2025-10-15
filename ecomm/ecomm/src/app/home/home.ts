@@ -19,8 +19,9 @@ export class Home implements OnInit{
 
   ngOnInit(): void {
       this.getProduct();
-      this.combineProduct();
       this.getAllProduct();
+      this.combineProduct();
+      
   }
   getProduct(){
     this.productServ.popularProducts().subscribe((data)=>{
