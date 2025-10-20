@@ -4,9 +4,13 @@ import { filter } from 'rxjs';
 import { SellerAddProduct } from '../services/seller-add-product';
 import {FormsModule } from '@angular/forms';
 import { product } from '../interfaces/sellerAuth-interface';
+import { LocationService,Location } from '../services/location';
+import { WeatherService } from '../services/weather';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'ec-header',
-  imports: [RouterLink, FormsModule],
+  imports: [RouterLink, FormsModule,CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
@@ -17,6 +21,13 @@ export class Header implements OnInit ,OnChanges{
   allProducts: product[] | undefined;
   filterProducts: product[] | undefined = [];
   router = inject(Router);
+  fullWeatherInfo = signal(false);
+    private locationService = inject(LocationService);
+    private weatherService = inject(WeatherService);
+  
+    location = signal<Location | null>(null);
+    error = signal<string>('');
+    isLoading = signal<boolean>(false);
   constructor(private productServ:SellerAddProduct){}
 
   ngOnInit(): void {
@@ -64,6 +75,7 @@ export class Header implements OnInit ,OnChanges{
           }
         })
         this.getAllProducts();
+        this.getLocationAndWeather();
         
        
   }
@@ -109,6 +121,43 @@ export class Header implements OnInit ,OnChanges{
     }).slice(0, 5);
   }
 
-    
+    showFullWeatherinfo(){
+      this.fullWeatherInfo.set(true);
+    }
+    hideFullWeatherinfo(){
+      this.fullWeatherInfo.set(false);
+    }
+
+    async getLocationAndWeather() {
+    this.isLoading.set(true);
+    this.error.set('');
+    this.location.set(null);
+
+    this.locationService.getLocationWithWeather().subscribe({
+      next: (location) => {
+        this.location.set(location);
+        this.isLoading.set(false);
+      },
+      error: (error) => {
+        this.error.set(error);
+        this.isLoading.set(false);
+      }
+    });
+  }
+
+  refreshWeather() {
+    if (this.location()) {
+      this.getLocationAndWeather();
+    }
+  }
+
+  getWeatherIcon(iconCode: string): string {
+    return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  }
+
+  getGoogleMapsLink(): string {
+    if (!this.location()) return '';
+    return `https://www.google.com/maps?q=${this.location()!.latitude},${this.location()!.longitude}`;
+  }
   
 }
