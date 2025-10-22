@@ -120,7 +120,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of grocery;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
