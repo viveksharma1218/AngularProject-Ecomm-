@@ -5,8 +5,9 @@
     @if(headerType() === 'default'){
         <div class="searchBox">
             <input type="text" class="form-control" (keyup)="searchFilter($event)"
+            #searchInput (focus)="onFocus()" (blur)="onBlur()"
              placeholder="search product here" aria-label="Username" aria-describedby="basic-addon1">
-            <button>Search</button>
+            <button (click)="getSearchResult(searchInput.value)">Search</button>
         </div>
         <div class="linksBox">
             <button routerLink="seller-auth">Seller</button>
@@ -21,7 +22,7 @@
                        @if (!error()) {
                         <div class="weather-card">
                             <div class="location-header">
-                                <h3>📍 {{ location()!.address }}</h3>
+                                <h3>{{ location()!.address }}</h3>
                                 <p class="coordinates">
                                 {{ location()!.latitude | number:'1.4-4' }}, 
                                 {{ location()!.longitude | number:'1.4-4' }}
@@ -36,7 +37,6 @@
                                     class="weather-icon">
                                 <div class="temp-display">
                                     <span class="temperature">{{ location()!.weather!.temperature }}°C</span>
-                                    <span class="feels-like">Feels like {{ location()!.weather!.feelsLike }}°C</span>
                                 </div>
                                 </div>
                                 
@@ -47,20 +47,20 @@
 
                             <div class="weather-details">
                                 <div class="detail-item">
-                                <span class="label">💨 Wind</span>
+                                <span class="label">Wind</span>
                                 <span class="value">{{ location()!.weather!.windSpeed }} m/s</span>
                                 </div>
                                 <div class="detail-item">
-                                <span class="label">💧 Humidity</span>
+                                <span class="label">Humidity</span>
                                 <span class="value">{{ location()!.weather!.humidity }}%</span>
                                 </div>
                                 <div class="detail-item">
-                                <span class="label">📊 Pressure</span>
+                                <span class="label">Pressure</span>
                                 <span class="value">{{ location()!.weather!.pressure }} hPa</span>
                                 </div>
                                 <div class="detail-item">
-                                <span class="label">🏙️ City</span>
-                                <span class="value">{{ location()!.weather!.city }}, {{ location()!.weather!.country }}</span>
+                                <span class="label">City</span>
+                                <span class="value">{{ location()!.address }}, {{ location()!.weather!.country }}</span>
                                 </div>
                             </div>
 
@@ -69,10 +69,10 @@
                                 [href]="getGoogleMapsLink()" 
                                 target="_blank" 
                                 class="map-btn">
-                                🗺️ View on Google Maps
+                                View on Google Maps
                                 </a>
                                 <button (click)="refreshWeather()" class="refresh-btn">
-                                🔄 Refresh Weather
+                                 Refresh Weather
                                 </button>
                             </div>
                         </div>
@@ -106,95 +106,12 @@
             <button routerLink="seller-home">List</button>
             <button (click)="logout()">Logout</button>
             <button>{{sellerName}} </button>
-            <button (mouseenter)="showFullWeatherinfo()" (mouseleave)="hideFullWeatherinfo()">
-                {{ location()?.address ?? 'Getting Location...' }}
-                {{location()?.weather?.temperature  ?? '--'}}°C
-            </button>
-            @if(fullWeatherInfo()){
-                <div class="weatherInfo" (mouseenter)="showFullWeatherinfo()" (mouseleave)="hideFullWeatherinfo()">
-                       @if (!error()) {
-                        <div class="weather-card">
-                            <div class="location-header">
-                                <h3>📍 {{ location()!.address }}</h3>
-                                <p class="coordinates">
-                                {{ location()!.latitude | number:'1.4-4' }}, 
-                                {{ location()!.longitude | number:'1.4-4' }}
-                                </p>
-                            </div>
-
-                            <div class="weather-main">
-                                <div class="temperature-section">
-                                <img 
-                                    [src]="getWeatherIcon(location()!.weather!.icon)" 
-                                    [alt]="location()!.weather!.description"
-                                    class="weather-icon">
-                                <div class="temp-display">
-                                    <span class="temperature">{{ location()!.weather!.temperature }}°C</span>
-                                    <span class="feels-like">Feels like {{ location()!.weather!.feelsLike }}°C</span>
-                                </div>
-                                </div>
-                                
-                                <div class="weather-description">
-                                <span class="description">{{ location()!.weather!.description | titlecase }}</span>
-                                </div>
-                            </div>
-
-                            <div class="weather-details">
-                                <div class="detail-item">
-                                <span class="label">💨 Wind</span>
-                                <span class="value">{{ location()!.weather!.windSpeed }} m/s</span>
-                                </div>
-                                <div class="detail-item">
-                                <span class="label">💧 Humidity</span>
-                                <span class="value">{{ location()!.weather!.humidity }}%</span>
-                                </div>
-                                <div class="detail-item">
-                                <span class="label">📊 Pressure</span>
-                                <span class="value">{{ location()!.weather!.pressure }} hPa</span>
-                                </div>
-                                <div class="detail-item">
-                                <span class="label">🏙️ City</span>
-                                <span class="value">{{ location()!.weather!.city }}, {{ location()!.weather!.country }}</span>
-                                </div>
-                            </div>
-
-                            <div class="map-actions">
-                                <a 
-                                [href]="getGoogleMapsLink()" 
-                                target="_blank" 
-                                class="map-btn">
-                                🗺️ View on Google Maps
-                                </a>
-                                <button (click)="refreshWeather()" class="refresh-btn">
-                                🔄 Refresh Weather
-                                </button>
-                            </div>
-                        </div>
-                }
-                
-                @if (error()) {
-                    <div class="error-card">
-                    <div class="error-icon">❌</div>
-                    <h3>Unable to Get Weather</h3>
-                    <p>{{ error() }}</p>
-                    <button (click)="getLocationAndWeather()" class="retry-btn">Try Again</button>
-                    </div>
-                }
-
-                @if (!location() && !error() && !isLoading()) {
-                    <div class="info-card">
-                    <p>Click the button above to get your current location and weather conditions.</p>
-                    </div>
-                }
-                </div>
-             
-       
-            }
+            
         </div>
     }
     
 </div>
-@if(searchValue){
+@if(searchValue && showSearchFilter){
     <div class="searchFilter">
     @for(product of filterProducts; track product.id){
         <p>{{product.name}}</p>

@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Header implements OnInit ,OnChanges{
   searchValue :string = '';
+  showSearchFilter:boolean = false;
   headerType = signal<'default' | 'seller'>('default')
   sellerName:string = 'Profile';
   allProducts: product[] | undefined;
@@ -89,9 +90,9 @@ export class Header implements OnInit ,OnChanges{
   searchFilter(query:KeyboardEvent){
     let element = query.target as HTMLInputElement;
     this.searchValue = element.value;
-    console.log(this.searchValue);
+    //console.log(this.searchValue);
     this.getfilterProducts();
-    console.log(this.filterProducts)
+    //console.log(this.filterProducts)
   }
   getAllProducts(){
     this.productServ.productList().subscribe((data)=>{
@@ -159,5 +160,14 @@ export class Header implements OnInit ,OnChanges{
     if (!this.location()) return '';
     return `https://www.google.com/maps?q=${this.location()!.latitude},${this.location()!.longitude}`;
   }
-  
+  getSearchResult(val:any){
+      // console.log(val);
+      this.router.navigate([`search/${val}`])
+  }
+  onFocus(){
+    this.showSearchFilter = true
+  }
+  onBlur(){
+    this.showSearchFilter = false;
+  }
 }

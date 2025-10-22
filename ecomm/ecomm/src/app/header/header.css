@@ -97,7 +97,8 @@
 
     .location-header h3 {
       margin: 0 0 4px 0;
-      font-size: 18px;
+      font-size: 30px;
+      color:rgb(187, 255, 255)
     }
 
     .coordinates {
@@ -135,12 +136,6 @@
       line-height: 1;
     }
 
-    .feels-like {
-      font-size: 14px;
-      opacity: 0.8;
-      margin-top: 4px;
-    }
-
     .weather-description {
       text-align: right;
     }
@@ -163,11 +158,6 @@
       align-items: center;
       padding: 8px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .detail-item:last-child {
-      border-bottom: none;
-      grid-column: 1 / -1;
     }
 
     .label {
