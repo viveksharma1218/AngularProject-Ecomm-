@@ -7,6 +7,7 @@ import { product } from '../interfaces/sellerAuth-interface';
 import { LocationService,Location } from '../services/location';
 import { WeatherService } from '../services/weather';
 import { CommonModule } from '@angular/common';
+import { ProductCat } from '../services/product-cat';
 
 @Component({
   selector: 'ec-header',
@@ -23,8 +24,21 @@ export class Header implements OnInit ,OnChanges{
   filterProducts: product[] | undefined = [];
   router = inject(Router);
   fullWeatherInfo = signal(false);
+  secondHeader:boolean = false;
+  grocery :string[] = [];
+  fashion:string[] = [];
+  home:string[] = [];
+  beauty:string[] = [];
+  health:string[]=[];
+  sports:string[] =[];
+  toys:string[] = [];
+  books:string[]=[];
+  baby:string[] =[];
+  luxury:string[]=[];
+  handmade:string[]=[];
     private locationService = inject(LocationService);
     private weatherService = inject(WeatherService);
+    private productCat = inject(ProductCat);
   
     location = signal<Location | null>(null);
     error = signal<string>('');
@@ -77,6 +91,17 @@ export class Header implements OnInit ,OnChanges{
         })
         this.getAllProducts();
         this.getLocationAndWeather();
+        this.grocery = this.productCat.grocery;
+        this.fashion=this.productCat.fashion;
+        this.home=this.productCat.home;
+        this.beauty = this.productCat.beauty;
+        this.health=this.productCat.health;
+        this.sports=this.productCat.sports;
+        this.toys=this.productCat.toys;
+        this.books=this.productCat.books;
+        this.baby=this.productCat.baby;
+        this.luxury=this.productCat.luxury;
+        this.handmade=this.productCat.handmade;
         
        
   }
@@ -169,5 +194,8 @@ export class Header implements OnInit ,OnChanges{
   }
   onBlur(){
     this.showSearchFilter = false;
+  }
+  showSecondHeader(){
+    this.secondHeader = !this.secondHeader;
   }
 }

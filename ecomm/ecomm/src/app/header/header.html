@@ -4,6 +4,7 @@
     </div>
     @if(headerType() === 'default'){
         <div class="searchBox">
+            <button class="secondHeaderButton" (click)="showSecondHeader()"><img class="secondHeadericon" src="./arrow.svg"></button>
             <input type="text" class="form-control" (keyup)="searchFilter($event)"
             #searchInput (focus)="onFocus()" (blur)="onBlur()"
              placeholder="search product here" aria-label="Username" aria-describedby="basic-addon1">
@@ -111,10 +112,141 @@
     }
     
 </div>
+@if(secondHeader){
+    <div class="secondHeader">
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Grocery
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of grocery;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        fashion
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of fashion;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Home
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of home;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Grocery
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of grocery;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Beauty
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of beauty;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Health
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of health;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sports
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of sports;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Toys
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of toys;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Books
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of books;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Baby
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of baby;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Luxury
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of luxury;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+        <div>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Handmade
+        </a>
+        <ul class="dropdown-menu ">
+        @for(item of handmade;track item){
+        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        }
+        </ul>
+        </div>
+</div>
+}
+
 @if(searchValue && showSearchFilter){
     <div class="searchFilter">
     @for(product of filterProducts; track product.id){
-        <p>{{product.name}}</p>
+        <p>first {{product.name}}</p>
     }
     
 </div>

@@ -1,7 +1,4 @@
 .headerBox{
-    position:fixed;
-    top:0;
-    left:0;
     display: flex;
     height:40px;
     width:100%;
@@ -29,11 +26,15 @@
     gap:3px;
 }
 .searchBox input{
-    width:80%;
+    width:70%;
     border:none;
 }
 .searchBox button{
     border:none;
+    border-radius: 5px;
+}
+.searchBox button:hover{
+   background-color: rgb(211, 205, 205) !important;
 }
 .linksBox{
     width:25%;
@@ -203,4 +204,28 @@
     .map-btn:hover, .refresh-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .secondHeaderButton{
+      width:7%;
+      border:none;
+      border-radius:5px;
+      background-color:rgb(23, 22, 22,0);
+      transition: .2s;
+    }
+    .secondHeaderButton:hover{
+      cursor:pointer;
+      background-color: rgb(211, 205, 205) !important;
+    }
+    .secondHeadericon{
+      height:60%;
+    }
+    .secondHeader{
+      height:25px;
+      display: flex;
+      justify-content: space-around;
+      align-items:end;
+      overflow:hidden;
+    }
+    .categoryTitle{
+      list-style: none;
     }
