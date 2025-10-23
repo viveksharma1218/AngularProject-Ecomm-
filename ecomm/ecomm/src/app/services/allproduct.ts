@@ -106,16 +106,7630 @@ export class Allproduct {
   {"id": "909", "name": "Organic Bread", "price": "4.99", "category": "Organic & Natural", "color": "Brown", "imageUrl": "/images/organic-bread.jpg", "description": "Organic whole grain bread"},
   {"id": "910", "name": "Organic Coffee", "price": "14.99", "category": "Organic & Natural", "color": "Brown", "imageUrl": "/images/organic-coffee.jpg", "description": "Organic fair trade coffee, 12oz"},
   //Grocery:International Foods
-   {"id": "1001", "name": "Soy Sauce", "price": "3.99", "category": "International Foods", "color": "Brown", "imageUrl": "/images/soy-sauce.jpg", "description": "Japanese soy sauce, 10oz"},
-  {"id": "1002", "name": "Tortillas", "price": "2.49", "category": "International Foods", "color": "White", "imageUrl": "/images/tortillas.jpg", "description": "Flour tortillas, 10 count"},
-  {"id": "1003", "name": "Curry Paste", "price": "4.29", "category": "International Foods", "color": "Yellow", "imageUrl": "/images/curry-paste.jpg", "description": "Thai red curry paste, 4oz"},
-  {"id": "1004", "name": "Pita Bread", "price": "3.79", "category": "International Foods", "color": "White", "imageUrl": "/images/pita-bread.jpg", "description": "Greek pita bread, 6 pack"},
-  {"id": "1005", "name": "Coconut Milk", "price": "2.99", "category": "International Foods", "color": "White", "imageUrl": "/images/coconut-milk.jpg", "description": "Thai coconut milk, 13.5oz"},
-  {"id": "1006", "name": "Salsa", "price": "3.49", "category": "International Foods", "color": "Red", "imageUrl": "/images/salsa.jpg", "description": "Medium spicy salsa, 16oz"},
-  {"id": "1007", "name": "Basmati Rice", "price": "7.99", "category": "International Foods", "color": "White", "imageUrl": "/images/basmati-rice.jpg", "description": "Indian basmati rice, 5lb"},
-  {"id": "1008", "name": "Kimchi", "price": "8.99", "category": "International Foods", "color": "Red", "imageUrl": "/images/kimchi.jpg", "description": "Traditional Korean kimchi, 24oz"},
-  {"id": "1009", "name": "Pasta Sauce", "price": "4.99", "category": "International Foods", "color": "Red", "imageUrl": "/images/pasta-sauce.jpg", "description": "Italian marinara sauce, 24oz"},
-  {"id": "1010", "name": "Taco Shells", "price": "3.29", "category": "International Foods", "color": "Yellow", "imageUrl": "/images/taco-shells.jpg", "description": "Hard taco shells, 12 count"},
-  
+   {"id": "991", "name": "Soy Sauce", "price": "3.99", "category": "International Foods", "color": "Brown", "imageUrl": "/images/soy-sauce.jpg", "description": "Japanese soy sauce, 10oz"},
+  {"id": "992", "name": "Tortillas", "price": "2.49", "category": "International Foods", "color": "White", "imageUrl": "/images/tortillas.jpg", "description": "Flour tortillas, 10 count"},
+  {"id": "993", "name": "Curry Paste", "price": "4.29", "category": "International Foods", "color": "Yellow", "imageUrl": "/images/curry-paste.jpg", "description": "Thai red curry paste, 4oz"},
+  {"id": "994", "name": "Pita Bread", "price": "3.79", "category": "International Foods", "color": "White", "imageUrl": "/images/pita-bread.jpg", "description": "Greek pita bread, 6 pack"},
+  {"id": "995", "name": "Coconut Milk", "price": "2.99", "category": "International Foods", "color": "White", "imageUrl": "/images/coconut-milk.jpg", "description": "Thai coconut milk, 13.5oz"},
+  {"id": "996", "name": "Salsa", "price": "3.49", "category": "International Foods", "color": "Red", "imageUrl": "/images/salsa.jpg", "description": "Medium spicy salsa, 16oz"},
+  {"id": "9977", "name": "Basmati Rice", "price": "7.99", "category": "International Foods", "color": "White", "imageUrl": "/images/basmati-rice.jpg", "description": "Indian basmati rice, 5lb"},
+  {"id": "998", "name": "Kimchi", "price": "8.99", "category": "International Foods", "color": "Red", "imageUrl": "/images/kimchi.jpg", "description": "Traditional Korean kimchi, 24oz"},
+  {"id": "999", "name": "Pasta Sauce", "price": "4.99", "category": "International Foods", "color": "Red", "imageUrl": "/images/pasta-sauce.jpg", "description": "Italian marinara sauce, 24oz"},
+  {"id": "1000", "name": "Taco Shells", "price": "3.29", "category": "International Foods", "color": "Yellow", "imageUrl": "/images/taco-shells.jpg", "description": "Hard taco shells, 12 count"},
+  //home category
+   {
+    "name": "Modern Leather Sofa",
+    "price": "1899",
+    "category": "Furniture",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Luxurious 3-seater leather sofa with premium comfort",
+    "id": "1001"
+  },
+  {
+    "name": "Wooden Dining Table",
+    "price": "899",
+    "category": "Furniture",
+    "color": "Oak",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Solid wood dining table with extendable feature",
+    "id": "1002"
+  },
+  {
+    "name": "Ergonomic Office Chair",
+    "price": "349",
+    "category": "Furniture",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Adjustable office chair with lumbar support",
+    "id": "1003"
+  },
+  {
+    "name": "King Size Bed Frame",
+    "price": "1299",
+    "category": "Furniture",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Modern platform bed with storage drawers",
+    "id": "1004"
+  },
+  {
+    "name": "Bookshelf Unit",
+    "price": "299",
+    "category": "Furniture",
+    "color": "Walnut",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "5-tier wooden bookshelf for home library",
+    "id": "1005"
+  },
+  {
+    "name": "Coffee Table",
+    "price": "249",
+    "category": "Furniture",
+    "color": "Glass",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Modern glass top coffee table with metal legs",
+    "id": "1006"
+  },
+  {
+    "name": "Accent Chair",
+    "price": "399",
+    "category": "Furniture",
+    "color": "Navy Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Comfortable accent chair for living room",
+    "id": "1007"
+  },
+  {
+    "name": "TV Stand Cabinet",
+    "price": "459",
+    "category": "Furniture",
+    "color": "Dark Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Modern TV stand with storage compartments",
+    "id": "1008"
+  },
+  {
+    "name": "Dresser with Mirror",
+    "price": "699",
+    "category": "Furniture",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "6-drawer dresser with attached mirror",
+    "id": "1009"
+  },
+  {
+    "name": "Bar Stool Set",
+    "price": "199",
+    "category": "Furniture",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Set of 2 adjustable height bar stools",
+    "id": "1010"
+  },
+  {
+    "name": "Decorative Throw Pillows",
+    "price": "39",
+    "category": "Home Decor",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Set of 4 decorative throw pillows",
+    "id": "1011"
+  },
+  {
+    "name": "Wall Clock",
+    "price": "49",
+    "category": "Home Decor",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Modern minimalist wall clock",
+    "id": "1012"
+  },
+  {
+    "name": "Vase Set",
+    "price": "29",
+    "category": "Home Decor",
+    "color": "Clear Glass",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Set of 3 decorative glass vases",
+    "id": "1013"
+  },
+  {
+    "name": "Photo Frames",
+    "price": "25",
+    "category": "Home Decor",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Set of 5 assorted photo frames",
+    "id": "1014"
+  },
+  {
+    "name": "Candle Holders",
+    "price": "35",
+    "category": "Home Decor",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Elegant metal candle holders",
+    "id": "1015"
+  },
+  {
+    "name": "Decorative Tray",
+    "price": "45",
+    "category": "Home Decor",
+    "color": "Marble",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Marble finish decorative serving tray",
+    "id": "1016"
+  },
+  {
+    "name": "Artificial Plants",
+    "price": "59",
+    "category": "Home Decor",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Realistic artificial succulent plants",
+    "id": "1017"
+  },
+  {
+    "name": "Table Runner",
+    "price": "22",
+    "category": "Home Decor",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Linen table runner for dining table",
+    "id": "1018"
+  },
+  {
+    "name": "Decorative Bowl",
+    "price": "38",
+    "category": "Home Decor",
+    "color": "Ceramic",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Handcrafted decorative ceramic bowl",
+    "id": "1019"
+  },
+  {
+    "name": "Wall Shelves",
+    "price": "79",
+    "category": "Home Decor",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of 3 floating wall shelves",
+    "id": "1020"
+  },
+  {
+    "name": "Non-Stick Cookware Set",
+    "price": "299",
+    "category": "Kitchen & Dining",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "10-piece non-stick cookware set",
+    "id": "1021"
+  },
+  {
+    "name": "Dining Chair Set",
+    "price": "349",
+    "category": "Kitchen & Dining",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of 4 upholstered dining chairs",
+    "id": "1022"
+  },
+  {
+    "name": "Cutlery Set",
+    "price": "89",
+    "category": "Kitchen & Dining",
+    "color": "Stainless Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "20-piece stainless steel cutlery set",
+    "id": "1023"
+  },
+  {
+    "name": "Kitchen Knife Set",
+    "price": "159",
+    "category": "Kitchen & Dining",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Professional 8-piece kitchen knife set",
+    "id": "1024"
+  },
+  {
+    "name": "Food Storage Containers",
+    "price": "45",
+    "category": "Kitchen & Dining",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "15-piece BPA-free food storage set",
+    "id": "1025"
+  },
+  {
+    "name": "Coffee Maker",
+    "price": "129",
+    "category": "Kitchen & Dining",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Programmable drip coffee maker",
+    "id": "1026"
+  },
+  {
+    "name": "Dining Table Set",
+    "price": "799",
+    "category": "Kitchen & Dining",
+    "color": "Dark Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "6-seater dining table with chairs",
+    "id": "1027"
+  },
+  {
+    "name": "Blender",
+    "price": "79",
+    "category": "Kitchen & Dining",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "High-speed blender for smoothies",
+    "id": "1028"
+  },
+  {
+    "name": "Toaster Oven",
+    "price": "99",
+    "category": "Kitchen & Dining",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "4-slice toaster with convection oven",
+    "id": "1029"
+  },
+  {
+    "name": "Mixer",
+    "price": "199",
+    "category": "Kitchen & Dining",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Stand mixer for baking needs",
+    "id": "1030"
+  },
+  {
+    "name": "Queen Size Bedding Set",
+    "price": "129",
+    "category": "Bed & Bath",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Complete queen size bedding set",
+    "id": "1031"
+  },
+  {
+    "name": "Bath Towel Set",
+    "price": "49",
+    "category": "Bed & Bath",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of 6 premium cotton bath towels",
+    "id": "1032"
+  },
+  {
+    "name": "Memory Foam Pillow",
+    "price": "39",
+    "category": "Bed & Bath",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Orthopedic memory foam pillow",
+    "id": "1033"
+  },
+  {
+    "name": "Shower Curtain",
+    "price": "25",
+    "category": "Bed & Bath",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Waterproof fabric shower curtain",
+    "id": "1034"
+  },
+  {
+    "name": "Bath Mat Set",
+    "price": "35",
+    "category": "Bed & Bath",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Set of 2 memory foam bath mats",
+    "id": "1035"
+  },
+  {
+    "name": "Duvet Cover",
+    "price": "69",
+    "category": "Bed & Bath",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Reversible duvet cover set",
+    "id": "1036"
+  },
+  {
+    "name": "Bed Skirt",
+    "price": "45",
+    "category": "Bed & Bath",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Box pleat bed skirt",
+    "id": "1037"
+  },
+  {
+    "name": "Bathrobe",
+    "price": "59",
+    "category": "Bed & Bath",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Premium cotton bathrobe",
+    "id": "1038"
+  },
+  {
+    "name": "Sheet Set",
+    "price": "55",
+    "category": "Bed & Bath",
+    "color": "Light Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Egyptian cotton sheet set",
+    "id": "1039"
+  },
+  {
+    "name": "Pillow Protectors",
+    "price": "19",
+    "category": "Bed & Bath",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of 2 hypoallergenic pillow protectors",
+    "id": "1040"
+  },
+  {
+    "name": "Power Drill Set",
+    "price": "89",
+    "category": "Home Improvement",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Cordless power drill with accessories",
+    "id": "1041"
+  },
+  {
+    "name": "Tool Kit",
+    "price": "129",
+    "category": "Home Improvement",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "65-piece home tool kit",
+    "id": "1042"
+  },
+  {
+    "name": "Paint Roller Set",
+    "price": "25",
+    "category": "Home Improvement",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Professional paint roller kit",
+    "id": "1043"
+  },
+  {
+    "name": "Ladder",
+    "price": "149",
+    "category": "Home Improvement",
+    "color": "Aluminum",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "6-foot aluminum step ladder",
+    "id": "1044"
+  },
+  {
+    "name": "Safety Glasses",
+    "price": "15",
+    "category": "Home Improvement",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Anti-fog safety glasses",
+    "id": "1045"
+  },
+  {
+    "name": "Measuring Tape",
+    "price": "12",
+    "category": "Home Improvement",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "25-foot retractable measuring tape",
+    "id": "1046"
+  },
+  {
+    "name": "Screwdriver Set",
+    "price": "35",
+    "category": "Home Improvement",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "20-piece precision screwdriver set",
+    "id": "1047"
+  },
+  {
+    "name": "Work Gloves",
+    "price": "18",
+    "category": "Home Improvement",
+    "color": "Leather",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Heavy-duty work gloves",
+    "id": "1048"
+  },
+  {
+    "name": "Utility Knife",
+    "price": "10",
+    "category": "Home Improvement",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Retractable utility knife",
+    "id": "1049"
+  },
+  {
+    "name": "Level Tool",
+    "price": "22",
+    "category": "Home Improvement",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "48-inch aluminum level",
+    "id": "1050"
+  },
+  {
+    "name": "Garden Hose",
+    "price": "45",
+    "category": "Gardening & Outdoor",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "50-foot expandable garden hose",
+    "id": "1051"
+  },
+  {
+    "name": "Lawn Mower",
+    "price": "299",
+    "category": "Gardening & Outdoor",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Electric lawn mower",
+    "id": "1052"
+  },
+  {
+    "name": "Gardening Tools Set",
+    "price": "59",
+    "category": "Gardening & Outdoor",
+    "color": "Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "8-piece gardening tool set",
+    "id": "1053"
+  },
+  {
+    "name": "Outdoor Patio Set",
+    "price": "499",
+    "category": "Gardening & Outdoor",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "5-piece outdoor patio furniture",
+    "id": "1054"
+  },
+  {
+    "name": "Plant Pots",
+    "price": "35",
+    "category": "Gardening & Outdoor",
+    "color": "Terracotta",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Set of 3 ceramic plant pots",
+    "id": "1055"
+  },
+  {
+    "name": "Watering Can",
+    "price": "22",
+    "category": "Gardening & Outdoor",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "2-gallon plastic watering can",
+    "id": "1056"
+  },
+  {
+    "name": "Garden Gloves",
+    "price": "15",
+    "category": "Gardening & Outdoor",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Breathable garden gloves",
+    "id": "1057"
+  },
+  {
+    "name": "Bird Feeder",
+    "price": "28",
+    "category": "Gardening & Outdoor",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Squirrel-proof bird feeder",
+    "id": "1058"
+  },
+  {
+    "name": "Lawn Chair",
+    "price": "45",
+    "category": "Gardening & Outdoor",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Folding outdoor lawn chair",
+    "id": "1059"
+  },
+  {
+    "name": "Garden Soil",
+    "price": "12",
+    "category": "Gardening & Outdoor",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Organic potting soil bag",
+    "id": "1060"
+  },
+  {
+    "name": "LED Ceiling Light",
+    "price": "89",
+    "category": "Lighting",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Modern LED ceiling light fixture",
+    "id": "1061"
+  },
+  {
+    "name": "Table Lamp",
+    "price": "45",
+    "category": "Lighting",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Adjustable desk table lamp",
+    "id": "1062"
+  },
+  {
+    "name": "Floor Lamp",
+    "price": "79",
+    "category": "Lighting",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Modern arc floor lamp",
+    "id": "1063"
+  },
+  {
+    "name": "String Lights",
+    "price": "25",
+    "category": "Lighting",
+    "color": "Warm White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "20-foot outdoor string lights",
+    "id": "1064"
+  },
+  {
+    "name": "Smart Bulb",
+    "price": "35",
+    "category": "Lighting",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "WiFi enabled smart LED bulb",
+    "id": "1065"
+  },
+  {
+    "name": "Chandelier",
+    "price": "299",
+    "category": "Lighting",
+    "color": "Crystal",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Crystal chandelier for dining room",
+    "id": "1066"
+  },
+  {
+    "name": "Night Light",
+    "price": "15",
+    "category": "Lighting",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Auto-on motion sensor night light",
+    "id": "1067"
+  },
+  {
+    "name": "Track Lighting",
+    "price": "129",
+    "category": "Lighting",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Adjustable track lighting system",
+    "id": "1068"
+  },
+  {
+    "name": "Pendant Light",
+    "price": "65",
+    "category": "Lighting",
+    "color": "Industrial",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Industrial style pendant light",
+    "id": "1069"
+  },
+  {
+    "name": "Solar Lights",
+    "price": "40",
+    "category": "Lighting",
+    "color": "Stainless Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of 6 solar garden lights",
+    "id": "1070"
+  },
+  {
+    "name": "Plastic Storage Bins",
+    "price": "25",
+    "category": "Storage & Organization",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Set of 5 stackable storage bins",
+    "id": "1071"
+  },
+  {
+    "name": "Shoe Rack",
+    "price": "45",
+    "category": "Storage & Organization",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "12-pair shoe storage rack",
+    "id": "1072"
+  },
+  {
+    "name": "Closet Organizer",
+    "price": "89",
+    "category": "Storage & Organization",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Modular closet organization system",
+    "id": "1073"
+  },
+  {
+    "name": "Jewelry Box",
+    "price": "35",
+    "category": "Storage & Organization",
+    "color": "Velvet",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Velvet lined jewelry organizer",
+    "id": "1074"
+  },
+  {
+    "name": "Underbed Storage",
+    "price": "55",
+    "category": "Storage & Organization",
+    "color": "Fabric",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Underbed storage containers",
+    "id": "1075"
+  },
+  {
+    "name": "Pantry Organizers",
+    "price": "32",
+    "category": "Storage & Organization",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Set of kitchen pantry organizers",
+    "id": "1076"
+  },
+  {
+    "name": "File Cabinet",
+    "price": "129",
+    "category": "Storage & Organization",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "2-drawer letter size file cabinet",
+    "id": "1077"
+  },
+  {
+    "name": "Tool Box",
+    "price": "49",
+    "category": "Storage & Organization",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Heavy-duty plastic tool box",
+    "id": "1078"
+  },
+  {
+    "name": "Drawer Dividers",
+    "price": "18",
+    "category": "Storage & Organization",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Adjustable drawer organizer",
+    "id": "1079"
+  },
+  {
+    "name": "Storage Ottoman",
+    "price": "99",
+    "category": "Storage & Organization",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Fabric storage ottoman bench",
+    "id": "1080"
+  },
+  {
+    "name": "All-Purpose Cleaner",
+    "price": "8",
+    "category": "Cleaning Supplies",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Eco-friendly all-purpose cleaner",
+    "id": "1081"
+  },
+  {
+    "name": "Vacuum Cleaner",
+    "price": "199",
+    "category": "Cleaning Supplies",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Bagless upright vacuum cleaner",
+    "id": "1082"
+  },
+  {
+    "name": "Microfiber Cloths",
+    "price": "12",
+    "category": "Cleaning Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Pack of 24 microfiber cleaning cloths",
+    "id": "1083"
+  },
+  {
+    "name": "Mop and Bucket Set",
+    "price": "35",
+    "category": "Cleaning Supplies",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Spin mop with wringer bucket",
+    "id": "1084"
+  },
+  {
+    "name": "Trash Bags",
+    "price": "15",
+    "category": "Cleaning Supplies",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "100-count heavy duty trash bags",
+    "id": "1085"
+  },
+  {
+    "name": "Glass Cleaner",
+    "price": "6",
+    "category": "Cleaning Supplies",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Streak-free glass cleaner spray",
+    "id": "1086"
+  },
+  {
+    "name": "Broom and Dustpan",
+    "price": "22",
+    "category": "Cleaning Supplies",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Angled broom with dustpan",
+    "id": "1087"
+  },
+  {
+    "name": "Disinfecting Wipes",
+    "price": "10",
+    "category": "Cleaning Supplies",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Pack of 75 disinfecting wipes",
+    "id": "1088"
+  },
+  {
+    "name": "Sponges",
+    "price": "8",
+    "category": "Cleaning Supplies",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "12-pack kitchen sponges",
+    "id": "1089"
+  },
+  {
+    "name": "Laundry Detergent",
+    "price": "18",
+    "category": "Cleaning Supplies",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "100-load liquid laundry detergent",
+    "id": "1090"
+  },
+  {
+    "name": "Refrigerator",
+    "price": "899",
+    "category": "Home Appliances",
+    "color": "Stainless Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "French door smart refrigerator",
+    "id": "1091"
+  },
+  {
+    "name": "Washing Machine",
+    "price": "699",
+    "category": "Home Appliances",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Front load washing machine",
+    "id": "1092"
+  },
+  {
+    "name": "Microwave Oven",
+    "price": "149",
+    "category": "Home Appliances",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "1.7 cu ft countertop microwave",
+    "id": "1093"
+  },
+  {
+    "name": "Air Conditioner",
+    "price": "399",
+    "category": "Home Appliances",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "Portable air conditioner unit",
+    "id": "1094"
+  },
+  {
+    "name": "Dishwasher",
+    "price": "599",
+    "category": "Home Appliances",
+    "color": "Stainless Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Energy star rated dishwasher",
+    "id": "1095"
+  },
+  {
+    "name": "Electric Kettle",
+    "price": "45",
+    "category": "Home Appliances",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "1.7L stainless steel electric kettle",
+    "id": "1096"
+  },
+  {
+    "name": "Air Purifier",
+    "price": "199",
+    "category": "Home Appliances",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "HEPA air purifier for large rooms",
+    "id": "1097"
+  },
+  {
+    "name": "Food Processor",
+    "price": "129",
+    "category": "Home Appliances",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400",
+    "description": "10-cup capacity food processor",
+    "id": "1098"
+  },
+  {
+    "name": "Iron",
+    "price": "35",
+    "category": "Home Appliances",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
+    "description": "Steam iron with auto shut-off",
+    "id": "1099"
+  },
+  {
+    "name": "Toaster",
+    "price": "40",
+    "category": "Home Appliances",
+    "color": "Stainless Steel",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "2-slice stainless steel toaster",
+    "id": "1100"
+  },
+  //fashion
+   {
+    "name": "Men's Casual T-Shirt",
+    "price": "25",
+    "category": "Men's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Premium cotton casual t-shirt for men",
+    "id": "1101"
+  },
+  {
+    "name": "Men's Denim Jeans",
+    "price": "59",
+    "category": "Men's Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "Classic fit denim jeans for men",
+    "id": "1102"
+  },
+  {
+    "name": "Men's Formal Shirt",
+    "price": "45",
+    "category": "Men's Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",
+    "description": "Slim fit formal dress shirt",
+    "id": "1103"
+  },
+  {
+    "name": "Men's Hoodie",
+    "price": "39",
+    "category": "Men's Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+    "description": "Warm cotton blend hoodie",
+    "id": "1104"
+  },
+  {
+    "name": "Men's Shorts",
+    "price": "32",
+    "category": "Men's Clothing",
+    "color": "Khaki",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Casual summer shorts for men",
+    "id": "1105"
+  },
+  {
+    "name": "Men's Winter Jacket",
+    "price": "129",
+    "category": "Men's Clothing",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Waterproof winter jacket",
+    "id": "1106"
+  },
+  {
+    "name": "Men's Polo Shirt",
+    "price": "35",
+    "category": "Men's Clothing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Classic polo shirt for casual wear",
+    "id": "1107"
+  },
+  {
+    "name": "Men's Sweater",
+    "price": "55",
+    "category": "Men's Clothing",
+    "color": "Burgundy",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Wool blend knit sweater",
+    "id": "1108"
+  },
+  {
+    "name": "Men's Blazer",
+    "price": "149",
+    "category": "Men's Clothing",
+    "color": "Charcoal",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Single-breasted formal blazer",
+    "id": "1109"
+  },
+  {
+    "name": "Men's Sweatpants",
+    "price": "42",
+    "category": "Men's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Comfortable cotton sweatpants",
+    "id": "1110"
+  },
+  {
+    "name": "Women's Summer Dress",
+    "price": "49",
+    "category": "Women's Clothing",
+    "color": "Floral",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Floral print summer maxi dress",
+    "id": "1111"
+  },
+  {
+    "name": "Women's Jeans",
+    "price": "65",
+    "category": "Women's Clothing",
+    "color": "Light Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "High-waisted skinny jeans",
+    "id": "1112"
+  },
+  {
+    "name": "Women's Blouse",
+    "price": "38",
+    "category": "Women's Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5886a13d77?w=400",
+    "description": "Elegant silk blend blouse",
+    "id": "1113"
+  },
+  {
+    "name": "Women's Cardigan",
+    "price": "52",
+    "category": "Women's Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Soft knit cardigan sweater",
+    "id": "1114"
+  },
+  {
+    "name": "Women's Skirt",
+    "price": "45",
+    "category": "Women's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",
+    "description": "A-line midi skirt",
+    "id": "1115"
+  },
+  {
+    "name": "Women's Jacket",
+    "price": "89",
+    "category": "Women's Clothing",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Trench coat style jacket",
+    "id": "1116"
+  },
+  {
+    "name": "Women's T-Shirt",
+    "price": "28",
+    "category": "Women's Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Basic cotton crew neck t-shirt",
+    "id": "1117"
+  },
+  {
+    "name": "Women's Jumpsuit",
+    "price": "75",
+    "category": "Women's Clothing",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5886a13d77?w=400",
+    "description": "Elegant wide-leg jumpsuit",
+    "id": "1118"
+  },
+  {
+    "name": "Women's Sweater",
+    "price": "58",
+    "category": "Women's Clothing",
+    "color": "Cream",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Chunky knit oversized sweater",
+    "id": "1119"
+  },
+  {
+    "name": "Women's Leggings",
+    "price": "32",
+    "category": "Women's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "High-waisted yoga leggings",
+    "id": "1120"
+  },
+  {
+    "name": "Kids' T-Shirt Set",
+    "price": "22",
+    "category": "Kids' Clothing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Pack of 3 cotton t-shirts for kids",
+    "id": "1121"
+  },
+  {
+    "name": "Kids' Denim Jeans",
+    "price": "35",
+    "category": "Kids' Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "Durable kids' denim jeans",
+    "id": "1122"
+  },
+  {
+    "name": "Kids' Winter Coat",
+    "price": "65",
+    "category": "Kids' Clothing",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Warm winter coat for children",
+    "id": "1123"
+  },
+  {
+    "name": "Kids' Dress",
+    "price": "42",
+    "category": "Kids' Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Pretty party dress for girls",
+    "id": "1124"
+  },
+  {
+    "name": "Kids' Pajama Set",
+    "price": "28",
+    "category": "Kids' Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable cotton pajama set",
+    "id": "1125"
+  },
+  {
+    "name": "Kids' Hoodie",
+    "price": "32",
+    "category": "Kids' Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+    "description": "Soft kids' hooded sweatshirt",
+    "id": "1126"
+  },
+  {
+    "name": "Kids' Shorts",
+    "price": "18",
+    "category": "Kids' Clothing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Comfortable summer shorts for kids",
+    "id": "1127"
+  },
+  {
+    "name": "Kids' Sweater",
+    "price": "38",
+    "category": "Kids' Clothing",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Warm knit sweater for children",
+    "id": "1128"
+  },
+  {
+    "name": "Kids' Raincoat",
+    "price": "45",
+    "category": "Kids' Clothing",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Waterproof raincoat with hood",
+    "id": "1129"
+  },
+  {
+    "name": "Kids' Leggings",
+    "price": "20",
+    "category": "Kids' Clothing",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Stretchy cotton leggings for girls",
+    "id": "1130"
+  },
+  {
+    "name": "Men's Running Shoes",
+    "price": "89",
+    "category": "Shoes & Footwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Lightweight running shoes for men",
+    "id": "1131"
+  },
+  {
+    "name": "Women's High Heels",
+    "price": "75",
+    "category": "Shoes & Footwear",
+    "color": "Nude",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Elegant high heel pumps",
+    "id": "1132"
+  },
+  {
+    "name": "Casual Sneakers",
+    "price": "65",
+    "category": "Shoes & Footwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Classic white casual sneakers",
+    "id": "1133"
+  },
+  {
+    "name": "Kids' School Shoes",
+    "price": "45",
+    "category": "Shoes & Footwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Durable leather school shoes",
+    "id": "1134"
+  },
+  {
+    "name": "Men's Dress Shoes",
+    "price": "120",
+    "category": "Shoes & Footwear",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Leather oxford dress shoes",
+    "id": "1135"
+  },
+  {
+    "name": "Women's Sandals",
+    "price": "42",
+    "category": "Shoes & Footwear",
+    "color": "Tan",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Comfortable summer sandals",
+    "id": "1136"
+  },
+  {
+    "name": "Athletic Shoes",
+    "price": "95",
+    "category": "Shoes & Footwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Performance athletic training shoes",
+    "id": "1137"
+  },
+  {
+    "name": "Winter Boots",
+    "price": "110",
+    "category": "Shoes & Footwear",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Waterproof insulated winter boots",
+    "id": "1138"
+  },
+  {
+    "name": "Flip Flops",
+    "price": "15",
+    "category": "Shoes & Footwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Beach flip flops with arch support",
+    "id": "1139"
+  },
+  {
+    "name": "House Slippers",
+    "price": "25",
+    "category": "Shoes & Footwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Comfortable memory foam slippers",
+    "id": "1140"
+  },
+  {
+    "name": "Leather Handbag",
+    "price": "150",
+    "category": "Bags & Luggage",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Genuine leather crossbody handbag",
+    "id": "1141"
+  },
+  {
+    "name": "Backpack",
+    "price": "65",
+    "category": "Bags & Luggage",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "Laptop backpack with multiple compartments",
+    "id": "1142"
+  },
+  {
+    "name": "Suitcase Set",
+    "price": "280",
+    "category": "Bags & Luggage",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "3-piece hardshell luggage set",
+    "id": "1143"
+  },
+  {
+    "name": "Wallet",
+    "price": "45",
+    "category": "Bags & Luggage",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400",
+    "description": "Genuine leather bifold wallet",
+    "id": "1144"
+  },
+  {
+    "name": "Beach Tote",
+    "price": "35",
+    "category": "Bags & Luggage",
+    "color": "Striped",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Large canvas beach tote bag",
+    "id": "1145"
+  },
+  {
+    "name": "Messenger Bag",
+    "price": "85",
+    "category": "Bags & Luggage",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "Vintage style leather messenger bag",
+    "id": "1146"
+  },
+  {
+    "name": "Duffel Bag",
+    "price": "75",
+    "category": "Bags & Luggage",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Sports duffel bag with shoe compartment",
+    "id": "1147"
+  },
+  {
+    "name": "Clutch Purse",
+    "price": "55",
+    "category": "Bags & Luggage",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Evening clutch with chain strap",
+    "id": "1148"
+  },
+  {
+    "name": "Travel Backpack",
+    "price": "120",
+    "category": "Bags & Luggage",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "40L travel backpack with USB port",
+    "id": "1149"
+  },
+  {
+    "name": "Laptop Bag",
+    "price": "60",
+    "category": "Bags & Luggage",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Professional laptop briefcase",
+    "id": "1150"
+  },
+  {
+    "name": "Silver Necklace",
+    "price": "85",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Sterling silver pendant necklace",
+    "id": "1151"
+  },
+  {
+    "name": "Gold Earrings",
+    "price": "120",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
+    "description": "14k gold hoop earrings",
+    "id": "1152"
+  },
+  {
+    "name": "Leather Watch",
+    "price": "150",
+    "category": "Jewelry & Watches",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Classic leather strap watch",
+    "id": "1153"
+  },
+  {
+    "name": "Diamond Ring",
+    "price": "450",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400",
+    "description": "Solitaire diamond engagement ring",
+    "id": "1154"
+  },
+  {
+    "name": "Bracelet Set",
+    "price": "65",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Set of 3 stackable bracelets",
+    "id": "1155"
+  },
+  {
+    "name": "Smart Watch",
+    "price": "220",
+    "category": "Jewelry & Watches",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Fitness tracking smartwatch",
+    "id": "1156"
+  },
+  {
+    "name": "Pearl Earrings",
+    "price": "95",
+    "category": "Jewelry & Watches",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
+    "description": "Freshwater pearl stud earrings",
+    "id": "1157"
+  },
+  {
+    "name": "Charm Bracelet",
+    "price": "75",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Personalized charm bracelet",
+    "id": "1158"
+  },
+  {
+    "name": "Luxury Watch",
+    "price": "350",
+    "category": "Jewelry & Watches",
+    "color": "Rose Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Automatic mechanical watch",
+    "id": "1159"
+  },
+  {
+    "name": "Anklet",
+    "price": "28",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400",
+    "description": "Delicate gold chain anklet",
+    "id": "1160"
+  },
+  {
+    "name": "Sunglasses",
+    "price": "45",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+    "description": "UV protection sunglasses",
+    "id": "1161"
+  },
+  {
+    "name": "Leather Belt",
+    "price": "35",
+    "category": "Accessories",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Genuine leather dress belt",
+    "id": "1162"
+  },
+  {
+    "name": "Scarf",
+    "price": "28",
+    "category": "Accessories",
+    "color": "Plaid",
+    "imageUrl": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400",
+    "description": "Wool blend winter scarf",
+    "id": "1163"
+  },
+  {
+    "name": "Baseball Cap",
+    "price": "22",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400",
+    "description": "Adjustable baseball cap",
+    "id": "1164"
+  },
+  {
+    "name": "Tie Set",
+    "price": "40",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?w=400",
+    "description": "Set of 3 silk neckties",
+    "id": "1165"
+  },
+  {
+    "name": "Gloves",
+    "price": "25",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1600161967447-529c75c8bb1a?w=400",
+    "description": "Leather winter gloves",
+    "id": "1166"
+  },
+  {
+    "name": "Hair Accessories",
+    "price": "18",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400",
+    "description": "Set of hair clips and bands",
+    "id": "1167"
+  },
+  {
+    "name": "Umbrella",
+    "price": "32",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1532635224-cf024e66d1c1?w=400",
+    "description": "Automatic open travel umbrella",
+    "id": "1168"
+  },
+  {
+    "name": "Socks Pack",
+    "price": "20",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 6 cotton socks",
+    "id": "1169"
+  },
+  {
+    "name": "Keychain",
+    "price": "12",
+    "category": "Accessories",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400",
+    "description": "Personalized leather keychain",
+    "id": "1170"
+  },
+  {
+    "name": "Yoga Pants",
+    "price": "45",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "High-waisted yoga pants",
+    "id": "1171"
+  },
+  {
+    "name": "Running Shorts",
+    "price": "32",
+    "category": "Sportswear & Activewear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Lightweight running shorts",
+    "id": "1172"
+  },
+  {
+    "name": "Sports Bra",
+    "price": "38",
+    "category": "Sportswear & Activewear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "High impact sports bra",
+    "id": "1173"
+  },
+  {
+    "name": "Gym T-Shirt",
+    "price": "25",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Moisture-wicking gym shirt",
+    "id": "1174"
+  },
+  {
+    "name": "Athletic Jacket",
+    "price": "65",
+    "category": "Sportswear & Activewear",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Windproof athletic jacket",
+    "id": "1175"
+  },
+  {
+    "name": "Compression Leggings",
+    "price": "52",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Graduated compression leggings",
+    "id": "1176"
+  },
+  {
+    "name": "Training Shoes",
+    "price": "95",
+    "category": "Sportswear & Activewear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Cross-training athletic shoes",
+    "id": "1177"
+  },
+  {
+    "name": "Swimwear Set",
+    "price": "55",
+    "category": "Sportswear & Activewear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400",
+    "description": "Women's swimsuit and cover-up",
+    "id": "1178"
+  },
+  {
+    "name": "Headband",
+    "price": "12",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400",
+    "description": "Sweat-wicking sports headband",
+    "id": "1179"
+  },
+  {
+    "name": "Athletic Socks",
+    "price": "18",
+    "category": "Sportswear & Activewear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 3 athletic socks",
+    "id": "1180"
+  },
+  {
+    "name": "Cotton Underwear Pack",
+    "price": "25",
+    "category": "Underwear & Sleepwear",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 5 cotton underwear",
+    "id": "1181"
+  },
+  {
+    "name": "Pajama Set",
+    "price": "38",
+    "category": "Underwear & Sleepwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable cotton pajama set",
+    "id": "1182"
+  },
+  {
+    "name": "Bra Set",
+    "price": "45",
+    "category": "Underwear & Sleepwear",
+    "color": "Nude",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Wireless bra and panty set",
+    "id": "1183"
+  },
+  {
+    "name": "Robes",
+    "price": "55",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Soft cotton bathrobe",
+    "id": "1184"
+  },
+  {
+    "name": "Slippers",
+    "price": "22",
+    "category": "Underwear & Sleepwear",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Comfortable bedroom slippers",
+    "id": "1185"
+  },
+  {
+    "name": "Nightgown",
+    "price": "35",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Knee-length cotton nightgown",
+    "id": "1186"
+  },
+  {
+    "name": "Boxer Briefs",
+    "price": "28",
+    "category": "Underwear & Sleepwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 3 cotton boxer briefs",
+    "id": "1187"
+  },
+  {
+    "name": "Sleep Mask",
+    "price": "15",
+    "category": "Underwear & Sleepwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+    "description": "Contoured sleep mask",
+    "id": "1188"
+  },
+  {
+    "name": "Thermal Underwear",
+    "price": "42",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Warm thermal underwear set",
+    "id": "1189"
+  },
+  {
+    "name": "Loungewear Set",
+    "price": "48",
+    "category": "Underwear & Sleepwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable loungewear pants and top",
+    "id": "1190"
+  },
+  {
+    "name": "Evening Gown",
+    "price": "280",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Elegant floor-length evening gown",
+    "id": "1191"
+  },
+  {
+    "name": "Tuxedo Set",
+    "price": "350",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Complete men's tuxedo set",
+    "id": "1192"
+  },
+  {
+    "name": "Cocktail Dress",
+    "price": "120",
+    "category": "Formal Wear",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Knee-length cocktail dress",
+    "id": "1193"
+  },
+  {
+    "name": "Dress Shirt",
+    "price": "65",
+    "category": "Formal Wear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",
+    "description": "French cuff dress shirt",
+    "id": "1194"
+  },
+  {
+    "name": "Formal Shoes",
+    "price": "130",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Leather formal dress shoes",
+    "id": "1195"
+  },
+  {
+    "name": "Evening Clutch",
+    "price": "75",
+    "category": "Formal Wear",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Beaded evening clutch purse",
+    "id": "1196"
+  },
+  {
+    "name": "Bow Tie",
+    "price": "35",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?w=400",
+    "description": "Satin self-tie bow tie",
+    "id": "1197"
+  },
+  {
+    "name": "Prom Dress",
+    "price": "180",
+    "category": "Formal Wear",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Sparkly prom dress with sequins",
+    "id": "1198"
+  },
+  {
+    "name": "Cummerbund Set",
+    "price": "45",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Cummerbund and bow tie set",
+    "id": "1199"
+  },
+  {
+    "name": "Bridesmaid Dress",
+    "price": "150",
+    "category": "Formal Wear",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "A-line bridesmaid dress",
+    "id": "1200"
+  } ,
+  {
+    "name": "Men's Casual T-Shirt",
+    "price": "25",
+    "category": "Men's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Premium cotton casual t-shirt for men",
+    "id": "1101"
+  },
+  {
+    "name": "Men's Denim Jeans",
+    "price": "59",
+    "category": "Men's Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "Classic fit denim jeans for men",
+    "id": "1102"
+  },
+  {
+    "name": "Men's Formal Shirt",
+    "price": "45",
+    "category": "Men's Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",
+    "description": "Slim fit formal dress shirt",
+    "id": "1103"
+  },
+  {
+    "name": "Men's Hoodie",
+    "price": "39",
+    "category": "Men's Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+    "description": "Warm cotton blend hoodie",
+    "id": "1104"
+  },
+  {
+    "name": "Men's Shorts",
+    "price": "32",
+    "category": "Men's Clothing",
+    "color": "Khaki",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Casual summer shorts for men",
+    "id": "1105"
+  },
+  {
+    "name": "Men's Winter Jacket",
+    "price": "129",
+    "category": "Men's Clothing",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Waterproof winter jacket",
+    "id": "1106"
+  },
+  {
+    "name": "Men's Polo Shirt",
+    "price": "35",
+    "category": "Men's Clothing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Classic polo shirt for casual wear",
+    "id": "1107"
+  },
+  {
+    "name": "Men's Sweater",
+    "price": "55",
+    "category": "Men's Clothing",
+    "color": "Burgundy",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Wool blend knit sweater",
+    "id": "1108"
+  },
+  {
+    "name": "Men's Blazer",
+    "price": "149",
+    "category": "Men's Clothing",
+    "color": "Charcoal",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Single-breasted formal blazer",
+    "id": "1109"
+  },
+  {
+    "name": "Men's Sweatpants",
+    "price": "42",
+    "category": "Men's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Comfortable cotton sweatpants",
+    "id": "1110"
+  },
+  {
+    "name": "Women's Summer Dress",
+    "price": "49",
+    "category": "Women's Clothing",
+    "color": "Floral",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Floral print summer maxi dress",
+    "id": "1111"
+  },
+  {
+    "name": "Women's Jeans",
+    "price": "65",
+    "category": "Women's Clothing",
+    "color": "Light Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "High-waisted skinny jeans",
+    "id": "1112"
+  },
+  {
+    "name": "Women's Blouse",
+    "price": "38",
+    "category": "Women's Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5886a13d77?w=400",
+    "description": "Elegant silk blend blouse",
+    "id": "1113"
+  },
+  {
+    "name": "Women's Cardigan",
+    "price": "52",
+    "category": "Women's Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Soft knit cardigan sweater",
+    "id": "1114"
+  },
+  {
+    "name": "Women's Skirt",
+    "price": "45",
+    "category": "Women's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",
+    "description": "A-line midi skirt",
+    "id": "1115"
+  },
+  {
+    "name": "Women's Jacket",
+    "price": "89",
+    "category": "Women's Clothing",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Trench coat style jacket",
+    "id": "1116"
+  },
+  {
+    "name": "Women's T-Shirt",
+    "price": "28",
+    "category": "Women's Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Basic cotton crew neck t-shirt",
+    "id": "1117"
+  },
+  {
+    "name": "Women's Jumpsuit",
+    "price": "75",
+    "category": "Women's Clothing",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5886a13d77?w=400",
+    "description": "Elegant wide-leg jumpsuit",
+    "id": "1118"
+  },
+  {
+    "name": "Women's Sweater",
+    "price": "58",
+    "category": "Women's Clothing",
+    "color": "Cream",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Chunky knit oversized sweater",
+    "id": "1119"
+  },
+  {
+    "name": "Women's Leggings",
+    "price": "32",
+    "category": "Women's Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "High-waisted yoga leggings",
+    "id": "1120"
+  },
+  {
+    "name": "Kids' T-Shirt Set",
+    "price": "22",
+    "category": "Kids' Clothing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Pack of 3 cotton t-shirts for kids",
+    "id": "1121"
+  },
+  {
+    "name": "Kids' Denim Jeans",
+    "price": "35",
+    "category": "Kids' Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+    "description": "Durable kids' denim jeans",
+    "id": "1122"
+  },
+  {
+    "name": "Kids' Winter Coat",
+    "price": "65",
+    "category": "Kids' Clothing",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Warm winter coat for children",
+    "id": "1123"
+  },
+  {
+    "name": "Kids' Dress",
+    "price": "42",
+    "category": "Kids' Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Pretty party dress for girls",
+    "id": "1124"
+  },
+  {
+    "name": "Kids' Pajama Set",
+    "price": "28",
+    "category": "Kids' Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable cotton pajama set",
+    "id": "1125"
+  },
+  {
+    "name": "Kids' Hoodie",
+    "price": "32",
+    "category": "Kids' Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
+    "description": "Soft kids' hooded sweatshirt",
+    "id": "1126"
+  },
+  {
+    "name": "Kids' Shorts",
+    "price": "18",
+    "category": "Kids' Clothing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Comfortable summer shorts for kids",
+    "id": "1127"
+  },
+  {
+    "name": "Kids' Sweater",
+    "price": "38",
+    "category": "Kids' Clothing",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Warm knit sweater for children",
+    "id": "1128"
+  },
+  {
+    "name": "Kids' Raincoat",
+    "price": "45",
+    "category": "Kids' Clothing",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Waterproof raincoat with hood",
+    "id": "1129"
+  },
+  {
+    "name": "Kids' Leggings",
+    "price": "20",
+    "category": "Kids' Clothing",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Stretchy cotton leggings for girls",
+    "id": "1130"
+  },
+  {
+    "name": "Men's Running Shoes",
+    "price": "89",
+    "category": "Shoes & Footwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Lightweight running shoes for men",
+    "id": "1131"
+  },
+  {
+    "name": "Women's High Heels",
+    "price": "75",
+    "category": "Shoes & Footwear",
+    "color": "Nude",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Elegant high heel pumps",
+    "id": "1132"
+  },
+  {
+    "name": "Casual Sneakers",
+    "price": "65",
+    "category": "Shoes & Footwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Classic white casual sneakers",
+    "id": "1133"
+  },
+  {
+    "name": "Kids' School Shoes",
+    "price": "45",
+    "category": "Shoes & Footwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Durable leather school shoes",
+    "id": "1134"
+  },
+  {
+    "name": "Men's Dress Shoes",
+    "price": "120",
+    "category": "Shoes & Footwear",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Leather oxford dress shoes",
+    "id": "1135"
+  },
+  {
+    "name": "Women's Sandals",
+    "price": "42",
+    "category": "Shoes & Footwear",
+    "color": "Tan",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Comfortable summer sandals",
+    "id": "1136"
+  },
+  {
+    "name": "Athletic Shoes",
+    "price": "95",
+    "category": "Shoes & Footwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Performance athletic training shoes",
+    "id": "1137"
+  },
+  {
+    "name": "Winter Boots",
+    "price": "110",
+    "category": "Shoes & Footwear",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Waterproof insulated winter boots",
+    "id": "1138"
+  },
+  {
+    "name": "Flip Flops",
+    "price": "15",
+    "category": "Shoes & Footwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    "description": "Beach flip flops with arch support",
+    "id": "1139"
+  },
+  {
+    "name": "House Slippers",
+    "price": "25",
+    "category": "Shoes & Footwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Comfortable memory foam slippers",
+    "id": "1140"
+  },
+  {
+    "name": "Leather Handbag",
+    "price": "150",
+    "category": "Bags & Luggage",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Genuine leather crossbody handbag",
+    "id": "1141"
+  },
+  {
+    "name": "Backpack",
+    "price": "65",
+    "category": "Bags & Luggage",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "Laptop backpack with multiple compartments",
+    "id": "1142"
+  },
+  {
+    "name": "Suitcase Set",
+    "price": "280",
+    "category": "Bags & Luggage",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "3-piece hardshell luggage set",
+    "id": "1143"
+  },
+  {
+    "name": "Wallet",
+    "price": "45",
+    "category": "Bags & Luggage",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400",
+    "description": "Genuine leather bifold wallet",
+    "id": "1144"
+  },
+  {
+    "name": "Beach Tote",
+    "price": "35",
+    "category": "Bags & Luggage",
+    "color": "Striped",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Large canvas beach tote bag",
+    "id": "1145"
+  },
+  {
+    "name": "Messenger Bag",
+    "price": "85",
+    "category": "Bags & Luggage",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "Vintage style leather messenger bag",
+    "id": "1146"
+  },
+  {
+    "name": "Duffel Bag",
+    "price": "75",
+    "category": "Bags & Luggage",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Sports duffel bag with shoe compartment",
+    "id": "1147"
+  },
+  {
+    "name": "Clutch Purse",
+    "price": "55",
+    "category": "Bags & Luggage",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Evening clutch with chain strap",
+    "id": "1148"
+  },
+  {
+    "name": "Travel Backpack",
+    "price": "120",
+    "category": "Bags & Luggage",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+    "description": "40L travel backpack with USB port",
+    "id": "1149"
+  },
+  {
+    "name": "Laptop Bag",
+    "price": "60",
+    "category": "Bags & Luggage",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Professional laptop briefcase",
+    "id": "1150"
+  },
+  {
+    "name": "Silver Necklace",
+    "price": "85",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Sterling silver pendant necklace",
+    "id": "1151"
+  },
+  {
+    "name": "Gold Earrings",
+    "price": "120",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
+    "description": "14k gold hoop earrings",
+    "id": "1152"
+  },
+  {
+    "name": "Leather Watch",
+    "price": "150",
+    "category": "Jewelry & Watches",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Classic leather strap watch",
+    "id": "1153"
+  },
+  {
+    "name": "Diamond Ring",
+    "price": "450",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400",
+    "description": "Solitaire diamond engagement ring",
+    "id": "1154"
+  },
+  {
+    "name": "Bracelet Set",
+    "price": "65",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Set of 3 stackable bracelets",
+    "id": "1155"
+  },
+  {
+    "name": "Smart Watch",
+    "price": "220",
+    "category": "Jewelry & Watches",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Fitness tracking smartwatch",
+    "id": "1156"
+  },
+  {
+    "name": "Pearl Earrings",
+    "price": "95",
+    "category": "Jewelry & Watches",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
+    "description": "Freshwater pearl stud earrings",
+    "id": "1157"
+  },
+  {
+    "name": "Charm Bracelet",
+    "price": "75",
+    "category": "Jewelry & Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Personalized charm bracelet",
+    "id": "1158"
+  },
+  {
+    "name": "Luxury Watch",
+    "price": "350",
+    "category": "Jewelry & Watches",
+    "color": "Rose Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Automatic mechanical watch",
+    "id": "1159"
+  },
+  {
+    "name": "Anklet",
+    "price": "28",
+    "category": "Jewelry & Watches",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400",
+    "description": "Delicate gold chain anklet",
+    "id": "1160"
+  },
+  {
+    "name": "Sunglasses",
+    "price": "45",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+    "description": "UV protection sunglasses",
+    "id": "1161"
+  },
+  {
+    "name": "Leather Belt",
+    "price": "35",
+    "category": "Accessories",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Genuine leather dress belt",
+    "id": "1162"
+  },
+  {
+    "name": "Scarf",
+    "price": "28",
+    "category": "Accessories",
+    "color": "Plaid",
+    "imageUrl": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400",
+    "description": "Wool blend winter scarf",
+    "id": "1163"
+  },
+  {
+    "name": "Baseball Cap",
+    "price": "22",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400",
+    "description": "Adjustable baseball cap",
+    "id": "1164"
+  },
+  {
+    "name": "Tie Set",
+    "price": "40",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?w=400",
+    "description": "Set of 3 silk neckties",
+    "id": "1165"
+  },
+  {
+    "name": "Gloves",
+    "price": "25",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1600161967447-529c75c8bb1a?w=400",
+    "description": "Leather winter gloves",
+    "id": "1166"
+  },
+  {
+    "name": "Hair Accessories",
+    "price": "18",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400",
+    "description": "Set of hair clips and bands",
+    "id": "1167"
+  },
+  {
+    "name": "Umbrella",
+    "price": "32",
+    "category": "Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1532635224-cf024e66d1c1?w=400",
+    "description": "Automatic open travel umbrella",
+    "id": "1168"
+  },
+  {
+    "name": "Socks Pack",
+    "price": "20",
+    "category": "Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 6 cotton socks",
+    "id": "1169"
+  },
+  {
+    "name": "Keychain",
+    "price": "12",
+    "category": "Accessories",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400",
+    "description": "Personalized leather keychain",
+    "id": "1170"
+  },
+  {
+    "name": "Yoga Pants",
+    "price": "45",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "High-waisted yoga pants",
+    "id": "1171"
+  },
+  {
+    "name": "Running Shorts",
+    "price": "32",
+    "category": "Sportswear & Activewear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400",
+    "description": "Lightweight running shorts",
+    "id": "1172"
+  },
+  {
+    "name": "Sports Bra",
+    "price": "38",
+    "category": "Sportswear & Activewear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "High impact sports bra",
+    "id": "1173"
+  },
+  {
+    "name": "Gym T-Shirt",
+    "price": "25",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Moisture-wicking gym shirt",
+    "id": "1174"
+  },
+  {
+    "name": "Athletic Jacket",
+    "price": "65",
+    "category": "Sportswear & Activewear",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+    "description": "Windproof athletic jacket",
+    "id": "1175"
+  },
+  {
+    "name": "Compression Leggings",
+    "price": "52",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5b?w=400",
+    "description": "Graduated compression leggings",
+    "id": "1176"
+  },
+  {
+    "name": "Training Shoes",
+    "price": "95",
+    "category": "Sportswear & Activewear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Cross-training athletic shoes",
+    "id": "1177"
+  },
+  {
+    "name": "Swimwear Set",
+    "price": "55",
+    "category": "Sportswear & Activewear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400",
+    "description": "Women's swimsuit and cover-up",
+    "id": "1178"
+  },
+  {
+    "name": "Headband",
+    "price": "12",
+    "category": "Sportswear & Activewear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400",
+    "description": "Sweat-wicking sports headband",
+    "id": "1179"
+  },
+  {
+    "name": "Athletic Socks",
+    "price": "18",
+    "category": "Sportswear & Activewear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 3 athletic socks",
+    "id": "1180"
+  },
+  {
+    "name": "Cotton Underwear Pack",
+    "price": "25",
+    "category": "Underwear & Sleepwear",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 5 cotton underwear",
+    "id": "1181"
+  },
+  {
+    "name": "Pajama Set",
+    "price": "38",
+    "category": "Underwear & Sleepwear",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable cotton pajama set",
+    "id": "1182"
+  },
+  {
+    "name": "Bra Set",
+    "price": "45",
+    "category": "Underwear & Sleepwear",
+    "color": "Nude",
+    "imageUrl": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400",
+    "description": "Wireless bra and panty set",
+    "id": "1183"
+  },
+  {
+    "name": "Robes",
+    "price": "55",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+    "description": "Soft cotton bathrobe",
+    "id": "1184"
+  },
+  {
+    "name": "Slippers",
+    "price": "22",
+    "category": "Underwear & Sleepwear",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Comfortable bedroom slippers",
+    "id": "1185"
+  },
+  {
+    "name": "Nightgown",
+    "price": "35",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Knee-length cotton nightgown",
+    "id": "1186"
+  },
+  {
+    "name": "Boxer Briefs",
+    "price": "28",
+    "category": "Underwear & Sleepwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Pack of 3 cotton boxer briefs",
+    "id": "1187"
+  },
+  {
+    "name": "Sleep Mask",
+    "price": "15",
+    "category": "Underwear & Sleepwear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+    "description": "Contoured sleep mask",
+    "id": "1188"
+  },
+  {
+    "name": "Thermal Underwear",
+    "price": "42",
+    "category": "Underwear & Sleepwear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586351934193-6b655403ca71?w=400",
+    "description": "Warm thermal underwear set",
+    "id": "1189"
+  },
+  {
+    "name": "Loungewear Set",
+    "price": "48",
+    "category": "Underwear & Sleepwear",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable loungewear pants and top",
+    "id": "1190"
+  },
+  {
+    "name": "Evening Gown",
+    "price": "280",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Elegant floor-length evening gown",
+    "id": "1191"
+  },
+  {
+    "name": "Tuxedo Set",
+    "price": "350",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Complete men's tuxedo set",
+    "id": "1192"
+  },
+  {
+    "name": "Cocktail Dress",
+    "price": "120",
+    "category": "Formal Wear",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Knee-length cocktail dress",
+    "id": "1193"
+  },
+  {
+    "name": "Dress Shirt",
+    "price": "65",
+    "category": "Formal Wear",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",
+    "description": "French cuff dress shirt",
+    "id": "1194"
+  },
+  {
+    "name": "Formal Shoes",
+    "price": "130",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
+    "description": "Leather formal dress shoes",
+    "id": "1195"
+  },
+  {
+    "name": "Evening Clutch",
+    "price": "75",
+    "category": "Formal Wear",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Beaded evening clutch purse",
+    "id": "1196"
+  },
+  {
+    "name": "Bow Tie",
+    "price": "35",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?w=400",
+    "description": "Satin self-tie bow tie",
+    "id": "1197"
+  },
+  {
+    "name": "Prom Dress",
+    "price": "180",
+    "category": "Formal Wear",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "Sparkly prom dress with sequins",
+    "id": "1198"
+  },
+  {
+    "name": "Cummerbund Set",
+    "price": "45",
+    "category": "Formal Wear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    "description": "Cummerbund and bow tie set",
+    "id": "1199"
+  },
+  {
+    "name": "Bridesmaid Dress",
+    "price": "150",
+    "category": "Formal Wear",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400",
+    "description": "A-line bridesmaid dress",
+    "id": "1200"
+  },
+  // Beauty
+  {
+    "name": "Hydrating Face Serum",
+    "price": "32",
+    "category": "Skincare",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Deep hydrating facial serum with hyaluronic acid",
+    "id": "1201"
+  },
+  {
+    "name": "Retinol Night Cream",
+    "price": "48",
+    "category": "Skincare",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Anti-aging retinol cream for overnight renewal",
+    "id": "1202"
+  },
+  {
+    "name": "Vitamin C Brightening Cream",
+    "price": "38",
+    "category": "Skincare",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Brightening day cream with vitamin C",
+    "id": "1203"
+  },
+  {
+    "name": "Clay Face Mask",
+    "price": "24",
+    "category": "Skincare",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Purifying clay mask for deep cleansing",
+    "id": "1204"
+  },
+  {
+    "name": "Facial Oil Blend",
+    "price": "42",
+    "category": "Skincare",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Nourishing facial oil with rosehip and jojoba",
+    "id": "1205"
+  },
+  {
+    "name": "Eye Cream",
+    "price": "35",
+    "category": "Skincare",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Anti-puffiness and dark circle eye treatment",
+    "id": "1206"
+  },
+  {
+    "name": "AHA Exfoliating Toner",
+    "price": "28",
+    "category": "Skincare",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Gentle chemical exfoliating toner",
+    "id": "1207"
+  },
+  {
+    "name": "Sunscreen SPF 50",
+    "price": "26",
+    "category": "Skincare",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Lightweight daily facial sunscreen",
+    "id": "1208"
+  },
+  {
+    "name": "Overnight Mask",
+    "price": "34",
+    "category": "Skincare",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Hydrating overnight sleeping mask",
+    "id": "1209"
+  },
+  {
+    "name": "Facial Mist",
+    "price": "20",
+    "category": "Skincare",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Refreshing rose water facial spray",
+    "id": "1210"
+  },
+  {
+    "name": "Liquid Foundation",
+    "price": "42",
+    "category": "Makeup",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Buildable coverage liquid foundation",
+    "id": "1211"
+  },
+  {
+    "name": "Concealer Palette",
+    "price": "32",
+    "category": "Makeup",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "6-shade cream concealer palette",
+    "id": "1212"
+  },
+  {
+    "name": "Matte Lipstick Set",
+    "price": "45",
+    "category": "Makeup",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Set of 5 long-wear matte lipsticks",
+    "id": "1213"
+  },
+  {
+    "name": "Eyeshadow Palette",
+    "price": "58",
+    "category": "Makeup",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "16-color professional eyeshadow palette",
+    "id": "1214"
+  },
+  {
+    "name": "Mascara",
+    "price": "26",
+    "category": "Makeup",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Volumizing and lengthening mascara",
+    "id": "1215"
+  },
+  {
+    "name": "Blush Duo",
+    "price": "34",
+    "category": "Makeup",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Matte and shimmer blush combination",
+    "id": "1216"
+  },
+  {
+    "name": "Makeup Setting Spray",
+    "price": "28",
+    "category": "Makeup",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Long-lasting makeup setting mist",
+    "id": "1217"
+  },
+  {
+    "name": "Eyebrow Pomade",
+    "price": "24",
+    "category": "Makeup",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Waterproof eyebrow defining pomade",
+    "id": "1218"
+  },
+  {
+    "name": "Highlighter Palette",
+    "price": "38",
+    "category": "Makeup",
+    "color": "Champagne",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "4-shade highlighting palette",
+    "id": "1219"
+  },
+  {
+    "name": "Makeup Remover",
+    "price": "18",
+    "category": "Makeup",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Gentle dual-phase makeup remover",
+    "id": "1220"
+  },
+  {
+    "name": "Shampoo & Conditioner Set",
+    "price": "36",
+    "category": "Hair Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Hydrating shampoo and conditioner duo",
+    "id": "1221"
+  },
+  {
+    "name": "Hair Treatment Mask",
+    "price": "28",
+    "category": "Hair Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Deep conditioning hair treatment",
+    "id": "1222"
+  },
+  {
+    "name": "Heat Protectant Spray",
+    "price": "22",
+    "category": "Hair Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Thermal protection spray for styling",
+    "id": "1223"
+  },
+  {
+    "name": "Hair Serum",
+    "price": "26",
+    "category": "Hair Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Smoothing and shine serum",
+    "id": "1224"
+  },
+  {
+    "name": "Dry Shampoo",
+    "price": "20",
+    "category": "Hair Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Volumizing dry shampoo for fresh hair",
+    "id": "1225"
+  },
+  {
+    "name": "Hair Oil",
+    "price": "32",
+    "category": "Hair Care",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Nourishing argan hair oil",
+    "id": "1226"
+  },
+  {
+    "name": "Scalp Scrub",
+    "price": "24",
+    "category": "Hair Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Exfoliating scalp treatment",
+    "id": "1227"
+  },
+  {
+    "name": "Hair Color Kit",
+    "price": "18",
+    "category": "Hair Care",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "At-home hair coloring system",
+    "id": "1228"
+  },
+  {
+    "name": "Leave-In Conditioner",
+    "price": "22",
+    "category": "Hair Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Daily leave-in conditioner spray",
+    "id": "1229"
+  },
+  {
+    "name": "Hair Spray",
+    "price": "16",
+    "category": "Hair Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
+    "description": "Flexible hold hair spray",
+    "id": "1230"
+  },
+  {
+    "name": "Eau de Parfum",
+    "price": "85",
+    "category": "Fragrances",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Luxurious floral eau de parfum",
+    "id": "1231"
+  },
+  {
+    "name": "Cologne Spray",
+    "price": "75",
+    "category": "Fragrances",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Fresh woody cologne for men",
+    "id": "1232"
+  },
+  {
+    "name": "Perfume Rollerball",
+    "price": "32",
+    "category": "Fragrances",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Travel-size perfume rollerball",
+    "id": "1233"
+  },
+  {
+    "name": "Scented Body Mist",
+    "price": "22",
+    "category": "Fragrances",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Lightweight scented body spray",
+    "id": "1234"
+  },
+  {
+    "name": "Fragrance Gift Set",
+    "price": "65",
+    "category": "Fragrances",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Perfume and body lotion gift set",
+    "id": "1235"
+  },
+  {
+    "name": "Pocket Perfume",
+    "price": "28",
+    "category": "Fragrances",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Compact pocket-sized perfume",
+    "id": "1236"
+  },
+  {
+    "name": "Scented Candle",
+    "price": "35",
+    "category": "Fragrances",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Soy wax scented candle",
+    "id": "1237"
+  },
+  {
+    "name": "Room Diffuser",
+    "price": "42",
+    "category": "Fragrances",
+    "color": "Glass",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Reed diffuser for home fragrance",
+    "id": "1238"
+  },
+  {
+    "name": "Perfume Oil",
+    "price": "38",
+    "category": "Fragrances",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Concentrated perfume oil roll-on",
+    "id": "1239"
+  },
+  {
+    "name": "Fragrance Sampler",
+    "price": "45",
+    "category": "Fragrances",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Set of 8 mini fragrance samples",
+    "id": "1240"
+  },
+  {
+    "name": "Body Wash Gel",
+    "price": "18",
+    "category": "Bath & Body",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Moisturizing shower gel",
+    "id": "1241"
+  },
+  {
+    "name": "Body Lotion",
+    "price": "22",
+    "category": "Bath & Body",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "24-hour hydration body cream",
+    "id": "1242"
+  },
+  {
+    "name": "Bath Bombs Set",
+    "price": "25",
+    "category": "Bath & Body",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Set of 6 fragrant bath bombs",
+    "id": "1243"
+  },
+  {
+    "name": "Body Scrub",
+    "price": "28",
+    "category": "Bath & Body",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Exfoliating coffee body scrub",
+    "id": "1244"
+  },
+  {
+    "name": "Bubble Bath",
+    "price": "20",
+    "category": "Bath & Body",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Luxurious bubble bath solution",
+    "id": "1245"
+  },
+  {
+    "name": "Body Butter",
+    "price": "26",
+    "category": "Bath & Body",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Rich shea butter body cream",
+    "id": "1246"
+  },
+  {
+    "name": "Bath Salts",
+    "price": "24",
+    "category": "Bath & Body",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Epsom salt bath soak",
+    "id": "1247"
+  },
+  {
+    "name": "Shower Oil",
+    "price": "32",
+    "category": "Bath & Body",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Nourishing shower oil",
+    "id": "1248"
+  },
+  {
+    "name": "Body Powder",
+    "price": "16",
+    "category": "Bath & Body",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Talc-free body powder",
+    "id": "1249"
+  },
+  {
+    "name": "Bath Set",
+    "price": "45",
+    "category": "Bath & Body",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Complete bath and body gift set",
+    "id": "1250"
+  },
+  {
+    "name": "Electric Shaver",
+    "price": "95",
+    "category": "Men's Grooming",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Precision electric shaver",
+    "id": "1251"
+  },
+  {
+    "name": "Beard Oil",
+    "price": "24",
+    "category": "Men's Grooming",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Conditioning beard oil",
+    "id": "1252"
+  },
+  {
+    "name": "Aftershave Balm",
+    "price": "22",
+    "category": "Men's Grooming",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Soothing aftershave treatment",
+    "id": "1253"
+  },
+  {
+    "name": "Face Wash",
+    "price": "18",
+    "category": "Men's Grooming",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Charcoal face cleanser",
+    "id": "1254"
+  },
+  {
+    "name": "Hair Styling Cream",
+    "price": "20",
+    "category": "Men's Grooming",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Matte finish hair styling cream",
+    "id": "1255"
+  },
+  {
+    "name": "Beard Trimmer",
+    "price": "65",
+    "category": "Men's Grooming",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Precision beard trimming kit",
+    "id": "1256"
+  },
+  {
+    "name": "Shaving Cream",
+    "price": "16",
+    "category": "Men's Grooming",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Rich lather shaving cream",
+    "id": "1257"
+  },
+  {
+    "name": "Face Scrub",
+    "price": "22",
+    "category": "Men's Grooming",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Exfoliating face scrub",
+    "id": "1258"
+  },
+  {
+    "name": "Body Spray",
+    "price": "18",
+    "category": "Men's Grooming",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Fresh scent body spray",
+    "id": "1259"
+  },
+  {
+    "name": "Grooming Kit",
+    "price": "75",
+    "category": "Men's Grooming",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594736797933-d0c64e0c0506?w=400",
+    "description": "Complete men's grooming set",
+    "id": "1260"
+  },
+  {
+    "name": "LED Makeup Mirror",
+    "price": "55",
+    "category": "Beauty Tools & Accessories",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Lighted magnification makeup mirror",
+    "id": "1261"
+  },
+  {
+    "name": "Makeup Brush Set",
+    "price": "45",
+    "category": "Beauty Tools & Accessories",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "12-piece professional brush set",
+    "id": "1262"
+  },
+  {
+    "name": "Hair Straightener",
+    "price": "85",
+    "category": "Beauty Tools & Accessories",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Ceramic flat iron straightener",
+    "id": "1263"
+  },
+  {
+    "name": "Facial Steamer",
+    "price": "65",
+    "category": "Beauty Tools & Accessories",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Professional facial steaming device",
+    "id": "1264"
+  },
+  {
+    "name": "Makeup Organizer",
+    "price": "38",
+    "category": "Beauty Tools & Accessories",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Acrylic makeup storage case",
+    "id": "1265"
+  },
+  {
+    "name": "Tweezers Set",
+    "price": "22",
+    "category": "Beauty Tools & Accessories",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Precision tweezers collection",
+    "id": "1266"
+  },
+  {
+    "name": "Hair Dryer",
+    "price": "75",
+    "category": "Beauty Tools & Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Professional ionic hair dryer",
+    "id": "1267"
+  },
+  {
+    "name": "Makeup Sponge",
+    "price": "15",
+    "category": "Beauty Tools & Accessories",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Beauty blender makeup sponge",
+    "id": "1268"
+  },
+  {
+    "name": "Eyelash Curler",
+    "price": "18",
+    "category": "Beauty Tools & Accessories",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Professional eyelash curling tool",
+    "id": "1269"
+  },
+  {
+    "name": "Makeup Case",
+    "price": "42",
+    "category": "Beauty Tools & Accessories",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+    "description": "Travel makeup organizer case",
+    "id": "1270"
+  },
+  {
+    "name": "Organic Face Oil",
+    "price": "38",
+    "category": "Organic & Natural Products",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "100% organic rosehip facial oil",
+    "id": "1271"
+  },
+  {
+    "name": "Natural Deodorant",
+    "price": "16",
+    "category": "Organic & Natural Products",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Aluminum-free natural deodorant",
+    "id": "1272"
+  },
+  {
+    "name": "Herbal Face Mask",
+    "price": "24",
+    "category": "Organic & Natural Products",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Clay and herbal detox mask",
+    "id": "1273"
+  },
+  {
+    "name": "Organic Soap Bars",
+    "price": "20",
+    "category": "Organic & Natural Products",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Pack of 3 organic soap bars",
+    "id": "1274"
+  },
+  {
+    "name": "Natural Lip Balm",
+    "price": "10",
+    "category": "Organic & Natural Products",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Beeswax organic lip balm",
+    "id": "1275"
+  },
+  {
+    "name": "Essential Oil Set",
+    "price": "45",
+    "category": "Organic & Natural Products",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Set of 6 therapeutic essential oils",
+    "id": "1276"
+  },
+  {
+    "name": "Organic Body Lotion",
+    "price": "28",
+    "category": "Organic & Natural Products",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Certified organic body moisturizer",
+    "id": "1277"
+  },
+  {
+    "name": "Natural Toothpaste",
+    "price": "12",
+    "category": "Organic & Natural Products",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Fluoride-free natural toothpaste",
+    "id": "1278"
+  },
+  {
+    "name": "Herbal Tea Blend",
+    "price": "18",
+    "category": "Organic & Natural Products",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Organic herbal tea collection",
+    "id": "1279"
+  },
+  {
+    "name": "Natural Body Scrub",
+    "price": "26",
+    "category": "Organic & Natural Products",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Sugar and coconut oil body scrub",
+    "id": "1280"
+  },
+  {
+    "name": "Mineral Sunscreen SPF 50",
+    "price": "32",
+    "category": "Sun Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Zinc oxide mineral sunscreen",
+    "id": "1281"
+  },
+  {
+    "name": "After Sun Lotion",
+    "price": "22",
+    "category": "Sun Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Soothing after sun moisturizer",
+    "id": "1282"
+  },
+  {
+    "name": "Beach Sunscreen",
+    "price": "26",
+    "category": "Sun Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Water-resistant beach sunscreen",
+    "id": "1283"
+  },
+  {
+    "name": "Sun Hat",
+    "price": "35",
+    "category": "Sun Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400",
+    "description": "Wide brim sun protection hat",
+    "id": "1284"
+  },
+  {
+    "name": "Lip Balm SPF 30",
+    "price": "8",
+    "category": "Sun Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "SPF lip protection balm",
+    "id": "1285"
+  },
+  {
+    "name": "Aloe Vera Gel",
+    "price": "14",
+    "category": "Sun Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "100% pure aloe vera gel",
+    "id": "1286"
+  },
+  {
+    "name": "Sun Protective Clothing",
+    "price": "42",
+    "category": "Sun Care",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "UPF 50+ sun protection shirt",
+    "id": "1287"
+  },
+  {
+    "name": "Face Sunscreen SPF 30",
+    "price": "28",
+    "category": "Sun Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Lightweight facial sunscreen",
+    "id": "1288"
+  },
+  {
+    "name": "Sunburn Relief Spray",
+    "price": "18",
+    "category": "Sun Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Cooling sunburn relief spray",
+    "id": "1289"
+  },
+  {
+    "name": "Sun Care Kit",
+    "price": "55",
+    "category": "Sun Care",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Complete sun protection set",
+    "id": "1290"
+  },
+  {
+    "name": "Electric Toothbrush",
+    "price": "75",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Rechargeable electric toothbrush",
+    "id": "1291"
+  },
+  {
+    "name": "Whitening Toothpaste",
+    "price": "12",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Professional whitening toothpaste",
+    "id": "1292"
+  },
+  {
+    "name": "Dental Floss",
+    "price": "8",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Mint flavored dental floss",
+    "id": "1293"
+  },
+  {
+    "name": "Mouthwash",
+    "price": "10",
+    "category": "Oral Care",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Antibacterial mouthwash",
+    "id": "1294"
+  },
+  {
+    "name": "Tongue Cleaner",
+    "price": "6",
+    "category": "Oral Care",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Stainless steel tongue cleaner",
+    "id": "1295"
+  },
+  {
+    "name": "Toothbrush Heads",
+    "price": "28",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Replacement toothbrush heads",
+    "id": "1296"
+  },
+  {
+    "name": "Teeth Whitening Strips",
+    "price": "35",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Professional whitening strips",
+    "id": "1297"
+  },
+  {
+    "name": "Water Flosser",
+    "price": "85",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Cordless water dental flosser",
+    "id": "1298"
+  },
+  {
+    "name": "Toothbrush Sanitizer",
+    "price": "42",
+    "category": "Oral Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "UV toothbrush sanitizing station",
+    "id": "1299"
+  },
+  {
+    "name": "Breath Freshener",
+    "price": "10",
+    "category": "Oral Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-162179148a5b2e2b1de5eb83fabe9ad2?w=400",
+    "description": "Instant breath freshening spray",
+    "id": "1300"
+  },
+  //health
+  {
+    "name": "Multivitamin Supplement",
+    "price": "28",
+    "category": "Vitamins & Supplements",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Complete daily multivitamin for adults",
+    "id": "1301"
+  },
+  {
+    "name": "Vitamin D Capsules",
+    "price": "22",
+    "category": "Vitamins & Supplements",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "High potency vitamin D3 supplements",
+    "id": "1302"
+  },
+  {
+    "name": "Omega-3 Fish Oil",
+    "price": "32",
+    "category": "Vitamins & Supplements",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Pure omega-3 fish oil softgels",
+    "id": "1303"
+  },
+  {
+    "name": "Probiotic Supplement",
+    "price": "35",
+    "category": "Vitamins & Supplements",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Digestive health probiotic capsules",
+    "id": "1304"
+  },
+  {
+    "name": "Calcium & Magnesium",
+    "price": "24",
+    "category": "Vitamins & Supplements",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Bone support calcium magnesium tablets",
+    "id": "1305"
+  },
+  {
+    "name": "Yoga Mat",
+    "price": "38",
+    "category": "Fitness Equipment",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Non-slip exercise yoga mat",
+    "id": "1306"
+  },
+  {
+    "name": "Dumbbell Set",
+    "price": "95",
+    "category": "Fitness Equipment",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Adjustable dumbbell set 5-25 lbs",
+    "id": "1307"
+  },
+  {
+    "name": "Resistance Bands",
+    "price": "28",
+    "category": "Fitness Equipment",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Set of 5 resistance exercise bands",
+    "id": "1308"
+  },
+  {
+    "name": "Jump Rope",
+    "price": "18",
+    "category": "Fitness Equipment",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Speed jump rope for cardio workout",
+    "id": "1309"
+  },
+  {
+    "name": "Exercise Ball",
+    "price": "32",
+    "category": "Fitness Equipment",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "65cm stability exercise ball",
+    "id": "1310"
+  },
+  {
+    "name": "Protein Powder",
+    "price": "42",
+    "category": "Sports Nutrition",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Whey protein powder vanilla flavor",
+    "id": "1311"
+  },
+  {
+    "name": "Protein Bars",
+    "price": "28",
+    "category": "Sports Nutrition",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Box of 12 chocolate protein bars",
+    "id": "1312"
+  },
+  {
+    "name": "BCAA Powder",
+    "price": "35",
+    "category": "Sports Nutrition",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Branch chain amino acid supplement",
+    "id": "1313"
+  },
+  {
+    "name": "Creatine Monohydrate",
+    "price": "32",
+    "category": "Sports Nutrition",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Pure creatine monohydrate powder",
+    "id": "1314"
+  },
+  {
+    "name": "Electrolyte Drink Mix",
+    "price": "22",
+    "category": "Sports Nutrition",
+    "color": "Orange",
+    "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400",
+    "description": "Hydration electrolyte powder packets",
+    "id": "1315"
+  },
+  {
+    "name": "Digital Thermometer",
+    "price": "22",
+    "category": "Medical Supplies",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Fast reading digital thermometer",
+    "id": "1316"
+  },
+  {
+    "name": "Blood Pressure Monitor",
+    "price": "55",
+    "category": "Medical Supplies",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Automatic blood pressure cuff",
+    "id": "1317"
+  },
+  {
+    "name": "First Aid Kit",
+    "price": "38",
+    "category": "Medical Supplies",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Comprehensive family first aid kit",
+    "id": "1318"
+  },
+  {
+    "name": "Hot Water Bottle",
+    "price": "25",
+    "category": "Medical Supplies",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Rubber hot water bottle for pain relief",
+    "id": "1319"
+  },
+  {
+    "name": "Compression Socks",
+    "price": "22",
+    "category": "Medical Supplies",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Medical grade compression socks",
+    "id": "1320"
+  },
+  {
+    "name": "Essential Oil Diffuser",
+    "price": "42",
+    "category": "Wellness & Relaxation",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+    "description": "Ultrasonic essential oil diffuser",
+    "id": "1321"
+  },
+  {
+    "name": "Weighted Blanket",
+    "price": "95",
+    "category": "Wellness & Relaxation",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "15lb weighted blanket for anxiety relief",
+    "id": "1322"
+  },
+  {
+    "name": "Meditation Cushion",
+    "price": "48",
+    "category": "Wellness & Relaxation",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Zafu meditation cushion",
+    "id": "1323"
+  },
+  {
+    "name": "Massage Gun",
+    "price": "125",
+    "category": "Wellness & Relaxation",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Percussion massage therapy gun",
+    "id": "1324"
+  },
+  {
+    "name": "Acupressure Mat",
+    "price": "42",
+    "category": "Wellness & Relaxation",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Acupressure mat for pain relief",
+    "id": "1325"
+  },
+  {
+    "name": "Personal Lubricant",
+    "price": "18",
+    "category": "Sexual Wellness",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Water-based personal lubricant",
+    "id": "1326"
+  },
+  {
+    "name": "Sensual Massage Oil",
+    "price": "24",
+    "category": "Sexual Wellness",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Arousing sensual massage oil",
+    "id": "1327"
+  },
+  {
+    "name": "Intimate Health Wash",
+    "price": "16",
+    "category": "Sexual Wellness",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "pH balanced intimate cleanser",
+    "id": "1328"
+  },
+  {
+    "name": "Couples Massage Set",
+    "price": "45",
+    "category": "Sexual Wellness",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Romantic couples massage kit",
+    "id": "1329"
+  },
+  {
+    "name": "Sensual Games",
+    "price": "32",
+    "category": "Sexual Wellness",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Couples intimacy card games",
+    "id": "1330"
+  },
+  {
+    "name": "Adhesive Bandages",
+    "price": "8",
+    "category": "First Aid",
+    "color": "Skin Tone",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Box of 100 assorted bandages",
+    "id": "1331"
+  },
+  {
+    "name": "Antiseptic Wipes",
+    "price": "6",
+    "category": "First Aid",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Pack of 50 antiseptic cleaning wipes",
+    "id": "1332"
+  },
+  {
+    "name": "Gauze Pads",
+    "price": "12",
+    "category": "First Aid",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Sterile gauze pads for wound care",
+    "id": "1333"
+  },
+  {
+    "name": "Instant Cold Pack",
+    "price": "8",
+    "category": "First Aid",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Single-use instant cold compress",
+    "id": "1334"
+  },
+  {
+    "name": "First Aid Manual",
+    "price": "15",
+    "category": "First Aid",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Emergency first aid guidebook",
+    "id": "1335"
+  },
+  {
+    "name": "Walking Cane",
+    "price": "35",
+    "category": "Mobility Aids",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Adjustable aluminum walking cane",
+    "id": "1336"
+  },
+  {
+    "name": "Rollator Walker",
+    "price": "120",
+    "category": "Mobility Aids",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Folding rollator walker with seat",
+    "id": "1337"
+  },
+  {
+    "name": "Crutches",
+    "price": "45",
+    "category": "Mobility Aids",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Adjustable underarm crutches",
+    "id": "1338"
+  },
+  {
+    "name": "Wheelchair Cushion",
+    "price": "38",
+    "category": "Mobility Aids",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Gel wheelchair seat cushion",
+    "id": "1339"
+  },
+  {
+    "name": "Bed Rail",
+    "price": "65",
+    "category": "Mobility Aids",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Adjustable bed safety rail",
+    "id": "1340"
+  },
+  {
+    "name": "TENS Unit",
+    "price": "55",
+    "category": "Therapy Equipment",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Electronic muscle stimulation device",
+    "id": "1341"
+  },
+  {
+    "name": "Infrared Heat Lamp",
+    "price": "75",
+    "category": "Therapy Equipment",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Pain relief infrared heat therapy",
+    "id": "1342"
+  },
+  {
+    "name": "Compression Therapy",
+    "price": "95",
+    "category": "Therapy Equipment",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Leg compression massager",
+    "id": "1343"
+  },
+  {
+    "name": "Ultrasound Therapy",
+    "price": "150",
+    "category": "Therapy Equipment",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Professional ultrasound therapy device",
+    "id": "1344"
+  },
+  {
+    "name": "Traction Device",
+    "price": "85",
+    "category": "Therapy Equipment",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Cervical neck traction unit",
+    "id": "1345"
+  },
+  {
+    "name": "Pulse Oximeter",
+    "price": "35",
+    "category": "Health Monitoring",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Finger pulse oxygen monitor",
+    "id": "1346"
+  },
+  {
+    "name": "Glucose Meter",
+    "price": "28",
+    "category": "Health Monitoring",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Blood glucose monitoring system",
+    "id": "1347"
+  },
+  {
+    "name": "Heart Rate Monitor",
+    "price": "45",
+    "category": "Health Monitoring",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Chest strap heart rate monitor",
+    "id": "1348"
+  },
+  {
+    "name": "Digital Scale",
+    "price": "32",
+    "category": "Health Monitoring",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Smart body composition scale",
+    "id": "1349"
+  },
+  {
+    "name": "Sleep Tracker",
+    "price": "65",
+    "category": "Health Monitoring",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Wearable sleep monitoring device",
+    "id": "1350"
+  },
+  {
+    "name": "Emergency Alert System",
+    "price": "85",
+    "category": "Elderly Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Medical alert pendant with fall detection",
+    "id": "1351"
+  },
+  {
+    "name": "Pill Organizer",
+    "price": "15",
+    "category": "Elderly Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Weekly pill organizer with compartments",
+    "id": "1352"
+  },
+  {
+    "name": "Reacher Grabber",
+    "price": "22",
+    "category": "Elderly Care",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "32-inch reacher tool for mobility",
+    "id": "1353"
+  },
+  {
+    "name": "Shower Chair",
+    "price": "45",
+    "category": "Elderly Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Bathroom shower safety chair",
+    "id": "1354"
+  },
+  {
+    "name": "Magnifying Glass",
+    "price": "18",
+    "category": "Elderly Care",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "LED illuminated magnifying glass",
+    "id": "1355"
+  },
+  {
+    "name": "Baby Thermometer",
+    "price": "28",
+    "category": "Baby Care",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Forehead touch baby thermometer",
+    "id": "1356"
+  },
+  {
+    "name": "Nasal Aspirator",
+    "price": "15",
+    "category": "Baby Care",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Electric nasal aspirator for babies",
+    "id": "1357"
+  },
+  {
+    "name": "Baby Nail Clipper",
+    "price": "8",
+    "category": "Baby Care",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Safety baby nail clipper set",
+    "id": "1358"
+  },
+  {
+    "name": "Teething Toys",
+    "price": "12",
+    "category": "Baby Care",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 3 silicone teething toys",
+    "id": "1359"
+  },
+  {
+    "name": "Baby Medicine Dispenser",
+    "price": "6",
+    "category": "Baby Care",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Oral syringe medicine dispenser",
+    "id": "1360"
+  },
+  {
+    "name": "Acupuncture Kit",
+    "price": "45",
+    "category": "Alternative Medicine",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Beginner acupuncture practice kit",
+    "id": "1361"
+  },
+  {
+    "name": "Herbal Tea Collection",
+    "price": "22",
+    "category": "Alternative Medicine",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Medicinal herbal tea assortment",
+    "id": "1362"
+  },
+  {
+    "name": "Aromatherapy Set",
+    "price": "35",
+    "category": "Alternative Medicine",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Essential oils for aromatherapy",
+    "id": "1363"
+  },
+  {
+    "name": "Reflexology Chart",
+    "price": "18",
+    "category": "Alternative Medicine",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Foot reflexology pressure point chart",
+    "id": "1364"
+  },
+  {
+    "name": "Cupping Therapy Set",
+    "price": "38",
+    "category": "Alternative Medicine",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=400",
+    "description": "Silicone cupping therapy kit",
+    "id": "1365"
+  },
+  // sports
+  {
+    "name": "Treadmill",
+    "price": "450",
+    "category": "Exercise & Fitness",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Folding treadmill with digital display",
+    "id": "1366"
+  },
+  {
+    "name": "Exercise Bike",
+    "price": "320",
+    "category": "Exercise & Fitness",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Stationary exercise bike with resistance",
+    "id": "1367"
+  },
+  {
+    "name": "Weight Bench",
+    "price": "180",
+    "category": "Exercise & Fitness",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Adjustable weight training bench",
+    "id": "1368"
+  },
+  {
+    "name": "Kettlebell Set",
+    "price": "95",
+    "category": "Exercise & Fitness",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Set of 3 kettlebells 10-20 lbs",
+    "id": "1369"
+  },
+  {
+    "name": "Pull-Up Bar",
+    "price": "48",
+    "category": "Exercise & Fitness",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400",
+    "description": "Doorway mounted pull-up bar",
+    "id": "1370"
+  },
+  {
+    "name": "Basketball",
+    "price": "38",
+    "category": "Team Sports",
+    "color": "Orange",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Official size basketball",
+    "id": "1371"
+  },
+  {
+    "name": "Soccer Ball",
+    "price": "32",
+    "category": "Team Sports",
+    "color": "Black/White",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Professional soccer ball",
+    "id": "1372"
+  },
+  {
+    "name": "Volleyball",
+    "price": "35",
+    "category": "Team Sports",
+    "color": "Blue/White",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Indoor/outdoor volleyball",
+    "id": "1373"
+  },
+  {
+    "name": "Football",
+    "price": "42",
+    "category": "Team Sports",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Official size football",
+    "id": "1374"
+  },
+  {
+    "name": "Baseball Glove",
+    "price": "65",
+    "category": "Team Sports",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Leather baseball glove",
+    "id": "1375"
+  },
+  {
+    "name": "Kayak",
+    "price": "350",
+    "category": "Outdoor Recreation",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "Single person recreational kayak",
+    "id": "1376"
+  },
+  {
+    "name": "Stand Up Paddleboard",
+    "price": "420",
+    "category": "Outdoor Recreation",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "Inflatable stand up paddleboard",
+    "id": "1377"
+  },
+  {
+    "name": "Binoculars",
+    "price": "85",
+    "category": "Outdoor Recreation",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "10x42 waterproof binoculars",
+    "id": "1378"
+  },
+  {
+    "name": "Hammock",
+    "price": "45",
+    "category": "Outdoor Recreation",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "Two-person camping hammock",
+    "id": "1379"
+  },
+  {
+    "name": "Frisbee",
+    "price": "12",
+    "category": "Outdoor Recreation",
+    "color": "Orange",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "Professional flying disc",
+    "id": "1380"
+  },
+  {
+    "name": "Mountain Bike",
+    "price": "550",
+    "category": "Cycling",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400",
+    "description": "21-speed mountain bicycle",
+    "id": "1381"
+  },
+  {
+    "name": "Bicycle Helmet",
+    "price": "45",
+    "category": "Cycling",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400",
+    "description": "Safety certified bike helmet",
+    "id": "1382"
+  },
+  {
+    "name": "Bike Lock",
+    "price": "28",
+    "category": "Cycling",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400",
+    "description": "Heavy duty U-lock for bicycles",
+    "id": "1383"
+  },
+  {
+    "name": "Cycling Shorts",
+    "price": "38",
+    "category": "Cycling",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400",
+    "description": "Padded cycling shorts",
+    "id": "1384"
+  },
+  {
+    "name": "Bike Repair Kit",
+    "price": "25",
+    "category": "Cycling",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400",
+    "description": "Portable bicycle repair tools",
+    "id": "1385"
+  },
+  {
+    "name": "Snorkel Set",
+    "price": "45",
+    "category": "Water Sports",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400",
+    "description": "Complete snorkeling mask and fins set",
+    "id": "1386"
+  },
+  {
+    "name": "Life Jacket",
+    "price": "55",
+    "category": "Water Sports",
+    "color": "Orange",
+    "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400",
+    "description": "Coast Guard approved life vest",
+    "id": "1387"
+  },
+  {
+    "name": "Water Skis",
+    "price": "180",
+    "category": "Water Sports",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400",
+    "description": "Pair of recreational water skis",
+    "id": "1388"
+  },
+  {
+    "name": "Beach Volleyball",
+    "price": "28",
+    "category": "Water Sports",
+    "color": "Yellow/Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400",
+    "description": "Waterproof beach volleyball",
+    "id": "1389"
+  },
+  {
+    "name": "Waterproof Bag",
+    "price": "32",
+    "category": "Water Sports",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400",
+    "description": "Dry bag for water activities",
+    "id": "1390"
+  },
+  {
+    "name": "Snowboard",
+    "price": "320",
+    "category": "Winter Sports",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    "description": "All-mountain snowboard",
+    "id": "1391"
+  },
+  {
+    "name": "Ski Goggles",
+    "price": "65",
+    "category": "Winter Sports",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    "description": "Anti-fog ski goggles",
+    "id": "1392"
+  },
+  {
+    "name": "Ice Skates",
+    "price": "85",
+    "category": "Winter Sports",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    "description": "Figure ice skates for adults",
+    "id": "1393"
+  },
+  {
+    "name": "Sled",
+    "price": "45",
+    "category": "Winter Sports",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    "description": "Plastic snow sled",
+    "id": "1394"
+  },
+  {
+    "name": "Thermal Gloves",
+    "price": "28",
+    "category": "Winter Sports",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+    "description": "Insulated winter sports gloves",
+    "id": "1395"
+  },
+  {
+    "name": "Camping Tent",
+    "price": "150",
+    "category": "Camping & Hiking",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "4-person camping tent",
+    "id": "1396"
+  },
+  {
+    "name": "Sleeping Bag",
+    "price": "75",
+    "category": "Camping & Hiking",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "20°F rated sleeping bag",
+    "id": "1397"
+  },
+  {
+    "name": "Camping Stove",
+    "price": "55",
+    "category": "Camping & Hiking",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "Portable propane camping stove",
+    "id": "1398"
+  },
+  {
+    "name": "Hiking Backpack",
+    "price": "95",
+    "category": "Camping & Hiking",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "50L hiking backpack with frame",
+    "id": "1399"
+  },
+  {
+    "name": "Headlamp",
+    "price": "32",
+    "category": "Camping & Hiking",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=400",
+    "description": "LED headlamp for hands-free lighting",
+    "id": "1400"
+  },
+  {
+    "name": "Fishing Rod",
+    "price": "65",
+    "category": "Fishing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1448387473223-5c37445527e7?w=400",
+    "description": "Spinning fishing rod and reel combo",
+    "id": "1401"
+  },
+  {
+    "name": "Tackle Box",
+    "price": "35",
+    "category": "Fishing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1448387473223-5c37445527e7?w=400",
+    "description": "Fishing tackle organizer",
+    "id": "1402"
+  },
+  {
+    "name": "Fishing Lures",
+    "price": "18",
+    "category": "Fishing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1448387473223-5c37445527e7?w=400",
+    "description": "Set of 12 assorted fishing lures",
+    "id": "1403"
+  },
+  {
+    "name": "Fishing Vest",
+    "price": "45",
+    "category": "Fishing",
+    "color": "Tan",
+    "imageUrl": "https://images.unsplash.com/photo-1448387473223-5c37445527e7?w=400",
+    "description": "Multi-pocket fishing vest",
+    "id": "1404"
+  },
+  {
+    "name": "Fishing Net",
+    "price": "28",
+    "category": "Fishing",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1448387473223-5c37445527e7?w=400",
+    "description": "Landing net for fishing",
+    "id": "1405"
+  },
+  {
+    "name": "Hunting Bow",
+    "price": "280",
+    "category": "Hunting",
+    "color": "Camouflage",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+    "description": "Compound hunting bow",
+    "id": "1406"
+  },
+  {
+    "name": "Hunting Knife",
+    "price": "45",
+    "category": "Hunting",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+    "description": "Fixed blade hunting knife",
+    "id": "1407"
+  },
+  {
+    "name": "Camouflage Clothing",
+    "price": "65",
+    "category": "Hunting",
+    "color": "Camouflage",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+    "description": "Hunting camouflage jacket and pants",
+    "id": "1408"
+  },
+  {
+    "name": "Game Call",
+    "price": "22",
+    "category": "Hunting",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+    "description": "Duck hunting call",
+    "id": "1409"
+  },
+  {
+    "name": "Hunting Backpack",
+    "price": "85",
+    "category": "Hunting",
+    "color": "Camouflage",
+    "imageUrl": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+    "description": "Camouflage hunting backpack",
+    "id": "1410"
+  },
+  {
+    "name": "Running Shoes",
+    "price": "95",
+    "category": "Athletic Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Lightweight running shoes",
+    "id": "1411"
+  },
+  {
+    "name": "Compression Shirt",
+    "price": "32",
+    "category": "Athletic Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Moisture-wicking compression top",
+    "id": "1412"
+  },
+  {
+    "name": "Athletic Shorts",
+    "price": "28",
+    "category": "Athletic Clothing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Breathable athletic shorts",
+    "id": "1413"
+  },
+  {
+    "name": "Sports Bra",
+    "price": "38",
+    "category": "Athletic Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "High impact sports bra",
+    "id": "1414"
+  },
+  {
+    "name": "Athletic Socks",
+    "price": "15",
+    "category": "Athletic Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    "description": "Pack of 3 athletic socks",
+    "id": "1415"
+  },
+  {
+    "name": "Basketball Hoop",
+    "price": "220",
+    "category": "Sports Equipment",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Adjustable basketball goal",
+    "id": "1416"
+  },
+  {
+    "name": "Soccer Goal",
+    "price": "85",
+    "category": "Sports Equipment",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Portable soccer goal net",
+    "id": "1417"
+  },
+  {
+    "name": "Baseball Bat",
+    "price": "65",
+    "category": "Sports Equipment",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Aluminum baseball bat",
+    "id": "1418"
+  },
+  {
+    "name": "Tennis Net",
+    "price": "95",
+    "category": "Sports Equipment",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Professional tennis net",
+    "id": "1419"
+  },
+  {
+    "name": "Volleyball Net",
+    "price": "55",
+    "category": "Sports Equipment",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+    "description": "Beach volleyball net system",
+    "id": "1420"
+  },
+  {
+    "name": "Yoga Mat",
+    "price": "35",
+    "category": "Yoga & Pilates",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Non-slip yoga mat",
+    "id": "1421"
+  },
+  {
+    "name": "Yoga Blocks",
+    "price": "22",
+    "category": "Yoga & Pilates",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Set of 2 yoga foam blocks",
+    "id": "1422"
+  },
+  {
+    "name": "Yoga Strap",
+    "price": "15",
+    "category": "Yoga & Pilates",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Cotton yoga stretching strap",
+    "id": "1423"
+  },
+  {
+    "name": "Pilates Ring",
+    "price": "28",
+    "category": "Yoga & Pilates",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Resistance Pilates circle",
+    "id": "1424"
+  },
+  {
+    "name": "Meditation Cushion",
+    "price": "42",
+    "category": "Yoga & Pilates",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400",
+    "description": "Zafu meditation cushion",
+    "id": "1425"
+  },
+  {
+    "name": "Boxing Gloves",
+    "price": "55",
+    "category": "Boxing & Martial Arts",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1542840417-555183f6ddf2?w=400",
+    "description": "16oz boxing training gloves",
+    "id": "1426"
+  },
+  {
+    "name": "Punching Bag",
+    "price": "120",
+    "category": "Boxing & Martial Arts",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542840417-555183f6f6ddf2?w=400",
+    "description": "Heavy duty punching bag",
+    "id": "1427"
+  },
+  {
+    "name": "Martial Arts Uniform",
+    "price": "45",
+    "category": "Boxing & Martial Arts",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1542840417-555183f6f6ddf2?w=400",
+    "description": "Karate gi uniform",
+    "id": "1428"
+  },
+  {
+    "name": "Hand Wraps",
+    "price": "12",
+    "category": "Boxing & Martial Arts",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1542840417-555183f6f6ddf2?w=400",
+    "description": "Boxing hand protection wraps",
+    "id": "1429"
+  },
+  {
+    "name": "Focus Mitts",
+    "price": "38",
+    "category": "Boxing & Martial Arts",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1542840417-555183f6f6ddf2?w=400",
+    "description": "Pair of focus pad mitts",
+    "id": "1430"
+  },
+  {
+    "name": "Golf Clubs Set",
+    "price": "350",
+    "category": "Golf",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400",
+    "description": "Complete golf club set",
+    "id": "1431"
+  },
+  {
+    "name": "Golf Balls",
+    "price": "25",
+    "category": "Golf",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400",
+    "description": "Box of 12 premium golf balls",
+    "id": "1432"
+  },
+  {
+    "name": "Golf Bag",
+    "price": "95",
+    "category": "Golf",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400",
+    "description": "Stand golf bag with legs",
+    "id": "1433"
+  },
+  {
+    "name": "Golf Glove",
+    "price": "18",
+    "category": "Golf",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400",
+    "description": "Leather golf glove",
+    "id": "1434"
+  },
+  {
+    "name": "Golf Tees",
+    "price": "8",
+    "category": "Golf",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=400",
+    "description": "Pack of 50 golf tees",
+    "id": "1435"
+  },
+  {
+    "name": "Tennis Racket",
+    "price": "85",
+    "category": "Tennis & Racquet Sports",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1622279457486-62dcc4a431ea?w=400",
+    "description": "Professional tennis racket",
+    "id": "1436"
+  },
+  {
+    "name": "Tennis Balls",
+    "price": "15",
+    "category": "Tennis & Racquet Sports",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1622279457486-62dcc4a431ea?w=400",
+    "description": "Can of 3 tennis balls",
+    "id": "1437"
+  },
+  {
+    "name": "Badminton Set",
+    "price": "35",
+    "category": "Tennis & Racquet Sports",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1622279457486-62dcc4a431ea?w=400",
+    "description": "Complete badminton set with net",
+    "id": "1438"
+  },
+  {
+    "name": "Squash Racket",
+    "price": "65",
+    "category": "Tennis & Racquet Sports",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1622279457486-62dcc4a431ea?w=400",
+    "description": "Professional squash racket",
+    "id": "1439"
+  },
+  {
+    "name": "Racquetball Goggles",
+    "price": "22",
+    "category": "Tennis & Racquet Sports",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1622279457486-62dcc4a431ea?w=400",
+    "description": "Protective racquetball eyewear",
+    "id": "1440"
+  },
+  // Toys
+    {
+    "name": "STEM Robotics Kit",
+    "price": "45",
+    "category": "Educational Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Build and program your own robot",
+    "id": "1441"
+  },
+  {
+    "name": "Math Learning Game",
+    "price": "28",
+    "category": "Educational Toys",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Fun math skills development game",
+    "id": "1442"
+  },
+  {
+    "name": "Science Experiment Set",
+    "price": "35",
+    "category": "Educational Toys",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "50+ science experiments for kids",
+    "id": "1443"
+  },
+  {
+    "name": "World Map Puzzle",
+    "price": "22",
+    "category": "Educational Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Educational world geography puzzle",
+    "id": "1444"
+  },
+  {
+    "name": "Alphabet Learning Blocks",
+    "price": "18",
+    "category": "Educational Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Wooden alphabet blocks for toddlers",
+    "id": "1445"
+  },
+  {
+    "name": "Superhero Action Figure",
+    "price": "25",
+    "category": "Action Figures",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "12-inch poseable superhero figure",
+    "id": "1446"
+  },
+  {
+    "name": "Space Adventure Set",
+    "price": "38",
+    "category": "Action Figures",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Astronaut and spaceship action figures",
+    "id": "1447"
+  },
+  {
+    "name": "Dinosaur Collection",
+    "price": "32",
+    "category": "Action Figures",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Set of 5 realistic dinosaur figures",
+    "id": "1448"
+  },
+  {
+    "name": "Military Action Figures",
+    "price": "28",
+    "category": "Action Figures",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Army soldier action figure set",
+    "id": "1449"
+  },
+  {
+    "name": "Fantasy Warrior",
+    "price": "22",
+    "category": "Action Figures",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Knight with armor and weapons",
+    "id": "1450"
+  },
+  {
+    "name": "Fashion Doll",
+    "price": "32",
+    "category": "Dolls & Accessories",
+    "color": "Blonde",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "11-inch fashion doll with outfits",
+    "id": "1451"
+  },
+  {
+    "name": "Dollhouse",
+    "price": "65",
+    "category": "Dolls & Accessories",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "3-story dollhouse with furniture",
+    "id": "1452"
+  },
+  {
+    "name": "Baby Doll Set",
+    "price": "28",
+    "category": "Dolls & Accessories",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Interactive baby doll with accessories",
+    "id": "1453"
+  },
+  {
+    "name": "Doll Clothing Set",
+    "price": "18",
+    "category": "Dolls & Accessories",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "5-piece doll fashion collection",
+    "id": "1454"
+  },
+  {
+    "name": "Hair Styling Doll",
+    "price": "25",
+    "category": "Dolls & Accessories",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Doll with brushable hair and styles",
+    "id": "1455"
+  },
+  {
+    "name": "LEGO Building Set",
+    "price": "55",
+    "category": "Building Sets & Blocks",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "650-piece LEGO creative set",
+    "id": "1456"
+  },
+  {
+    "name": "Magnetic Tiles",
+    "price": "42",
+    "category": "Building Sets & Blocks",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "100-piece magnetic building tiles",
+    "id": "1457"
+  },
+  {
+    "name": "Wooden Block Set",
+    "price": "35",
+    "category": "Building Sets & Blocks",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "80-piece wooden building blocks",
+    "id": "1458"
+  },
+  {
+    "name": "Construction Vehicle Set",
+    "price": "28",
+    "category": "Building Sets & Blocks",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Buildable construction trucks",
+    "id": "1459"
+  },
+  {
+    "name": "Marble Run",
+    "price": "38",
+    "category": "Building Sets & Blocks",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "85-piece marble run construction set",
+    "id": "1460"
+  },
+  {
+    "name": "1000-Piece Puzzle",
+    "price": "22",
+    "category": "Puzzles",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1618897992766-321b6bd35b2c?w=400",
+    "description": "Landscape jigsaw puzzle for adults",
+    "id": "1461"
+  },
+  {
+    "name": "3D Puzzle",
+    "price": "28",
+    "category": "Puzzles",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1618897992766-321b6bd35b2c?w=400",
+    "description": "Architectural landmark 3D puzzle",
+    "id": "1462"
+  },
+  {
+    "name": "Children's Puzzle",
+    "price": "15",
+    "category": "Puzzles",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1618897992766-321b6bd35b2c?w=400",
+    "description": "24-piece animal puzzle for kids",
+    "id": "1463"
+  },
+  {
+    "name": "Wooden Brain Teaser",
+    "price": "18",
+    "category": "Puzzles",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1618897992766-321b6bd35b2c?w=400",
+    "description": "Classic wooden puzzle games",
+    "id": "1464"
+  },
+  {
+    "name": "Glow in the Dark Puzzle",
+    "price": "25",
+    "category": "Puzzles",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1618897992766-321b6bd35b2c?w=400",
+    "description": "Space theme glow puzzle",
+    "id": "1465"
+  },
+  {
+    "name": "Classic Board Game",
+    "price": "32",
+    "category": "Board Games",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b001b?w=400",
+    "description": "Family favorite board game",
+    "id": "1466"
+  },
+  {
+    "name": "Strategy Game",
+    "price": "45",
+    "category": "Board Games",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b001b?w=400",
+    "description": "European strategy board game",
+    "id": "1467"
+  },
+  {
+    "name": "Card Game Collection",
+    "price": "22",
+    "category": "Board Games",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b001b?w=400",
+    "description": "Set of 5 family card games",
+    "id": "1468"
+  },
+  {
+    "name": "Cooperative Game",
+    "price": "38",
+    "category": "Board Games",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b001b?w=400",
+    "description": "Team-based adventure game",
+    "id": "1469"
+  },
+  {
+    "name": "Party Game",
+    "price": "28",
+    "category": "Board Games",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1632501641765-e568d28b001b?w=400",
+    "description": "Fun party game for groups",
+    "id": "1470"
+  },
+  {
+    "name": "Trampoline",
+    "price": "180",
+    "category": "Outdoor Toys",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "8-foot outdoor trampoline",
+    "id": "1471"
+  },
+  {
+    "name": "Swing Set",
+    "price": "220",
+    "category": "Outdoor Toys",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Backyard swing set with slide",
+    "id": "1472"
+  },
+  {
+    "name": "Water Slide",
+    "price": "45",
+    "category": "Outdoor Toys",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Inflatable backyard water slide",
+    "id": "1473"
+  },
+  {
+    "name": "Sandbox",
+    "price": "65",
+    "category": "Outdoor Toys",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Wooden sandbox with cover",
+    "id": "1474"
+  },
+  {
+    "name": "Bounce House",
+    "price": "150",
+    "category": "Outdoor Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Inflatable bounce house",
+    "id": "1475"
+  },
+  {
+    "name": "Art Supply Set",
+    "price": "35",
+    "category": "Arts & Crafts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Complete art supplies collection",
+    "id": "1476"
+  },
+  {
+    "name": "Bead Jewelry Kit",
+    "price": "22",
+    "category": "Arts & Crafts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Make your own jewelry set",
+    "id": "1477"
+  },
+  {
+    "name": "Painting Set",
+    "price": "28",
+    "category": "Arts & Crafts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Acrylic paints and brushes",
+    "id": "1478"
+  },
+  {
+    "name": "Clay Modeling Kit",
+    "price": "25",
+    "category": "Arts & Crafts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Air-dry clay with tools",
+    "id": "1479"
+  },
+  {
+    "name": "Origami Paper Set",
+    "price": "15",
+    "category": "Arts & Crafts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "200 sheets of origami paper",
+    "id": "1480"
+  },
+  {
+    "name": "Remote Control Car",
+    "price": "45",
+    "category": "Electronic Toys",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "2.4GHz remote control race car",
+    "id": "1481"
+  },
+  {
+    "name": "Robot Dog",
+    "price": "65",
+    "category": "Electronic Toys",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Interactive robotic pet",
+    "id": "1482"
+  },
+  {
+    "name": "Electronic Learning Tablet",
+    "price": "38",
+    "category": "Electronic Toys",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Educational kids tablet",
+    "id": "1483"
+  },
+  {
+    "name": "Walkie Talkies",
+    "price": "28",
+    "category": "Electronic Toys",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Pair of kids walkie talkies",
+    "id": "1484"
+  },
+  {
+    "name": "Video Game Console",
+    "price": "300",
+    "category": "Electronic Toys",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Kids educational game console",
+    "id": "1485"
+  },
+  {
+    "name": "Activity Gym",
+    "price": "42",
+    "category": "Baby & Toddler Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Baby play mat with activities",
+    "id": "1486"
+  },
+  {
+    "name": "Stacking Rings",
+    "price": "15",
+    "category": "Baby & Toddler Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Colorful stacking toy",
+    "id": "1487"
+  },
+  {
+    "name": "Shape Sorter",
+    "price": "22",
+    "category": "Baby & Toddler Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Educational shape sorting toy",
+    "id": "1488"
+  },
+  {
+    "name": "Teething Toys",
+    "price": "18",
+    "category": "Baby & Toddler Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Set of 3 silicone teethers",
+    "id": "1489"
+  },
+  {
+    "name": "Baby Musical Toy",
+    "price": "25",
+    "category": "Baby & Toddler Toys",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Musical activity center",
+    "id": "1490"
+  },
+  {
+    "name": "Airplane Model Kit",
+    "price": "28",
+    "category": "Model Kits",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "1:72 scale airplane model",
+    "id": "1491"
+  },
+  {
+    "name": "Car Model Kit",
+    "price": "32",
+    "category": "Model Kits",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Classic car model building kit",
+    "id": "1492"
+  },
+  {
+    "name": "Ship Model",
+    "price": "45",
+    "category": "Model Kits",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Wooden ship model kit",
+    "id": "1493"
+  },
+  {
+    "name": "Robot Model Kit",
+    "price": "35",
+    "category": "Model Kits",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Buildable robot model",
+    "id": "1494"
+  },
+  {
+    "name": "Architecture Model",
+    "price": "38",
+    "category": "Model Kits",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Famous building model kit",
+    "id": "1495"
+  },
+  {
+    "name": "Doctor Play Set",
+    "price": "32",
+    "category": "Role Play & Costumes",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Complete doctor role play kit",
+    "id": "1496"
+  },
+  {
+    "name": "Princess Costume",
+    "price": "28",
+    "category": "Role Play & Costumes",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Sparkly princess dress and tiara",
+    "id": "1497"
+  },
+  {
+    "name": "Superhero Costume",
+    "price": "25",
+    "category": "Role Play & Costumes",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Kids superhero costume set",
+    "id": "1498"
+  },
+  {
+    "name": "Play Kitchen",
+    "price": "85",
+    "category": "Role Play & Costumes",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Wooden play kitchen set",
+    "id": "1499"
+  },
+  {
+    "name": "Tool Set",
+    "price": "35",
+    "category": "Role Play & Costumes",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Kids tool bench with tools",
+    "id": "1500"
+  },
+  {
+    "name": "Remote Control Helicopter",
+    "price": "55",
+    "category": "Vehicle Toys",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "2.4GHz RC helicopter",
+    "id": "1501"
+  },
+  {
+    "name": "Toy Train Set",
+    "price": "65",
+    "category": "Vehicle Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Electric train set with tracks",
+    "id": "1502"
+  },
+  {
+    "name": "Die-Cast Cars",
+    "price": "22",
+    "category": "Vehicle Toys",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Set of 5 die-cast metal cars",
+    "id": "1503"
+  },
+  {
+    "name": "Construction Truck",
+    "price": "28",
+    "category": "Vehicle Toys",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Large dump truck toy",
+    "id": "1504"
+  },
+  {
+    "name": "Ride-On Car",
+    "price": "120",
+    "category": "Vehicle Toys",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Battery powered ride-on toy car",
+    "id": "1505"
+  },
+  {
+    "name": "Teddy Bear",
+    "price": "25",
+    "category": "Stuffed Animals",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Soft plush teddy bear",
+    "id": "1506"
+  },
+  {
+    "name": "Stuffed Dog",
+    "price": "22",
+    "category": "Stuffed Animals",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Cuddly plush puppy",
+    "id": "1507"
+  },
+  {
+    "name": "Stuffed Animal Set",
+    "price": "35",
+    "category": "Stuffed Animals",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Set of 3 jungle animals",
+    "id": "1508"
+  },
+  {
+    "name": "Giant Stuffed Panda",
+    "price": "45",
+    "category": "Stuffed Animals",
+    "color": "Black/White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "24-inch giant panda bear",
+    "id": "1509"
+  },
+  {
+    "name": "Interactive Stuffed Animal",
+    "price": "38",
+    "category": "Stuffed Animals",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Plush animal with sounds",
+    "id": "1510"
+  },
+  {
+    "name": "Birthday Party Decorations",
+    "price": "25",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Complete birthday decoration kit",
+    "id": "1511"
+  },
+  {
+    "name": "Balloons",
+    "price": "12",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Pack of 50 assorted balloons",
+    "id": "1512"
+  },
+  {
+    "name": "Party Favors",
+    "price": "18",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Set of 12 party favor bags",
+    "id": "1513"
+  },
+  {
+    "name": "Paper Plates & Cups",
+    "price": "15",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Party tableware set for 16",
+    "id": "1514"
+  },
+  {
+    "name": "Piñata",
+    "price": "22",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Traditional party piñata",
+    "id": "1515"
+  },
+  //Books
+    {
+    "name": "Bestselling Novel",
+    "price": "18",
+    "category": "Fiction Books",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "New York Times bestselling fiction novel",
+    "id": "1516"
+  },
+  {
+    "name": "Science Fiction Classic",
+    "price": "15",
+    "category": "Fiction Books",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Award-winning science fiction masterpiece",
+    "id": "1517"
+  },
+  {
+    "name": "Mystery Thriller",
+    "price": "16",
+    "category": "Fiction Books",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Gripping mystery thriller novel",
+    "id": "1518"
+  },
+  {
+    "name": "Romance Novel",
+    "price": "14",
+    "category": "Fiction Books",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Heartwarming contemporary romance",
+    "id": "1519"
+  },
+  {
+    "name": "Fantasy Epic",
+    "price": "22",
+    "category": "Fiction Books",
+    "color": "Purple",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Epic fantasy adventure series",
+    "id": "1520"
+  },
+  {
+    "name": "Biography",
+    "price": "20",
+    "category": "Non-Fiction Books",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Inspirational biography of famous leader",
+    "id": "1521"
+  },
+  {
+    "name": "Self-Help Guide",
+    "price": "18",
+    "category": "Non-Fiction Books",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Personal development and growth guide",
+    "id": "1522"
+  },
+  {
+    "name": "Cookbook",
+    "price": "25",
+    "category": "Non-Fiction Books",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Professional chef's recipe collection",
+    "id": "1523"
+  },
+  {
+    "name": "History Book",
+    "price": "22",
+    "category": "Non-Fiction Books",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Comprehensive world history volume",
+    "id": "1524"
+  },
+  {
+    "name": "Science Book",
+    "price": "24",
+    "category": "Non-Fiction Books",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Popular science and discoveries",
+    "id": "1525"
+  },
+  {
+    "name": "Mathematics Textbook",
+    "price": "85",
+    "category": "Academic Textbooks",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "University level mathematics textbook",
+    "id": "1526"
+  },
+  {
+    "name": "Physics Textbook",
+    "price": "95",
+    "category": "Academic Textbooks",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "College physics course textbook",
+    "id": "1527"
+  },
+  {
+    "name": "Chemistry Guide",
+    "price": "78",
+    "category": "Academic Textbooks",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Advanced chemistry textbook",
+    "id": "1528"
+  },
+  {
+    "name": "Literature Anthology",
+    "price": "65",
+    "category": "Academic Textbooks",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "English literature collection",
+    "id": "1529"
+  },
+  {
+    "name": "Business Textbook",
+    "price": "88",
+    "category": "Academic Textbooks",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "MBA level business management",
+    "id": "1530"
+  },
+  {
+    "name": "Picture Book",
+    "price": "12",
+    "category": "Children's Books",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Colorful illustrated children's book",
+    "id": "1531"
+  },
+  {
+    "name": "Bedtime Stories",
+    "price": "15",
+    "category": "Children's Books",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Collection of bedtime stories",
+    "id": "1532"
+  },
+  {
+    "name": "Educational ABC Book",
+    "price": "10",
+    "category": "Children's Books",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Alphabet learning book for toddlers",
+    "id": "1533"
+  },
+  {
+    "name": "Animal Stories",
+    "price": "14",
+    "category": "Children's Books",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Fun animal adventure stories",
+    "id": "1534"
+  },
+  {
+    "name": "Interactive Children's Book",
+    "price": "18",
+    "category": "Children's Books",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Pop-up and interactive storybook",
+    "id": "1535"
+  },
+  {
+    "name": "eBook Reader",
+    "price": "120",
+    "category": "eBooks & Digital Content",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "E-ink digital ebook reader",
+    "id": "1536"
+  },
+  {
+    "name": "Digital Cookbook",
+    "price": "15",
+    "category": "eBooks & Digital Content",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Downloadable recipe collection",
+    "id": "1537"
+  },
+  {
+    "name": "Language Learning App",
+    "price": "25",
+    "category": "eBooks & Digital Content",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Digital language course subscription",
+    "id": "1538"
+  },
+  {
+    "name": "Online Course Access",
+    "price": "45",
+    "category": "eBooks & Digital Content",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Professional skills online course",
+    "id": "1539"
+  },
+  {
+    "name": "Digital Magazine Subscription",
+    "price": "20",
+    "category": "eBooks & Digital Content",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "1-year digital magazine access",
+    "id": "1540"
+  },
+  {
+    "name": "Bestseller Audiobook",
+    "price": "22",
+    "category": "Audiobooks",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Professional narration of popular novel",
+    "id": "1541"
+  },
+  {
+    "name": "Self-Development Audiobook",
+    "price": "18",
+    "category": "Audiobooks",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Personal growth audiobook",
+    "id": "1542"
+  },
+  {
+    "name": "Children's Story Audiobook",
+    "price": "12",
+    "category": "Audiobooks",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Collection of children's stories",
+    "id": "1543"
+  },
+  {
+    "name": "Mystery Audiobook",
+    "price": "20",
+    "category": "Audiobooks",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Full-cast mystery production",
+    "id": "1544"
+  },
+  {
+    "name": "Business Audiobook",
+    "price": "25",
+    "category": "Audiobooks",
+    "color": "Digital",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Leadership and business strategies",
+    "id": "1545"
+  },
+  {
+    "name": "Fashion Magazine",
+    "price": "8",
+    "category": "Magazines & Newspapers",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Monthly fashion and lifestyle magazine",
+    "id": "1546"
+  },
+  {
+    "name": "Sports Magazine",
+    "price": "7",
+    "category": "Magazines & Newspapers",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Weekly sports news and analysis",
+    "id": "1547"
+  },
+  {
+    "name": "News Magazine",
+    "price": "6",
+    "category": "Magazines & Newspapers",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Current events and news weekly",
+    "id": "1548"
+  },
+  {
+    "name": "Newspaper Subscription",
+    "price": "25",
+    "category": "Magazines & Newspapers",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "1-month daily newspaper delivery",
+    "id": "1549"
+  },
+  {
+    "name": "Science Magazine",
+    "price": "9",
+    "category": "Magazines & Newspapers",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Popular science monthly magazine",
+    "id": "1550"
+  },
+  {
+    "name": "Classic Rock CD",
+    "price": "15",
+    "category": "Music CDs & Vinyl",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Greatest hits classic rock album",
+    "id": "1551"
+  },
+  {
+    "name": "Vinyl Record",
+    "price": "28",
+    "category": "Music CDs & Vinyl",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "180g vinyl record of iconic album",
+    "id": "1552"
+  },
+  {
+    "name": "Pop Music CD",
+    "price": "12",
+    "category": "Music CDs & Vinyl",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Latest pop music album",
+    "id": "1553"
+  },
+  {
+    "name": "Jazz Collection",
+    "price": "18",
+    "category": "Music CDs & Vinyl",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Classic jazz standards compilation",
+    "id": "1554"
+  },
+  {
+    "name": "Classical Music Box Set",
+    "price": "35",
+    "category": "Music CDs & Vinyl",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "5-CD classical music collection",
+    "id": "1555"
+  },
+  {
+    "name": "Blockbuster Movie Blu-ray",
+    "price": "25",
+    "category": "Movies & TV Shows",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Latest blockbuster movie release",
+    "id": "1556"
+  },
+  {
+    "name": "TV Series Box Set",
+    "price": "45",
+    "category": "Movies & TV Shows",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Complete season of popular TV show",
+    "id": "1557"
+  },
+  {
+    "name": "Classic Film Collection",
+    "price": "35",
+    "category": "Movies & TV Shows",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "5 classic movies box set",
+    "id": "1558"
+  },
+  {
+    "name": "Documentary Series",
+    "price": "32",
+    "category": "Movies & TV Shows",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Award-winning documentary collection",
+    "id": "1559"
+  },
+  {
+    "name": "Animated Movie",
+    "price": "20",
+    "category": "Movies & TV Shows",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Family animated feature film",
+    "id": "1560"
+  },
+  {
+    "name": "Action Video Game",
+    "price": "60",
+    "category": "Video Games",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Latest action-adventure video game",
+    "id": "1561"
+  },
+  {
+    "name": "Sports Game",
+    "price": "55",
+    "category": "Video Games",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Current year sports simulation",
+    "id": "1562"
+  },
+  {
+    "name": "Racing Game",
+    "price": "50",
+    "category": "Video Games",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "High-speed racing video game",
+    "id": "1563"
+  },
+  {
+    "name": "Family Game",
+    "price": "40",
+    "category": "Video Games",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Multiplayer family-friendly game",
+    "id": "1564"
+  },
+  {
+    "name": "Strategy Game",
+    "price": "45",
+    "category": "Video Games",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Complex strategy and planning game",
+    "id": "1565"
+  },
+  {
+    "name": "Educational Workbook",
+    "price": "15",
+    "category": "Educational Materials",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Grade-level educational workbook",
+    "id": "1566"
+  },
+  {
+    "name": "Flash Cards Set",
+    "price": "12",
+    "category": "Educational Materials",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Educational flash cards for learning",
+    "id": "1567"
+  },
+  {
+    "name": "Science Kit",
+    "price": "35",
+    "category": "Educational Materials",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Hands-on science experiment kit",
+    "id": "1568"
+  },
+  {
+    "name": "Language Learning Set",
+    "price": "28",
+    "category": "Educational Materials",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Beginner language learning materials",
+    "id": "1569"
+  },
+  {
+    "name": "Math Learning Kit",
+    "price": "22",
+    "category": "Educational Materials",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Interactive math learning tools",
+    "id": "1570"
+  },
+  {
+    "name": "Superhero Comic",
+    "price": "8",
+    "category": "Comics & Graphic Novels",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Latest superhero comic issue",
+    "id": "1571"
+  },
+  {
+    "name": "Graphic Novel",
+    "price": "25",
+    "category": "Comics & Graphic Novels",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Award-winning graphic novel",
+    "id": "1572"
+  },
+  {
+    "name": "Manga Collection",
+    "price": "15",
+    "category": "Comics & Graphic Novels",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Popular manga volume",
+    "id": "1573"
+  },
+  {
+    "name": "Comic Book Bundle",
+    "price": "35",
+    "category": "Comics & Graphic Novels",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Set of 10 comic books",
+    "id": "1574"
+  },
+  {
+    "name": "Collector's Edition Comic",
+    "price": "45",
+    "category": "Comics & Graphic Novels",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Limited edition collector's comic",
+    "id": "1575"
+  },
+  {
+    "name": "Fountain Pen Set",
+    "price": "45",
+    "category": "Stationery & Writing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Premium fountain pen with ink",
+    "id": "1576"
+  },
+  {
+    "name": "Journal Notebook",
+    "price": "18",
+    "category": "Stationery & Writing",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Leather-bound journal notebook",
+    "id": "1577"
+  },
+  {
+    "name": "Artistic Pen Set",
+    "price": "32",
+    "category": "Stationery & Writing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Set of 12 artistic drawing pens",
+    "id": "1578"
+  },
+  {
+    "name": "Calligraphy Kit",
+    "price": "38",
+    "category": "Stationery & Writing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Complete calligraphy writing set",
+    "id": "1579"
+  },
+  {
+    "name": "Office Stationery Set",
+    "price": "25",
+    "category": "Stationery & Writing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Complete office writing supplies",
+    "id": "1580"
+  },
+  {
+    "name": "Photography Masterpiece",
+    "price": "45",
+    "category": "Art & Photography Books",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Collection of iconic photographs",
+    "id": "1581"
+  },
+  {
+    "name": "Art History Book",
+    "price": "38",
+    "category": "Art & Photography Books",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Comprehensive art history volume",
+    "id": "1582"
+  },
+  {
+    "name": "Landscape Photography",
+    "price": "42",
+    "category": "Art & Photography Books",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Stunning landscape photography collection",
+    "id": "1583"
+  },
+  {
+    "name": "Modern Art Collection",
+    "price": "35",
+    "category": "Art & Photography Books",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Contemporary modern art showcase",
+    "id": "1584"
+  },
+  {
+    "name": "Portrait Photography",
+    "price": "40",
+    "category": "Art & Photography Books",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "description": "Masterful portrait photography book",
+    "id": "1585"
+  },
+  //Baby
+  {
+    "name": "Baby Stroller",
+    "price": "220",
+    "category": "Baby Gear & Furniture",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Lightweight travel system stroller",
+    "id": "1586"
+  },
+  {
+    "name": "Convertible Crib",
+    "price": "280",
+    "category": "Baby Gear & Furniture",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "3-in-1 convertible crib to toddler bed",
+    "id": "1587"
+  },
+  {
+    "name": "Baby Carrier",
+    "price": "65",
+    "category": "Baby Gear & Furniture",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Ergonomic baby carrier for parents",
+    "id": "1588"
+  },
+  {
+    "name": "High Chair",
+    "price": "95",
+    "category": "Baby Gear & Furniture",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Adjustable height feeding chair",
+    "id": "1589"
+  },
+  {
+    "name": "Baby Swing",
+    "price": "120",
+    "category": "Baby Gear & Furniture",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Electronic baby swing with music",
+    "id": "1590"
+  },
+  {
+    "name": "Diaper Bag",
+    "price": "45",
+    "category": "Diapering",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Multifunctional diaper backpack",
+    "id": "1591"
+  },
+  {
+    "name": "Diaper Pail",
+    "price": "35",
+    "category": "Diapering",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Odor-locking diaper disposal system",
+    "id": "1592"
+  },
+  {
+    "name": "Cloth Diapers",
+    "price": "55",
+    "category": "Diapering",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 6 reusable cloth diapers",
+    "id": "1593"
+  },
+  {
+    "name": "Diaper Cream",
+    "price": "8",
+    "category": "Diapering",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Zinc oxide diaper rash cream",
+    "id": "1594"
+  },
+  {
+    "name": "Changing Pad",
+    "price": "25",
+    "category": "Diapering",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Portable waterproof changing pad",
+    "id": "1595"
+  },
+  {
+    "name": "Baby Bottle Set",
+    "price": "32",
+    "category": "Feeding & Nursing",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 6 BPA-free baby bottles",
+    "id": "1596"
+  },
+  {
+    "name": "Breast Pump",
+    "price": "85",
+    "category": "Feeding & Nursing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Electric double breast pump",
+    "id": "1597"
+  },
+  {
+    "name": "Baby Food Maker",
+    "price": "45",
+    "category": "Feeding & Nursing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Steam and blend baby food processor",
+    "id": "1598"
+  },
+  {
+    "name": "Sippy Cups",
+    "price": "15",
+    "category": "Feeding & Nursing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 3 no-spill sippy cups",
+    "id": "1599"
+  },
+  {
+    "name": "Nursing Pillow",
+    "price": "38",
+    "category": "Feeding & Nursing",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Ergonomic breastfeeding support pillow",
+    "id": "1600"
+  },
+  {
+    "name": "Baby Onesies",
+    "price": "25",
+    "category": "Baby Clothing",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Pack of 5 cotton baby bodysuits",
+    "id": "1601"
+  },
+  {
+    "name": "Baby Sleepers",
+    "price": "28",
+    "category": "Baby Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 3 footed pajama sleepers",
+    "id": "1602"
+  },
+  {
+    "name": "Baby Hat and Mittens",
+    "price": "12",
+    "category": "Baby Clothing",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Newborn hat and mitten set",
+    "id": "1603"
+  },
+  {
+    "name": "Baby Romper",
+    "price": "18",
+    "category": "Baby Clothing",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Cute baby romper with patterns",
+    "id": "1604"
+  },
+  {
+    "name": "Baby Socks",
+    "price": "10",
+    "category": "Baby Clothing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Pack of 6 pairs baby socks",
+    "id": "1605"
+  },
+  {
+    "name": "Activity Gym",
+    "price": "45",
+    "category": "Baby Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Baby play mat with hanging toys",
+    "id": "1606"
+  },
+  {
+    "name": "Teething Toys",
+    "price": "15",
+    "category": "Baby Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 3 silicone teething rings",
+    "id": "1607"
+  },
+  {
+    "name": "Baby Rattle Set",
+    "price": "18",
+    "category": "Baby Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Collection of baby rattles",
+    "id": "1608"
+  },
+  {
+    "name": "Soft Blocks",
+    "price": "22",
+    "category": "Baby Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 8 soft stacking blocks",
+    "id": "1609"
+  },
+  {
+    "name": "Bath Toys",
+    "price": "12",
+    "category": "Baby Toys",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Floating bath toy set",
+    "id": "1610"
+  },
+  {
+    "name": "Baby Thermometer",
+    "price": "28",
+    "category": "Baby Care & Health",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Forehead touch baby thermometer",
+    "id": "1611"
+  },
+  {
+    "name": "Baby Nail Clipper",
+    "price": "8",
+    "category": "Baby Care & Health",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Safety baby nail clipper set",
+    "id": "1612"
+  },
+  {
+    "name": "Nasal Aspirator",
+    "price": "15",
+    "category": "Baby Care & Health",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Electric nasal aspirator for babies",
+    "id": "1613"
+  },
+  {
+    "name": "Baby Shampoo",
+    "price": "6",
+    "category": "Baby Care & Health",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Tear-free baby shampoo",
+    "id": "1614"
+  },
+  {
+    "name": "Baby Lotion",
+    "price": "7",
+    "category": "Baby Care & Health",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Hypoallergenic baby moisturizer",
+    "id": "1615"
+  },
+  {
+    "name": "Nursery Mobile",
+    "price": "35",
+    "category": "Nursery Decor",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Musical crib mobile with animals",
+    "id": "1616"
+  },
+  {
+    "name": "Nursery Rug",
+    "price": "55",
+    "category": "Nursery Decor",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Soft nursery area rug",
+    "id": "1617"
+  },
+  {
+    "name": "Wall Decals",
+    "price": "22",
+    "category": "Nursery Decor",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Removable nursery wall stickers",
+    "id": "1618"
+  },
+  {
+    "name": "Nursery Lamp",
+    "price": "38",
+    "category": "Nursery Decor",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Dimmable nursery night light",
+    "id": "1619"
+  },
+  {
+    "name": "Crib Sheets",
+    "price": "18",
+    "category": "Nursery Decor",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 2 waterproof crib sheets",
+    "id": "1620"
+  },
+  {
+    "name": "Baby Monitor",
+    "price": "120",
+    "category": "Baby Safety",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Video baby monitor with night vision",
+    "id": "1621"
+  },
+  {
+    "name": "Outlet Covers",
+    "price": "8",
+    "category": "Baby Safety",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 12 electrical outlet covers",
+    "id": "1622"
+  },
+  {
+    "name": "Cabinet Locks",
+    "price": "15",
+    "category": "Baby Safety",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Child safety cabinet locks",
+    "id": "1623"
+  },
+  {
+    "name": "Corner Guards",
+    "price": "12",
+    "category": "Baby Safety",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Table corner protectors for safety",
+    "id": "1624"
+  },
+  {
+    "name": "Safety Gate",
+    "price": "45",
+    "category": "Baby Safety",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Adjustable pressure-mounted safety gate",
+    "id": "1625"
+  },
+  {
+    "name": "Maternity Pillow",
+    "price": "48",
+    "category": "Maternity",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Full body pregnancy support pillow",
+    "id": "1626"
+  },
+  {
+    "name": "Nursing Bra",
+    "price": "28",
+    "category": "Maternity",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable maternity nursing bra",
+    "id": "1627"
+  },
+  {
+    "name": "Maternity Dress",
+    "price": "35",
+    "category": "Maternity",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Comfortable maternity maxi dress",
+    "id": "1628"
+  },
+  {
+    "name": "Belly Butter",
+    "price": "18",
+    "category": "Maternity",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Stretch mark prevention cream",
+    "id": "1629"
+  },
+  {
+    "name": "Pregnancy Journal",
+    "price": "22",
+    "category": "Maternity",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Memory keeping pregnancy journal",
+    "id": "1630"
+  },
+  {
+    "name": "Kids' Desk",
+    "price": "95",
+    "category": "Kids' Furniture",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Adjustable height children's desk",
+    "id": "1631"
+  },
+  {
+    "name": "Bookshelf",
+    "price": "65",
+    "category": "Kids' Furniture",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Children's book storage shelf",
+    "id": "1632"
+  },
+  {
+    "name": "Toy Storage",
+    "price": "45",
+    "category": "Kids' Furniture",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Cube storage organizer for toys",
+    "id": "1633"
+  },
+  {
+    "name": "Kids' Chair",
+    "price": "35",
+    "category": "Kids' Furniture",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Child-sized comfortable chair",
+    "id": "1634"
+  },
+  {
+    "name": "Bunk Bed",
+    "price": "280",
+    "category": "Kids' Furniture",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Twin over twin bunk bed",
+    "id": "1635"
+  },
+  {
+    "name": "Backpack",
+    "price": "25",
+    "category": "School Supplies",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Kids school backpack with lunch bag",
+    "id": "1636"
+  },
+  {
+    "name": "Lunch Box",
+    "price": "18",
+    "category": "School Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Insulated lunch box set",
+    "id": "1637"
+  },
+  {
+    "name": "Pencil Case",
+    "price": "12",
+    "category": "School Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Zipper pencil case with supplies",
+    "id": "1638"
+  },
+  {
+    "name": "Art Supplies",
+    "price": "22",
+    "category": "School Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Complete kids art set",
+    "id": "1639"
+  },
+  {
+    "name": "Water Bottle",
+    "price": "15",
+    "category": "School Supplies",
+    "color": "Pink",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Stainless steel kids water bottle",
+    "id": "1640"
+  },
+  {
+    "name": "Birthday Party Decorations",
+    "price": "28",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Complete birthday decoration kit",
+    "id": "1641"
+  },
+  {
+    "name": "Party Plates & Cups",
+    "price": "18",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of party tableware for 16",
+    "id": "1642"
+  },
+  {
+    "name": "Balloons",
+    "price": "12",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Pack of 50 assorted balloons",
+    "id": "1643"
+  },
+  {
+    "name": "Party Favors",
+    "price": "22",
+    "category": "Party Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Set of 12 party favor bags",
+    "id": "1644"
+  },
+  {
+    "name": "Birthday Cake Topper",
+    "price": "8",
+    "category": "Party Supplies",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400",
+    "description": "Personalized birthday cake decoration",
+    "id": "1645"
+  },
+  //luxury
+  {
+    "name": "Designer Silk Dress",
+    "price": "1200",
+    "category": "Designer Fashion",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+    "description": "Evening gown from luxury fashion house",
+    "id": "1646"
+  },
+  {
+    "name": "Cashmere Coat",
+    "price": "1800",
+    "category": "Designer Fashion",
+    "color": "Camel",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+    "description": "100% cashmere designer winter coat",
+    "id": "1647"
+  },
+  {
+    "name": "Designer Leather Jacket",
+    "price": "2500",
+    "category": "Designer Fashion",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+    "description": "Italian leather motorcycle jacket",
+    "id": "1648"
+  },
+  {
+    "name": "Silk Blouse",
+    "price": "650",
+    "category": "Designer Fashion",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+    "description": "Signature print silk designer blouse",
+    "id": "1649"
+  },
+  {
+    "name": "Designer Suit",
+    "price": "3200",
+    "category": "Designer Fashion",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+    "description": "Bespoke wool suit from luxury tailor",
+    "id": "1650"
+  },
+  {
+    "name": "Diamond Tennis Bracelet",
+    "price": "8500",
+    "category": "Fine Jewelry",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "5 carat diamond line bracelet",
+    "id": "1651"
+  },
+  {
+    "name": "Pearl Necklace",
+    "price": "3200",
+    "category": "Fine Jewelry",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "South Sea pearl strand with diamond clasp",
+    "id": "1652"
+  },
+  {
+    "name": "Emerald Ring",
+    "price": "12000",
+    "category": "Fine Jewelry",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "5-carat Colombian emerald with diamonds",
+    "id": "1653"
+  },
+  {
+    "name": "Gold Hoop Earrings",
+    "price": "2800",
+    "category": "Fine Jewelry",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "18k gold large hoop earrings",
+    "id": "1654"
+  },
+  {
+    "name": "Diamond Stud Earrings",
+    "price": "6500",
+    "category": "Fine Jewelry",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "2-carat total weight diamond studs",
+    "id": "1655"
+  },
+  {
+    "name": "Swiss Automatic Watch",
+    "price": "8500",
+    "category": "Luxury Watches",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Swiss-made automatic chronograph",
+    "id": "1656"
+  },
+  {
+    "name": "Diamond Watch",
+    "price": "25000",
+    "category": "Luxury Watches",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Ladies diamond bezel luxury watch",
+    "id": "1657"
+  },
+  {
+    "name": "Limited Edition Watch",
+    "price": "15000",
+    "category": "Luxury Watches",
+    "color": "Rose Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Limited production luxury timepiece",
+    "id": "1658"
+  },
+  {
+    "name": "Diver's Watch",
+    "price": "7200",
+    "category": "Luxury Watches",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Professional 300m dive watch",
+    "id": "1659"
+  },
+  {
+    "name": "Skeleton Watch",
+    "price": "18000",
+    "category": "Luxury Watches",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400",
+    "description": "Open-heart skeleton mechanical watch",
+    "id": "1660"
+  },
+  {
+    "name": "Premium Laptop",
+    "price": "3500",
+    "category": "High-End Electronics",
+    "color": "Space Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+    "description": "Professional workstation laptop",
+    "id": "1661"
+  },
+  {
+    "name": "4K Smart TV",
+    "price": "4500",
+    "category": "High-End Electronics",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+    "description": "85-inch 8K OLED smart television",
+    "id": "1662"
+  },
+  {
+    "name": "High-End Headphones",
+    "price": "1200",
+    "category": "High-End Electronics",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+    "description": "Professional studio headphones",
+    "id": "1663"
+  },
+  {
+    "name": "Smart Home System",
+    "price": "2800",
+    "category": "High-End Electronics",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+    "description": "Complete luxury smart home automation",
+    "id": "1664"
+  },
+  {
+    "name": "Professional Camera",
+    "price": "6500",
+    "category": "High-End Electronics",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+    "description": "Full-frame mirrorless camera system",
+    "id": "1665"
+  },
+  {
+    "name": "Luxury Skincare Set",
+    "price": "450",
+    "category": "Premium Beauty",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400",
+    "description": "Complete anti-aging skincare collection",
+    "id": "1666"
+  },
+  {
+    "name": "Designer Perfume",
+    "price": "380",
+    "category": "Premium Beauty",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400",
+    "description": "Exclusive designer signature fragrance",
+    "id": "1667"
+  },
+  {
+    "name": "24K Gold Serum",
+    "price": "650",
+    "category": "Premium Beauty",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400",
+    "description": "24-karat gold infused facial serum",
+    "id": "1668"
+  },
+  {
+    "name": "Caviar Eye Cream",
+    "price": "320",
+    "category": "Premium Beauty",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400",
+    "description": "Luxury caviar extract eye treatment",
+    "id": "1669"
+  },
+  {
+    "name": "Premium Makeup Kit",
+    "price": "580",
+    "category": "Premium Beauty",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400",
+    "description": "Complete luxury makeup collection",
+    "id": "1670"
+  },
+  {
+    "name": "Crystal Chandelier",
+    "price": "8500",
+    "category": "Luxury Home Decor",
+    "color": "Crystal",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Hand-cut crystal statement chandelier",
+    "id": "1671"
+  },
+  {
+    "name": "Italian Marble Table",
+    "price": "12000",
+    "category": "Luxury Home Decor",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Carrara marble dining table",
+    "id": "1672"
+  },
+  {
+    "name": "Silk Area Rug",
+    "price": "4500",
+    "category": "Luxury Home Decor",
+    "color": "Beige",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Hand-woven silk Persian rug",
+    "id": "1673"
+  },
+  {
+    "name": "Designer Sofa",
+    "price": "15000",
+    "category": "Luxury Home Decor",
+    "color": "Navy",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Italian leather sectional sofa",
+    "id": "1674"
+  },
+  {
+    "name": "Art Glass Vase",
+    "price": "2800",
+    "category": "Luxury Home Decor",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Murano glass art piece vase",
+    "id": "1675"
+  },
+  {
+    "name": "Designer Tote Bag",
+    "price": "3200",
+    "category": "Designer Handbags",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Signature monogram leather tote",
+    "id": "1676"
+  },
+  {
+    "name": "Evening Clutch",
+    "price": "1800",
+    "category": "Designer Handbags",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Beaded evening clutch with chain",
+    "id": "1677"
+  },
+  {
+    "name": "Crossbody Bag",
+    "price": "2500",
+    "category": "Designer Handbags",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Leather crossbody with gold hardware",
+    "id": "1678"
+  },
+  {
+    "name": "Weekender Bag",
+    "price": "4200",
+    "category": "Designer Handbags",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Luxury leather travel weekender",
+    "id": "1679"
+  },
+  {
+    "name": "Bucket Bag",
+    "price": "2800",
+    "category": "Designer Handbags",
+    "color": "Camel",
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+    "description": "Structured leather bucket bag",
+    "id": "1680"
+  },
+  {
+    "name": "Original Oil Painting",
+    "price": "25000",
+    "category": "Fine Art & Collectibles",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Contemporary original oil on canvas",
+    "id": "1681"
+  },
+  {
+    "name": "Bronze Sculpture",
+    "price": "18000",
+    "category": "Fine Art & Collectibles",
+    "color": "Bronze",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Limited edition bronze art sculpture",
+    "id": "1682"
+  },
+  {
+    "name": "Vintage Watch Collection",
+    "price": "45000",
+    "category": "Fine Art & Collectibles",
+    "color": "Various",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Rare vintage watch collection",
+    "id": "1683"
+  },
+  {
+    "name": "Art Photography Print",
+    "price": "8500",
+    "category": "Fine Art & Collectibles",
+    "color": "Black/White",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Limited edition art photography",
+    "id": "1684"
+  },
+  {
+    "name": "Antique Jewelry Box",
+    "price": "12000",
+    "category": "Fine Art & Collectibles",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "19th century antique jewelry chest",
+    "id": "1685"
+  },
+  {
+    "name": "Aged Scotch Whisky",
+    "price": "850",
+    "category": "Premium Spirits",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1572383672419-ab35444a6934?w=400",
+    "description": "25-year single malt Scotch whisky",
+    "id": "1686"
+  },
+  {
+    "name": "Vintage Champagne",
+    "price": "650",
+    "category": "Premium Spirits",
+    "color": "Gold",
+    "imageUrl": "https://images.unsplash.com/photo-1572383672419-ab35444a6934?w=400",
+    "description": "Vintage champagne from prestigious house",
+    "id": "1687"
+  },
+  {
+    "name": "Limited Edition Cognac",
+    "price": "2200",
+    "category": "Premium Spirits",
+    "color": "Amber",
+    "imageUrl": "https://images.unsplash.com/photo-1572383672419-ab35444a6934?w=400",
+    "description": "XO cognac limited release",
+    "id": "1688"
+  },
+  {
+    "name": "Collector's Wine Set",
+    "price": "3500",
+    "category": "Premium Spirits",
+    "color": "Various",
+    "imageUrl": "https://images.unsplash.com/photo-1572383672419-ab35444a6934?w=400",
+    "description": "Vertical collection of fine wines",
+    "id": "1689"
+  },
+  {
+    "name": "Artisanal Tequila",
+    "price": "480",
+    "category": "Premium Spirits",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1572383672419-ab35444a6934?w=400",
+    "description": "Small batch extra añejo tequila",
+    "id": "1690"
+  },
+  {
+    "name": "Designer Luggage Set",
+    "price": "5800",
+    "category": "Luxury Travel Gear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "3-piece luxury hardshell luggage",
+    "id": "1691"
+  },
+  {
+    "name": "Leather Travel Bag",
+    "price": "2200",
+    "category": "Luxury Travel Gear",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Full-grain leather duffel bag",
+    "id": "1692"
+  },
+  {
+    "name": "Travel Accessories Set",
+    "price": "850",
+    "category": "Luxury Travel Gear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Premium leather travel accessories",
+    "id": "1693"
+  },
+  {
+    "name": "First Class Travel Kit",
+    "price": "450",
+    "category": "Luxury Travel Gear",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Luxury in-flight comfort set",
+    "id": "1694"
+  },
+  {
+    "name": "Designer Passport Holder",
+    "price": "380",
+    "category": "Luxury Travel Gear",
+    "color": "Red",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+    "description": "Leather passport cover and wallet",
+    "id": "1695"
+  },
+  //handmade
+  {
+    "name": "Hand-Forged Silver Ring",
+    "price": "85",
+    "category": "Handmade Jewelry",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Artisan crafted sterling silver ring with unique hammered texture",
+    "id": "1696"
+  },
+  {
+    "name": "Gemstone Necklace",
+    "price": "65",
+    "category": "Handmade Jewelry",
+    "color": "Turquoise",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Hand-wrapped turquoise stone pendant on leather cord",
+    "id": "1697"
+  },
+  {
+    "name": "Clay Bead Bracelet",
+    "price": "28",
+    "category": "Handmade Jewelry",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Hand-painted polymer clay beads strung on elastic",
+    "id": "1698"
+  },
+  {
+    "name": "Wire-Wrapped Earrings",
+    "price": "42",
+    "category": "Handmade Jewelry",
+    "color": "Copper",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Copper wire wrapped crystal drop earrings",
+    "id": "1699"
+  },
+  {
+    "name": "Resin Art Pendant",
+    "price": "38",
+    "category": "Handmade Jewelry",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+    "description": "Hand-poured resin pendant with floral inclusions",
+    "id": "1700"
+  },
+  {
+    "name": "Hand-Thrown Ceramic Vase",
+    "price": "75",
+    "category": "Artisan Home Decor",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Unique wheel-thrown ceramic vase with natural glaze",
+    "id": "1701"
+  },
+  {
+    "name": "Macrame Wall Hanging",
+    "price": "55",
+    "category": "Artisan Home Decor",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Hand-knotted cotton macrame with wooden beads",
+    "id": "1702"
+  },
+  {
+    "name": "Wood Burned Art",
+    "price": "45",
+    "category": "Artisan Home Decor",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Pyrography art on reclaimed wood slice",
+    "id": "1703"
+  },
+  {
+    "name": "Hand-Painted Coasters",
+    "price": "32",
+    "category": "Artisan Home Decor",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Set of 4 ceramic coasters with botanical designs",
+    "id": "1704"
+  },
+  {
+    "name": "Woven Basket",
+    "price": "65",
+    "category": "Artisan Home Decor",
+    "color": "Natural",
+    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+    "description": "Hand-woven seagrass storage basket",
+    "id": "1705"
+  },
+  {
+    "name": "Live Edge Wood Table",
+    "price": "850",
+    "category": "Handcrafted Furniture",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Solid walnut live edge coffee table with steel legs",
+    "id": "1706"
+  },
+  {
+    "name": "Hand-Carved Chair",
+    "price": "320",
+    "category": "Handcrafted Furniture",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Solid oak dining chair with hand-carved details",
+    "id": "1707"
+  },
+  {
+    "name": "Reclaimed Wood Shelf",
+    "price": "180",
+    "category": "Handcrafted Furniture",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Floating shelf made from reclaimed barn wood",
+    "id": "1708"
+  },
+  {
+    "name": "Hand-Woven Rug",
+    "price": "450",
+    "category": "Handcrafted Furniture",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Wool rug hand-woven on traditional loom",
+    "id": "1709"
+  },
+  {
+    "name": "Custom Bookshelf",
+    "price": "650",
+    "category": "Handcrafted Furniture",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400",
+    "description": "Solid wood bookshelf with adjustable shelves",
+    "id": "1710"
+  },
+  {
+    "name": "Hand-Embroidered Denim Jacket",
+    "price": "120",
+    "category": "Custom Clothing",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Vintage denim jacket with custom floral embroidery",
+    "id": "1711"
+  },
+  {
+    "name": "Hand-Printed T-Shirt",
+    "price": "35",
+    "category": "Custom Clothing",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Organic cotton tee with hand-screen printed design",
+    "id": "1712"
+  },
+  {
+    "name": "Crocheted Sweater",
+    "price": "85",
+    "category": "Custom Clothing",
+    "color": "Mustard",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Hand-crocheted wool blend oversized sweater",
+    "id": "1713"
+  },
+  {
+    "name": "Hand-Dyed Scarf",
+    "price": "45",
+    "category": "Custom Clothing",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Silk scarf with natural plant-based dyes",
+    "id": "1714"
+  },
+  {
+    "name": "Custom Leather Belt",
+    "price": "65",
+    "category": "Custom Clothing",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400",
+    "description": "Vegetable-tanned leather belt with custom sizing",
+    "id": "1715"
+  },
+  {
+    "name": "Beading Supply Kit",
+    "price": "35",
+    "category": "DIY Craft Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Complete jewelry making kit with beads and tools",
+    "id": "1716"
+  },
+  {
+    "name": "Embroidery Starter Set",
+    "price": "28",
+    "category": "DIY Craft Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Beginner embroidery kit with patterns and threads",
+    "id": "1717"
+  },
+  {
+    "name": "Pottery Clay Pack",
+    "price": "42",
+    "category": "DIY Craft Supplies",
+    "color": "Gray",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Air-dry clay with sculpting tools",
+    "id": "1718"
+  },
+  {
+    "name": "Natural Dye Kit",
+    "price": "38",
+    "category": "DIY Craft Supplies",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Plant-based dyes for fabric and yarn",
+    "id": "1719"
+  },
+  {
+    "name": "Candle Making Supplies",
+    "price": "45",
+    "category": "DIY Craft Supplies",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Soy wax, wicks, and fragrance oils kit",
+    "id": "1720"
+  },
+  {
+    "name": "Vintage Typewriter",
+    "price": "220",
+    "category": "Vintage Items",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268801-8a96d6ef2a8a?w=400",
+    "description": "Restored 1950s manual typewriter",
+    "id": "1721"
+  },
+  {
+    "name": "Antique Camera",
+    "price": "180",
+    "category": "Vintage Items",
+    "color": "Black",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268801-8a96d6ef2a8a?w=400",
+    "description": "Vintage film camera from 1960s",
+    "id": "1722"
+  },
+  {
+    "name": "Retro Record Player",
+    "price": "150",
+    "category": "Vintage Items",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268801-8a96d6ef2a8a?w=400",
+    "description": "Mid-century modern record player",
+    "id": "1723"
+  },
+  {
+    "name": "Vintage Leather Bag",
+    "price": "95",
+    "category": "Vintage Items",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268801-8a96d6ef2a8a?w=400",
+    "description": "Genuine leather doctor's bag from 1970s",
+    "id": "1724"
+  },
+  {
+    "name": "Antique Glassware Set",
+    "price": "65",
+    "category": "Vintage Items",
+    "color": "Clear",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268801-8a96d6ef2a8a?w=400",
+    "description": "Set of 6 depression glass tumblers",
+    "id": "1725"
+  },
+  {
+    "name": "Personalized Family Tree",
+    "price": "85",
+    "category": "Personalized Gifts",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+    "description": "Custom engraved family tree with names",
+    "id": "1726"
+  },
+  {
+    "name": "Monogrammed Leather Journal",
+    "price": "45",
+    "category": "Personalized Gifts",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+    "description": "Hand-tooled leather journal with initials",
+    "id": "1727"
+  },
+  {
+    "name": "Custom Photo Blanket",
+    "price": "75",
+    "category": "Personalized Gifts",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+    "description": "Fleece blanket printed with your photos",
+    "id": "1728"
+  },
+  {
+    "name": "Engraved Cutting Board",
+    "price": "55",
+    "category": "Personalized Gifts",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+    "description": "Bamboo cutting board with custom message",
+    "id": "1729"
+  },
+  {
+    "name": "Personalized Ornament",
+    "price": "22",
+    "category": "Personalized Gifts",
+    "color": "Silver",
+    "imageUrl": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+    "description": "Glass ornament with hand-painted name",
+    "id": "1730"
+  },
+  {
+    "name": "Local Landscape Painting",
+    "price": "280",
+    "category": "Local Art",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Original oil painting of regional scenery",
+    "id": "1731"
+  },
+  {
+    "name": "Ceramic Sculpture",
+    "price": "150",
+    "category": "Local Art",
+    "color": "Terracotta",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Hand-built ceramic abstract sculpture",
+    "id": "1732"
+  },
+  {
+    "name": "Local Photography Print",
+    "price": "65",
+    "category": "Local Art",
+    "color": "Black/White",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Limited edition local landmark photo",
+    "id": "1733"
+  },
+  {
+    "name": "Mixed Media Art",
+    "price": "120",
+    "category": "Local Art",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Collage and paint on canvas by local artist",
+    "id": "1734"
+  },
+  {
+    "name": "Hand-Blown Glass Art",
+    "price": "180",
+    "category": "Local Art",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=400",
+    "description": "Studio glass paperweight with swirl design",
+    "id": "1735"
+  },
+  {
+    "name": "Beginner Knitting Kit",
+    "price": "45",
+    "category": "Craft Kits",
+    "color": "Multicolor",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Everything needed to learn knitting",
+    "id": "1736"
+  },
+  {
+    "name": "Soap Making Kit",
+    "price": "38",
+    "category": "Craft Kits",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Cold process soap making supplies",
+    "id": "1737"
+  },
+  {
+    "name": "Pottery Wheel Kit",
+    "price": "220",
+    "category": "Craft Kits",
+    "color": "Blue",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Tabletop pottery wheel with clay",
+    "id": "1738"
+  },
+  {
+    "name": "Leather Crafting Kit",
+    "price": "65",
+    "category": "Craft Kits",
+    "color": "Brown",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Beginner leatherworking tools and materials",
+    "id": "1739"
+  },
+  {
+    "name": "Weaving Loom Kit",
+    "price": "55",
+    "category": "Craft Kits",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400",
+    "description": "Frame loom with yarn for tapestry weaving",
+    "id": "1740"
+  },
+  {
+    "name": "Handmade Soap Collection",
+    "price": "28",
+    "category": "Natural Products",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Set of 5 cold process natural soaps",
+    "id": "1741"
+  },
+  {
+    "name": "Beeswax Candles",
+    "price": "35",
+    "category": "Natural Products",
+    "color": "Yellow",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Pure beeswax pillar candles",
+    "id": "1742"
+  },
+  {
+    "name": "Herbal Tea Blends",
+    "price": "22",
+    "category": "Natural Products",
+    "color": "Green",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Organic loose leaf tea collection",
+    "id": "1743"
+  },
+  {
+    "name": "Natural Body Butter",
+    "price": "32",
+    "category": "Natural Products",
+    "color": "White",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Whipped shea and cocoa butter cream",
+    "id": "1744"
+  },
+  {
+    "name": "Wooden Kitchenware",
+    "price": "45",
+    "category": "Natural Products",
+    "color": "Wood",
+    "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+    "description": "Set of handmade wooden spoons and spatulas",
+    "id": "1745"
+  }
   ]
 }

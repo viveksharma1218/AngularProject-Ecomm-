@@ -131,7 +131,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of fashion;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -142,21 +142,11 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of home;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
 
-        <div>
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Grocery
-        </a>
-        <ul class="dropdown-menu ">
-        @for(item of grocery;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
-        }
-        </ul>
-        </div>
 
         <div>
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -164,7 +154,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of beauty;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -175,7 +165,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of health;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -186,7 +176,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of sports;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -196,7 +186,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of toys;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -206,7 +196,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of books;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -216,7 +206,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of baby;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item"[routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -226,7 +216,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of luxury;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
@@ -236,7 +226,7 @@
         </a>
         <ul class="dropdown-menu ">
         @for(item of handmade;track item){
-        <li><a class="dropdown-item" href="#">{{item}}</a></li>
+        <li><a class="dropdown-item" [routerLink]="['/search', item]">{{item}}</a></li>
         }
         </ul>
         </div>
