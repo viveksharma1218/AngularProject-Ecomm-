@@ -16,9 +16,7 @@ export class Searchbar implements OnInit{
   filterProducts : product[] | undefined = [];
 private route = inject(ActivatedRoute);
 private productServ = inject(SellerAddProduct);
-constructor(){
-  
-}
+constructor(){}
 
   ngOnInit(): void {
   // Observable for all products
@@ -37,7 +35,13 @@ constructor(){
       // Perform filtering logic
       if (currentFilter) {
         this.filterProducts = this.allProduct?.filter((product) => {
-          return product.category === currentFilter; // Using strict equality
+            if(product.category == currentFilter){
+               return product.category === currentFilter; // Using strict equality
+            }
+            const filterlowecase = currentFilter.toLowerCase();
+            const searchableText = [product.name,product.category,product.color,product.description].join('').toLowerCase()
+            return searchableText.includes(filterlowecase);
+         
         });
       } else {
         // No filter applied, show all products
