@@ -23,7 +23,10 @@ constructor(){}
   ngOnInit(): void {
   // Observable for all products
     //const products$ = this.productServ.productList();
-    this.allProduct = this.allProductServ.products;
+    //this.allProduct = this.allProductServ.products;
+    this.allProductServ.allProducts$.subscribe((data)=>{
+      this.allProduct = data;
+    })
 
     // 2. Observalbe for filter(id) So whenever route change we get new value
     const filter$ = this.route.paramMap.pipe(

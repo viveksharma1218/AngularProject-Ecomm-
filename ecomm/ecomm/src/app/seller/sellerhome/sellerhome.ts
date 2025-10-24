@@ -13,7 +13,7 @@ import { Allproduct } from '../../services/allproduct';
   styleUrl: './sellerhome.css'
 })
 export class Sellerhome implements OnInit{
-  productList= signal<undefined | product[]>([])
+  productList= signal<undefined | product[]>([]);
   deleteMessage = signal<boolean>(false);
   deleteId = signal(0);
   Icon = faTrashCan;
@@ -23,7 +23,10 @@ export class Sellerhome implements OnInit{
 
   ngOnInit(): void {
       //this.generateList();
-      this.productList.set(this.allProductServ.products);
+      //this.productList.set(this.allProductServ.products);
+      this.allProductServ.allProducts$.subscribe((data)=>{
+        this.productList.set(data);
+      })
   }
   deleteProduct(id:number){
     this.deleteMessage.set(true);
@@ -64,7 +67,7 @@ export class Sellerhome implements OnInit{
   }
   generateList(){
     this.sellerProductServ.productList().subscribe((data)=>{
-        this.productList.set(data)
+        this.productList.set(data);
       })
   }
 }

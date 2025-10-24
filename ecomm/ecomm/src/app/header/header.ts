@@ -91,7 +91,10 @@ export class Header implements OnInit ,OnChanges{
            this.headerType.set('default');
           }
         })
-        this.getAllProducts();
+        //this.getAllProducts();
+        this.AllproductServ.allProducts$.subscribe((data)=>{
+          this.allProducts= data;
+        })
         this.getLocationAndWeather();
         this.grocery = this.productCat.grocery;
         this.fashion=this.productCat.fashion;
@@ -104,7 +107,6 @@ export class Header implements OnInit ,OnChanges{
         this.baby=this.productCat.baby;
         this.luxury=this.productCat.luxury;
         this.handmade=this.productCat.handmade;
-        this.allProducts = this.AllproductServ.products;
        
   }
   ngOnChanges(changes: SimpleChanges): void {
@@ -121,12 +123,12 @@ export class Header implements OnInit ,OnChanges{
     this.getfilterProducts();
     //console.log(this.filterProducts)
   }
-  getAllProducts(){
-    this.productServ.productList().subscribe((data)=>{
-      //this.allProducts = data;
-      this.AllproductServ.products = data;
-    })
-  }
+  // getAllProducts(){
+  //   this.productServ.productList().subscribe((data)=>{
+  //     //this.allProducts = data;
+  //     this.AllproductServ.products = data;
+  //   })
+  // }
   getfilterProducts(){
      if (!this.allProducts || this.allProducts.length === 0) {
       this.filterProducts = [];

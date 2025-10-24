@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { product } from '../interfaces/sellerAuth-interface';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { SellerAddProduct } from './seller-add-product';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +9,9 @@ import { product } from '../interfaces/sellerAuth-interface';
 export class Allproduct {
   // we are making get call many times in application now we use this property 
   // to save all products after making get request inside header and we can use this anywhere
-  products:product[] | undefined = [];
+
+  private allProductsSubject = new BehaviorSubject<product[] | undefined>([]);
+  public allProducts$: Observable<product[] | undefined> = this.allProductsSubject.asObservable();
 
   // this is all products list so if we delete some product we can copy paste these
   allProduct = [
@@ -8188,4 +8192,10 @@ export class Allproduct {
     "id": "1745"
   }
   ]
+  constructor(private productServ:SellerAddProduct){
+    this.productServ.productList().subscribe((data)=>{
+      //console.log(data);
+      this.allProductsSubject.next(data);
+    })
+  }
 }
