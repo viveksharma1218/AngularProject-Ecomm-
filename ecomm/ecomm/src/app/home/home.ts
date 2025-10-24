@@ -1,6 +1,7 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,inject } from '@angular/core';
 import { product,productWithPic } from '../interfaces/sellerAuth-interface';
 import { SellerAddProduct } from '../services/seller-add-product';
+import { Allproduct } from '../services/allproduct';
 
 @Component({
   selector: 'ec-home',
@@ -15,24 +16,28 @@ export class Home implements OnInit{
     '1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'
   ]
   productWithPic:productWithPic[] = [];
-  constructor(private productServ:SellerAddProduct){}
+  constructor(private productServ:SellerAddProduct,
+      private AllproductServ:Allproduct
+  ){}
 
   ngOnInit(): void {
       this.getProduct();
-      this.getAllProduct();
-      this.combineProduct();
-      
+      //this.getAllProduct();
+      this.combineProduct(); 
+      this.AllProducts = this.AllproductServ.products;
   }
   getProduct(){
     this.productServ.popularProducts().subscribe((data)=>{
       this.popularProducts = data;
     })
   }
-  getAllProduct(){
-    this.productServ.productList().subscribe((data)=>{
-      this.AllProducts = data;
-    })
-  }
+  // getAllProduct(){
+  //   this.productServ.productList().subscribe((data)=>{
+       //this.AllProducts = data;
+  //     this.AllproductServ.products = data;
+
+  //   })
+  // }
   combineProduct(){
     let combinedList :productWithPic[] = [];
     const length = Math.min(this.popularProducts.length, this.productPics.length);

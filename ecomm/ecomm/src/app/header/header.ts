@@ -8,6 +8,7 @@ import { LocationService,Location } from '../services/location';
 import { WeatherService } from '../services/weather';
 import { CommonModule } from '@angular/common';
 import { ProductCat } from '../services/product-cat';
+import { Allproduct } from '../services/allproduct';
 
 @Component({
   selector: 'ec-header',
@@ -39,6 +40,7 @@ export class Header implements OnInit ,OnChanges{
     private locationService = inject(LocationService);
     private weatherService = inject(WeatherService);
     private productCat = inject(ProductCat);
+    private AllproductServ = inject(Allproduct);
   
     location = signal<Location | null>(null);
     error = signal<string>('');
@@ -102,7 +104,7 @@ export class Header implements OnInit ,OnChanges{
         this.baby=this.productCat.baby;
         this.luxury=this.productCat.luxury;
         this.handmade=this.productCat.handmade;
-        
+        this.allProducts = this.AllproductServ.products;
        
   }
   ngOnChanges(changes: SimpleChanges): void {
@@ -121,7 +123,8 @@ export class Header implements OnInit ,OnChanges{
   }
   getAllProducts(){
     this.productServ.productList().subscribe((data)=>{
-      this.allProducts = data;
+      //this.allProducts = data;
+      this.AllproductServ.products = data;
     })
   }
   getfilterProducts(){

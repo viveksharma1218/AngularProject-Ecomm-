@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { product } from '../interfaces/sellerAuth-interface';
 import { SellerAddProduct } from '../services/seller-add-product';
 import { combineLatest, tap,switchMap } from 'rxjs';
+import { Allproduct } from '../services/allproduct';
 
 @Component({
   selector: 'ec-searchbar',
@@ -16,11 +17,13 @@ export class Searchbar implements OnInit{
   filterProducts : product[] | undefined = [];
 private route = inject(ActivatedRoute);
 private productServ = inject(SellerAddProduct);
+private allProductServ = inject(Allproduct);
 constructor(){}
 
   ngOnInit(): void {
   // Observable for all products
-    const products$ = this.productServ.productList();
+    //const products$ = this.productServ.productList();
+    this.allProduct = this.allProductServ.products;
 
     // 2. Observalbe for filter(id) So whenever route change we get new value
     const filter$ = this.route.paramMap.pipe(
@@ -28,8 +31,8 @@ constructor(){}
     );
 
     // 3. Combine them: only execute filtering when BOTH products AND filter are available/changed
-    combineLatest([products$, filter$]).subscribe(([products, params]) => {
-      this.allProduct = products;
+     filter$.subscribe(( params) => {
+      
       const currentFilter = params.get('id');
 
       // Perform filtering logic

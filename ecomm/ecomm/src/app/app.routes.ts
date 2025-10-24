@@ -6,6 +6,7 @@ import { sellerAuthGuardGuard } from './seller/guards/seller-auth-guard-guard';
 import { AddProduct } from './seller/add-product/add-product';
 import { Update } from './seller/update/update';
 import { Searchbar } from './searchbar/searchbar';
+import { ProductDetail } from './product-detail/product-detail';
 
 export const routes: Routes = [
     {   path:'', 
@@ -14,6 +15,10 @@ export const routes: Routes = [
     {
         path:'search/:id',
         component:Searchbar
+    },
+    {
+        path:'detail/:productId',
+        component:ProductDetail
     },
     //paths for seller must have name 'seller' because we are 
     // using this for dynamic header

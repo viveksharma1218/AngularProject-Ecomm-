@@ -1,10 +1,10 @@
-import { Component,OnInit,signal } from '@angular/core';
+import { Component,OnInit,signal,inject } from '@angular/core';
 import { SellerAddProduct } from '../../services/seller-add-product';
 import { product } from '../../interfaces/sellerAuth-interface';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTrashCan,faEdit} from '@fortawesome/free-solid-svg-icons';
 import { RouterLink } from '@angular/router';
-
+import { Allproduct } from '../../services/allproduct';
 
 @Component({
   selector: 'ec-sellerhome',
@@ -18,10 +18,12 @@ export class Sellerhome implements OnInit{
   deleteId = signal(0);
   Icon = faTrashCan;
   editIcon = faEdit;
+  allProductServ = inject(Allproduct)
   constructor(private sellerProductServ:SellerAddProduct){}
 
   ngOnInit(): void {
-      this.generateList();
+      //this.generateList();
+      this.productList.set(this.allProductServ.products);
   }
   deleteProduct(id:number){
     this.deleteMessage.set(true);
