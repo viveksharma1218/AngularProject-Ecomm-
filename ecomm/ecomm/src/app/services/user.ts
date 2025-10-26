@@ -1,5 +1,5 @@
 import { Injectable,inject } from '@angular/core';
-import { SellerAuthInterface } from '../interfaces/sellerAuth-interface';
+import { logIn, SellerAuthInterface } from '../interfaces/sellerAuth-interface';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -27,5 +27,17 @@ export class User {
     if(localStorage.getItem('user')){
       this.router.navigate(['/']);
     }
+  }
+
+  userLogin(data:logIn){
+    this.http.get<SellerAuthInterface[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,{observe:'response'}).subscribe(
+      (data)=>{
+        if(data && data.body){
+          //console.log(data.body);
+          localStorage.setItem('user',JSON.stringify(data.body));
+          this.router.navigate(['/']);
+        }
+      }
+    )
   }
 }

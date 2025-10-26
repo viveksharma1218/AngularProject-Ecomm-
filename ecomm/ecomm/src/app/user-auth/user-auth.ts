@@ -43,7 +43,8 @@ export class UserAuth implements OnInit {
       this.userServ.userSignUp(this.signUpForm.value);
     }
     userLogIn(){
-      console.log(this.logInForm.value);
+      //console.log(this.logInForm.value);
+      this.userServ.userLogin(this.logInForm.value);
       
     }
     showLogInForm(){
