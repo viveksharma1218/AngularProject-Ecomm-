@@ -12,7 +12,7 @@
         </div>
         <div class="linksBox">
             <button routerLink="seller-auth">Seller</button>
-            <button>Login</button>
+            <button routerLink="user-auth">Login/SignUp</button>
             <button>Cart</button>
             <button (mouseenter)="showFullWeatherinfo()" (mouseleave)="hideFullWeatherinfo()">
                 {{ location()?.address ?? 'Getting Location...' }}

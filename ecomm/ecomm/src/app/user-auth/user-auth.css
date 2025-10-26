@@ -1,0 +1,59 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.sellerAuthBox{
+    margin-top:50px;
+    margin-left:400px;
+    width:500px;
+}
+h1{
+  color:brown
+}
+.sellerAuthBox button{
+    border:none;
+    background-color: rgb(191, 167, 213);
+    height: 30px;
+    width:80px;
+    margin-top:20px;
+    margin-left:150px;
+    border-radius:5px;
+}
+.sellerAuthBox button:hover{
+    background-color: rgb(163, 128, 195);
+    cursor:pointer;
+}
+.sellerAuthBox button:active{
+    background-color: rgb(191, 167, 213);
+}
+.sellerAuthBox button:disabled{
+  background-color: #ccc; 
+  color: #666; 
+  cursor: not-allowed;
+}
+
+.passwordMismatch{
+  margin-top:-15px;
+  margin-bottom:5px;
+}
+.logInBox h1{
+  color:rgb(77, 185, 77);
+}
+.alreadyRegistered{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:30px;
+}
+.alreadyRegistered p{
+  margin:0;
+}
+.logInButton{
+   width:100px;
+   margin:0!important;
+}
