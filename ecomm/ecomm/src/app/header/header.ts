@@ -9,6 +9,7 @@ import { WeatherService } from '../services/weather';
 import { CommonModule } from '@angular/common';
 import { ProductCat } from '../services/product-cat';
 import { Allproduct } from '../services/allproduct';
+import { isArray } from 'util';
 
 @Component({
   selector: 'ec-header',
@@ -19,8 +20,9 @@ import { Allproduct } from '../services/allproduct';
 export class Header implements OnInit ,OnChanges{
   searchValue :string = '';
   showSearchFilter:boolean = false;
-  headerType = signal<'default' | 'seller'>('default')
+  headerType = signal<'default' | 'seller' | 'user'>('default')
   sellerName:string = 'Profile';
+  userName:string= 'Profile';
   allProducts: product[] | undefined;
   filterProducts: product[] | undefined = [];
   router = inject(Router);
@@ -70,7 +72,7 @@ export class Header implements OnInit ,OnChanges{
             // 2. Parse the JSON string.
             let parsedData = JSON.parse(sellerData);
 
-            // 3. Check if the parsed data is an array.
+            // 3. Check if the parsed data is an array.because seller signup and login both are saving inside this
             if (Array.isArray(parsedData) && parsedData.length > 0) {
               // If it's an array, take the first object.
               finalSellerObject = parsedData[0];
@@ -85,6 +87,23 @@ export class Header implements OnInit ,OnChanges{
           this.sellerName = sellerName;
           //console.log(sellerName); // Outputs "Vivek" or undefined
  
+          }
+          else if (localStorage.getItem('user')){
+            this.headerType.set('user');
+            let userData = localStorage.getItem('user');
+            let finalUserObject ;
+            if(userData){
+              let parsedData = JSON.parse(userData);
+              if(Array.isArray(parsedData) && parsedData.length > 0){
+                finalUserObject = parsedData[0];
+              }
+              else{
+                finalUserObject = parsedData;
+              }
+              const userName = finalUserObject?.name;
+              this.userName = userName;
+
+            }
           }
           else{
             //console.log('seller view cannot be initialized');
@@ -205,5 +224,10 @@ export class Header implements OnInit ,OnChanges{
   }
   searchbarfulldetail(id:any){
     this.router.navigate(['detail',id])
+  }
+  userLogout(){
+    localStorage.removeItem('user');
+    this.router.navigate(['/']);
+    this.userName = 'Profile';
   }
 }

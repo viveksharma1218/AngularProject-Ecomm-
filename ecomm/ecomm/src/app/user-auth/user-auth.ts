@@ -19,6 +19,7 @@ export class UserAuth implements OnInit {
   userServ = inject(User);
   constructor(){}
   ngOnInit(): void {
+      this.userServ.isUser();
       this.signUpForm = this.fb.group({
          name:[''],
       email: [''],

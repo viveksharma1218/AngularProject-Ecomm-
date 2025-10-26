@@ -50,6 +50,27 @@
       "email": "user@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
+    },
+    {
+      "id": "a2dd",
+      "name": "user3",
+      "email": "user@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "1b48",
+      "name": "user4@gmail.com",
+      "email": "user@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "ee06",
+      "name": "user5",
+      "email": "user@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     }
   ],
   "products": [

@@ -21,4 +21,11 @@ export class User {
       }
     )
   }
+  // if user try to access userAuth component through url after login or signup
+  // this will redirect to home page
+  isUser(){
+    if(localStorage.getItem('user')){
+      this.router.navigate(['/']);
+    }
+  }
 }
