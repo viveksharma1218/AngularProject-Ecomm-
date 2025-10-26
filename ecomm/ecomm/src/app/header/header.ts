@@ -203,4 +203,7 @@ export class Header implements OnInit ,OnChanges{
   showSecondHeader(){
     this.secondHeader = !this.secondHeader;
   }
+  searchbarfulldetail(id:any){
+    this.router.navigate(['detail',id])
+  }
 }

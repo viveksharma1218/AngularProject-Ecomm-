@@ -236,7 +236,7 @@
 @if(searchValue && showSearchFilter){
     <div class="searchFilter">
     @for(product of filterProducts; track product.id){
-        <p>first {{product.name}}</p>
+        <a (mousedown)="searchbarfulldetail(product.id)"><p>first {{product.name}}</p></a>  
     }
     
 </div>

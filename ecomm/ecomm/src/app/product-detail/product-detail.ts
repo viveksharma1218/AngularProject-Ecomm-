@@ -2,6 +2,7 @@ import { Component,inject,signal,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
+import { map,combineLatest } from 'rxjs';
 
 @Component({
   selector: 'ec-product-detail',
@@ -16,16 +17,31 @@ export class ProductDetail implements OnInit {
   route = inject(ActivatedRoute);
   allProductServ = inject(Allproduct);
   productQuantity:number = 1;
-  ngOnInit(): void {
-      this.route.paramMap.subscribe((param)=>{
-        const productId = param.get('productId');
-        this.productId = productId ? +productId : null;
-      })
-      this.allProductServ.allProducts$.subscribe((data)=>{
-        this.allProduct = data;
-      })
-      this.getProduct(this.productId,this.allProduct)
-  }
+ngOnInit(): void {
+        
+        // 1. Create an Observable that maps route params to the product ID (number)
+        const productId$ = this.route.paramMap.pipe(
+            map(param => {
+                const idString = param.get('productId');
+                return idString ? +idString : null;
+            })
+        );
+
+        // 2. Combine the two streams: ID changes AND Product Data changes
+        combineLatest([
+            productId$,                   // Stream 1: The product ID (number)
+            this.allProductServ.allProducts$ // Stream 2: The full product array
+        ]).subscribe(([productId, productsData]) => {
+            // This block runs ONLY when both productId and productsData have a value.
+            
+            this.productId = productId;
+            this.allProduct = productsData;
+            
+
+                 this.getProduct(this.productId, this.allProduct);
+            
+        });
+    }
   getProduct(id:number | null,products:product[] | undefined){
     products!.forEach((product)=>{
       if(product.id == id){
