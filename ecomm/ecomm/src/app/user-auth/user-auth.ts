@@ -2,6 +2,7 @@ import { Component,inject,OnInit} from '@angular/core';
 import { ReactiveFormsModule,FormBuilder, FormGroup,FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { User } from '../services/user';
 
 @Component({
   selector: 'ec-user-auth',
@@ -15,6 +16,7 @@ export class UserAuth implements OnInit {
   fb = inject(FormBuilder);
   usersignUpVisible:boolean = true;
   userlogInVisible:boolean = false;
+  userServ = inject(User);
   constructor(){}
   ngOnInit(): void {
       this.signUpForm = this.fb.group({
@@ -37,7 +39,7 @@ export class UserAuth implements OnInit {
       //   };
       // });
       // differet approach after applying canActivate Guard
-      
+      this.userServ.userSignUp(this.signUpForm.value);
     }
     userLogIn(){
       console.log(this.logInForm.value);
