@@ -1,5 +1,5 @@
 import { Component,inject,OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { product } from '../interfaces/sellerAuth-interface';
 import { SellerAddProduct } from '../services/seller-add-product';
 import { combineLatest, tap,switchMap } from 'rxjs';
@@ -16,6 +16,7 @@ export class Searchbar implements OnInit{
   allProduct : product[] | undefined = [];
   filterProducts : product[] | undefined = [];
 private route = inject(ActivatedRoute);
+private router = inject(Router)
 private productServ = inject(SellerAddProduct);
 private allProductServ = inject(Allproduct);
 constructor(){}
@@ -61,7 +62,9 @@ constructor(){}
   // 🔑 We no longer need separate getAllProducts and getFilterData methods 
   // as the logic is now encapsulated in the ngOnInit Observable chain.
     
-
+  getProductDetail(id:number){
+    this.router.navigate(['/detail',id])
+  }
 
 
   }

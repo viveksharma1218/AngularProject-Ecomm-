@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin:20px 0;
+    width:45%;
+    height:570px;
+}
+.firstBox{
+width:100%;
+height:50%;
+background-color: aqua;
+border-radius: 10px;
+overflow: hidden;
+margin:0;
+}
+.firstBox img{
+    width:100%;
+}
+.secondBox{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.secondBox p {
+    margin:0;
+}
+.thirdBox{
+    margin:10px 0 ;
+    display: flex;
+    gap:15px;
+}
+.colorBox{
+    display: flex;
+    gap:10px;
+}
+.color{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    display: inline-block;
+}

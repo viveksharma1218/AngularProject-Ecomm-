@@ -7,10 +7,11 @@
             <img src="/3.jpg"  alt="i phone image" class="image">
         </div>
         <div class="Name">{{product.name}}</div>
-        <div class="Price"><strong>Price:</strong>{{product.price}}</div>
-        <div class="Color"><strong>Color:</strong>{{product.color}}</div>
-        <div class="Category"><strong>Category:</strong>{{product.category}}</div>
-        <div class="description"><strong>Description:</strong>{{product.description}}</div>
+        <div class="Price"><strong>Price : </strong>{{product.price}}</div>
+        <div class="Color"><strong>Color : </strong>{{product.color}}</div>
+        <div class="Category"><strong>Category : </strong>{{product.category}}</div>
+        <div class="description"><strong>Description : </strong>{{product.description}}</div>
+        <div><button (click)="getProductDetail(product.id)" class="btn btn-primary">Buy Now</button></div>
     </div>
     }
    

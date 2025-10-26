@@ -1,1 +1,27 @@
-<p>product-detail works!</p>
+<!-- <p>product-detail works!</p>{{productId}} -->
+<!-- {{product}} -->
+<div class="container">
+    <div class="firstBox">
+        <img src="./1.jpg">
+    </div>
+    <div class="secondBox">
+        <p>Product Name : {{product.name}}</p>
+        <p>Product Id : {{product.id}}</p>
+        <p>Category : {{product.category}}</p>
+        <div class="colorBox">
+             <p>Color : </p>
+             <div class="color" [style.backgroundColor]="product.color"></div>
+             <p> {{product.color}}</p>
+        </div>
+       
+        <p>Price : {{product.price}}</p>
+        <p>Description : {{product.description}}</p>
+    </div>
+    <div class="thirdBox">
+        <button class="btn btn-primary">Buy Now</button>
+        <button class="btn btn-primary">Add to Cart</button>
+        <button class="btn btn-primary" (click)="editQuantiry('add')">+</button>
+        <button class="btn btn-primary">Qty:{{productQuantity}}</button>
+        <button class="btn btn-primary" (click)="editQuantiry('sub')">-</button>
+    </div>
+</div>
