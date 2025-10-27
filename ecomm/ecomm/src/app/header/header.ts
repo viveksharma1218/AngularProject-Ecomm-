@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { ProductCat } from '../services/product-cat';
 import { Allproduct } from '../services/allproduct';
 import { isArray } from 'util';
+import { UserCart } from '../services/user-cart';
+import { parse } from 'path';
 
 @Component({
   selector: 'ec-header',
@@ -43,6 +45,7 @@ export class Header implements OnInit ,OnChanges{
     private weatherService = inject(WeatherService);
     private productCat = inject(ProductCat);
     private AllproductServ = inject(Allproduct);
+    userCartServ = inject(UserCart);
   
     location = signal<Location | null>(null);
     error = signal<string>('');
@@ -126,7 +129,6 @@ export class Header implements OnInit ,OnChanges{
         this.baby=this.productCat.baby;
         this.luxury=this.productCat.luxury;
         this.handmade=this.productCat.handmade;
-       
   }
   ngOnChanges(changes: SimpleChanges): void {
       

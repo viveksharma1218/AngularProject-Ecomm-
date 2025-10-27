@@ -1,27 +1,70 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal, WritableSignal, PLATFORM_ID, inject,computed } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { product } from '../interfaces/sellerAuth-interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class UserCart {
+  // these was error localStorage is not defined so we are using platformid and is platformBrowser
+  // full explainaiton in googledoc angular
+  private platformId = inject(PLATFORM_ID);
   
-  localAddToCart(data:product){
+  // Writable signal for internal use
+  private _cartData: WritableSignal<product[]> = signal([]);
+  
+  // Public read-only signal for components to consume
+  public readonly cartData = this._cartData.asReadonly();
+  
+  // number of products
+  public readonly cartItemCount = computed(() => this._cartData().length);
 
-    let cartData= [];
-    // check if localStorage already have data
-    // we are checking this because when we use localStorage.setItem() if we already have that data new data
-    // will replace the old one that we don't want
-    let alreadyCart = localStorage.getItem('localCart');
-    if(!alreadyCart){
-      localStorage.setItem('localCart',JSON.stringify([data]));
+  constructor() {
+    this.loadInitialCart();
+  }
+
+  // Loads initial data from localStorage (guarded for SSR)
+  private loadInitialCart(): void {
+    if (isPlatformBrowser(this.platformId)) { 
+      const cartItem = localStorage.getItem('localCart');
+      //check if cartitem is not undefined
+      if (cartItem) {
+        try {
+          const parsedData = JSON.parse(cartItem);
+          // .length was not so we used this
+          if (Array.isArray(parsedData)) {
+            this._cartData.set(parsedData); 
+          }
+        } catch (e) {
+          console.error("Error parsing local storage cart data:", e);
+        }
+      }
     }
-    else{
-      //console.log('already have data');
-      cartData = JSON.parse(alreadyCart);
-      cartData.push(data);
-      // now we have both old and new data and we will send this data to localStorage 
-      localStorage.setItem('localCart',JSON.stringify(cartData));
+  }
+
+  // 🔑 FIX: This method must update BOTH localStorage AND the Signal
+  localAddToCart(data: product): void {
+    if (isPlatformBrowser(this.platformId)) { 
+      let cart: product[] = [];
+      let alreadyCart = localStorage.getItem('localCart');
+      // check if alreadyCart is not undefined
+      if (alreadyCart) {
+        try {
+            cart = JSON.parse(alreadyCart);
+        } catch (e) {
+            console.error("Failed to parse existing cart data.");
+            // Fallback to empty array if data is corrupt
+            cart = []; 
+        }
+      }
+      
+      // Add the new item
+      cart.push(data);
+      
+      // 1. Update localStorage
+      localStorage.setItem('localCart', JSON.stringify(cart));
+      
+      // 2. 🔑 CRITICAL FIX: Update the Signal to notify all consumers
+      this._cartData.set(cart);
+      //console.log(`Signal updated. New cart size: ${cart.length}`);
     }
   }
 }
