@@ -19,7 +19,7 @@
     </div>
     <div class="thirdBox">
         <button class="btn btn-primary">Buy Now</button>
-        <button class="btn btn-primary">Add to Cart</button>
+        <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
         <button class="btn btn-primary" (click)="editQuantiry('add')">+</button>
         <button class="btn btn-primary">Qty:{{productQuantity}}</button>
         <button class="btn btn-primary" (click)="editQuantiry('sub')">-</button>

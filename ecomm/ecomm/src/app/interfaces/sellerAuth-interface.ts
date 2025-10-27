@@ -15,7 +15,8 @@ export interface product{
     color:string,
     imageUrl:string,
     description:string,
-    id:number
+    id:number,
+    quantity?:number;
 }
 export interface productWithPic {
   product: product;

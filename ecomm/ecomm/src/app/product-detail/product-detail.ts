@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
 import { map,combineLatest } from 'rxjs';
+import { UserCart } from '../services/user-cart';
 
 @Component({
   selector: 'ec-product-detail',
@@ -17,6 +18,7 @@ export class ProductDetail implements OnInit {
   route = inject(ActivatedRoute);
   allProductServ = inject(Allproduct);
   productQuantity:number = 1;
+  userCartServ = inject(UserCart);
 ngOnInit(): void {
         
         // 1. Create an Observable that maps route params to the product ID (number)
@@ -57,5 +59,15 @@ ngOnInit(): void {
      else if (this.productQuantity < 20 && val == 'add'){
       this.productQuantity++;
      }
+  }
+  addToCart(){
+    if(this.product){
+      this.product.quantity = this.productQuantity;
+      // now we have quantity in product object
+      //console.log(this.product);
+      if(localStorage.getItem('user')){
+        this.userCartServ.localAddToCart(this.product);
+      }
+    }
   }
 }
