@@ -107,3 +107,13 @@
     </div>
 </div>
 }
+@if(invalidUser){
+    <div class="invalidUserPopup">
+    <div>
+        <h3>User Not Found</h3>
+        <p>Check your User Email and Password</p>
+        <button class="btn btn-light" (click)="tryAgain()">Try Again</button>
+    </div>
+
+    </div>  
+}

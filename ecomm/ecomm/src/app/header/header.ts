@@ -229,5 +229,6 @@ export class Header implements OnInit ,OnChanges{
     localStorage.removeItem('user');
     this.router.navigate(['/']);
     this.userName = 'Profile';
+    this.headerType.set('default');
   }
 }

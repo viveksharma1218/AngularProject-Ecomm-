@@ -1,8 +1,9 @@
 import { Component,inject,OnInit} from '@angular/core';
-import { ReactiveFormsModule,FormBuilder, FormGroup,FormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormBuilder, FormGroup,FormsModule, Validators } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { User } from '../services/user';
+import { passwordMatcherValidator } from '../seller/seller-auth/passwordMatcherValidator';
 
 @Component({
   selector: 'ec-user-auth',
@@ -17,18 +18,21 @@ export class UserAuth implements OnInit {
   usersignUpVisible:boolean = true;
   userlogInVisible:boolean = false;
   userServ = inject(User);
+  invalidUser :boolean= false;
   constructor(){}
   ngOnInit(): void {
       this.userServ.isUser();
       this.signUpForm = this.fb.group({
-         name:[''],
-      email: [''],
-      password: [''],
+      name:['', Validators.required],
+      email: ['',Validators.email],
+      password: ['',Validators.required],
       repeatPassword:[''],
-      });
+    },{
+      validators:passwordMatcherValidator
+    });
       this.logInForm = this.fb.group({
-         email: [''],
-        password: [''],
+         email: ['',Validators.required],
+        password: ['',Validators.required],
       })
   }
     userSignUp(){
@@ -45,7 +49,8 @@ export class UserAuth implements OnInit {
     userLogIn(){
       //console.log(this.logInForm.value);
       this.userServ.userLogin(this.logInForm.value);
-      
+      //console.log(this.userServ.invalidUser);
+      this.invalidUser = this.userServ.invalidUser;
     }
     showLogInForm(){
       this.usersignUpVisible = false;
@@ -54,5 +59,8 @@ export class UserAuth implements OnInit {
     showSignUpForm(){
       this.usersignUpVisible = true;
       this.userlogInVisible = false;
+    }
+    tryAgain(){
+      this.invalidUser = false;
     }
 }
