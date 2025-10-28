@@ -19,6 +19,8 @@ export class ProductDetail implements OnInit {
   allProductServ = inject(Allproduct);
   productQuantity:number = 1;
   userCartServ = inject(UserCart);
+  productAlreadyBought = signal(false);
+  popUp1 = signal(false);
 ngOnInit(): void {
         
         // 1. Create an Observable that maps route params to the product ID (number)
@@ -43,6 +45,7 @@ ngOnInit(): void {
                  this.getProduct(this.productId, this.allProduct);
             
         });
+        this.isProductAlreadyBought(this.productId);
     }
   getProduct(id:number | null,products:product[] | undefined){
     products!.forEach((product)=>{
@@ -67,7 +70,34 @@ ngOnInit(): void {
       //console.log(this.product);
       if(localStorage.getItem('user')){
         this.userCartServ.localAddToCart(this.product);
+        this.productAlreadyBought.set(true);
       }
+      this.popUp1.set(true);
+      setTimeout(() => {
+        this.popUp1.set(false);
+      },1500);
     }
+  }
+  isProductAlreadyBought(productid:number | null){
+    // 1. Guard against null ID
+    if (productid == null) {
+        this.productAlreadyBought.set(false);
+        return;
+    }
+    let cartData = localStorage.getItem('localCart');
+    if(cartData){
+       let parsedData:product[] = JSON.parse(cartData);
+       if(Array.isArray(parsedData)){
+        const foundItem = parsedData.find((item) => {
+                    return item.id == productid;
+                });
+        if(foundItem){
+          console.log(`this is product ${foundItem}`)
+          this.productAlreadyBought.set(true);
+        }
+       }
+    }
+ 
+   
   }
 }

@@ -38,3 +38,22 @@ margin:0;
     border-radius: 50%;
     display: inline-block;
 }
+.popUp1{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(36, 27, 27,.2);
+}
+.popUp1 div{
+    position:fixed;
+    top: 35%;
+    left: 35%;
+    height:100px;
+    width:350px;
+    background-color:aqua;
+    justify-items: center;
+    padding-top:2%;
+    border-radius:30px;
+}

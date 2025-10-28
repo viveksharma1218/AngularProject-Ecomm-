@@ -29,7 +29,7 @@ export class Header implements OnInit ,OnChanges{
   filterProducts: product[] | undefined = [];
   router = inject(Router);
   fullWeatherInfo = signal(false);
-  secondHeader:boolean = false;
+  secondHeader = signal(false);
   grocery :string[] = [];
   fashion:string[] = [];
   home:string[] = [];
@@ -222,7 +222,7 @@ export class Header implements OnInit ,OnChanges{
     this.showSearchFilter = false;
   }
   showSecondHeader(){
-    this.secondHeader = !this.secondHeader;
+    this.secondHeader.set(!this.secondHeader());
   }
   searchbarfulldetail(id:any){
     this.router.navigate(['detail',id])

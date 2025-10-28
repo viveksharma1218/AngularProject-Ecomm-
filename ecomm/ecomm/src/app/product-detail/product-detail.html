@@ -19,9 +19,24 @@
     </div>
     <div class="thirdBox">
         <button class="btn btn-primary">Buy Now</button>
-        <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+        @if(productAlreadyBought()){
+            <button class="btn btn-primary">Remove From Cart</button>
+        }
+        @else{
+            <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+        }
+        
         <button class="btn btn-primary" (click)="editQuantiry('add')">+</button>
         <button class="btn btn-primary">Qty:{{productQuantity}}</button>
         <button class="btn btn-primary" (click)="editQuantiry('sub')">-</button>
     </div>
 </div>
+@if(popUp1()){
+    <div class="popUp1">
+        <div>
+            <h3>Product Added to cart</h3>
+        </div>
+    </div>
+}
+    
+
