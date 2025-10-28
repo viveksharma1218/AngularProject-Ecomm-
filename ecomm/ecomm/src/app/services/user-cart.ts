@@ -13,7 +13,7 @@ export class UserCart {
   
   // Public read-only signal for components to consume
   public readonly cartData = this._cartData.asReadonly();
-  
+
   // number of products
   public readonly cartItemCount = computed(() => this._cartData().length);
 
@@ -65,6 +65,22 @@ export class UserCart {
       // 2. 🔑 CRITICAL FIX: Update the Signal to notify all consumers
       this._cartData.set(cart);
       //console.log(`Signal updated. New cart size: ${cart.length}`);
+    }
+  }
+  localRemoveFromCart(productId:number | null){
+    if(!productId){
+      return;
+    }
+    let cartData = localStorage.getItem('localCart');
+    if(cartData){
+      let parsedData:product[] = JSON.parse(cartData);
+      if(Array.isArray(parsedData)){
+        let newCartData = parsedData.filter((item:product)=>{
+          item.id !== productId
+        })
+        localStorage.setItem('localCart',JSON.stringify(newCartData))
+        this._cartData.set(newCartData);
+      }
     }
   }
 }

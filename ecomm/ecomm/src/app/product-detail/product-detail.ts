@@ -21,6 +21,7 @@ export class ProductDetail implements OnInit {
   userCartServ = inject(UserCart);
   productAlreadyBought = signal(false);
   popUp1 = signal(false);
+  popUp2 = signal(false);
 ngOnInit(): void {
         
         // 1. Create an Observable that maps route params to the product ID (number)
@@ -92,12 +93,20 @@ ngOnInit(): void {
                     return item.id == productid;
                 });
         if(foundItem){
-          console.log(`this is product ${foundItem}`)
+          //console.log(`this is product ${foundItem}`)
           this.productAlreadyBought.set(true);
         }
        }
     }
- 
    
+   
+  }
+   removeFromCart(productId:number | null){
+    this.userCartServ.localRemoveFromCart(this.productId)
+    this.productAlreadyBought.set(false);
+    this.popUp2.set(true);
+    setTimeout(() => {
+      this.popUp2.set(false)
+    }, 1500);
   }
 }
