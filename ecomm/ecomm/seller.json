@@ -8129,5 +8129,43 @@
       "description": "Set of handmade wooden spoons and spatulas",
       "id": "1745"
     }
+  ],
+  "cart": [
+    {
+      "id": "884d",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": "a3f6"
+    },
+    {
+      "id": "9e68",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": "a3f6"
+    },
+    {
+      "id": "4b4c",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": "a3f6"
+    }
   ]
 }

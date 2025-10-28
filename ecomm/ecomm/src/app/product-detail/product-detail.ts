@@ -1,9 +1,10 @@
 import { Component,inject,signal,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { product } from '../interfaces/sellerAuth-interface';
+import {cartData, product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
 import { map,combineLatest } from 'rxjs';
 import { UserCart } from '../services/user-cart';
+import { isString } from 'util';
 
 @Component({
   selector: 'ec-product-detail',
@@ -22,6 +23,7 @@ export class ProductDetail implements OnInit {
   productAlreadyBought = signal(false);
   popUp1 = signal(false);
   popUp2 = signal(false);
+  popUp3 = signal(false);
 ngOnInit(): void {
         
         // 1. Create an Observable that maps route params to the product ID (number)
@@ -69,14 +71,43 @@ ngOnInit(): void {
       this.product.quantity = this.productQuantity;
       // now we have quantity in product object
       //console.log(this.product);
-      if(localStorage.getItem('user')){
+      // we are making this condition if user is not logged in 
+      // else statment will handle if user is logged in 
+      if(!localStorage.getItem('user')){
         this.userCartServ.localAddToCart(this.product);
         this.productAlreadyBought.set(true);
-      }
-      this.popUp1.set(true);
+         this.popUp1.set(true);
       setTimeout(() => {
         this.popUp1.set(false);
       },1500);
+      }
+      else{
+        //console.log('user is logged in ')
+        // let's get user data first
+        let userData = localStorage.getItem('user');
+        if(userData){
+          let parsedUserData = JSON.parse(userData)[0].id;
+          //console.log(typeof(parsedUserData));
+          let cartData:cartData = {
+            ...this.product,
+            productId:this.productId
+            ,userId:parsedUserData
+          }
+          // now we will delete id property because json will give unique id automatically.
+          // for this we made this property optional.
+          delete cartData.id;
+          this.userCartServ.addToCart(cartData).subscribe((result)=>{
+            if(result){
+              this.productAlreadyBought.set(true);
+              this.popUp3.set(true);
+              setTimeout(() => {
+                this.popUp3.set(false);
+              }, 1500);
+            }
+          })
+        }
+      }
+     
     }
   }
   isProductAlreadyBought(productid:number | null){
