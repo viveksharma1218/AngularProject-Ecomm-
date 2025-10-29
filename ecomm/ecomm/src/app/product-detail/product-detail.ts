@@ -24,6 +24,7 @@ export class ProductDetail implements OnInit {
   popUp1 = signal(false);
   popUp2 = signal(false);
   popUp3 = signal(false);
+  popUp4 = signal(false);
   ngOnInit(): void {
         
         // 1. Create an Observable that maps route params to the product ID (number)
@@ -68,25 +69,24 @@ export class ProductDetail implements OnInit {
      }
   }
   addToCart(){
+  let userData = localStorage.getItem('user');
     if(this.product){
-      this.product.quantity = this.productQuantity;
-      // now we have quantity in product object
-      //console.log(this.product);
-      // we are making this condition if user is not logged in 
-      // else statment will handle if user is logged in 
-      if(!localStorage.getItem('user')){
-        this.userCartServ.localAddToCart(this.product);
-        this.productAlreadyBought.set(true);
-         this.popUp1.set(true);
-      setTimeout(() => {
-        this.popUp1.set(false);
-      },1500);
+            this.product.quantity = this.productQuantity;
+            // now we have quantity in product object
+            //console.log(this.product);
+            // we are making this condition if user is not logged in 
+            // else statment will handle if user is logged in 
+      if(!userData){
+          this.userCartServ.localAddToCart(this.product);
+          this.productAlreadyBought.set(true);
+          this.popUp1.set(true);
+          setTimeout(() => {
+          this.popUp1.set(false);
+          },1500);
       }
       else{
         //console.log('user is logged in ')
         // let's get user data first
-        let userData = localStorage.getItem('user');
-        if(userData){
           let parsedUserData = JSON.parse(userData)[0].id;
           //console.log(typeof(parsedUserData));
           let cartData:cartData = {
@@ -97,16 +97,12 @@ export class ProductDetail implements OnInit {
           // now we will delete id property because json will give unique id automatically.
           // for this we made this property optional.
           delete cartData.id;
-          this.userCartServ.addToCart(cartData).subscribe((result)=>{
-            if(result){
+          this.userCartServ.addToCart(cartData);
               this.productAlreadyBought.set(true);
               this.popUp3.set(true);
               setTimeout(() => {
                 this.popUp3.set(false);
               }, 1500);
-            }
-          })
-        }
       }
      
     }
@@ -134,10 +130,18 @@ export class ProductDetail implements OnInit {
     // check if product is already added in json data .
     let user = localStorage.getItem('user');
     if(user){
-        let userId = JSON.parse(user)[0].id;
+      let parsedUser = JSON.parse(user);
+      let userId;
+        if(Array.isArray(parsedUser)){
+            userId = parsedUser[0].id;
+        }
+       
+        //console.log('this is user id',userId)
         this.userCartServ.getCartList(userId);
         let cartData = this.userCartServ.cartData();
-        let matchedProduct = cartData.filter((product:product)=>{
+        //console.log('this is cart data',cartData)
+        if(cartData.length){
+           let matchedProduct = cartData.filter((product:product)=>{
           product.productId = this.productId
         })
          setTimeout(() => {
@@ -146,6 +150,8 @@ export class ProductDetail implements OnInit {
           this.productAlreadyBought.set(true);
         }
          }, 100);
+        }
+       
        
        }
     
@@ -153,11 +159,50 @@ export class ProductDetail implements OnInit {
    
   }
    removeFromCart(productId:number | null){
-    this.userCartServ.localRemoveFromCart(this.productId)
+    // there are two situations 
+    // first if product is inside local Storage
+    // Second if product is inside json server
+
+    //first: without login products will be saved inside localStorage
+    if(!localStorage.getItem('user')){
+       this.userCartServ.localRemoveFromCart(this.productId)
     this.productAlreadyBought.set(false);
     this.popUp2.set(true);
     setTimeout(() => {
       this.popUp2.set(false)
     }, 1500);
+    }
+    // Second: when products are in json server
+    else{
+      console.log('this is product id',this.productId);
+      let user = localStorage.getItem('user');
+      let userId;
+      if(user){
+        let parsedUser = JSON.parse(user);
+        userId = parsedUser[0].id;
+      }
+      console.log('this is user id ',userId);
+      console.log('this is product is ', this.productId);
+      console.log(typeof(userId));
+      this.userCartServ.getCartList(userId);
+      let cartData = this.userCartServ.cartData();
+      console.log(cartData);
+      let newcartData = cartData.filter((product)=>{
+        console.log('this is cart product id',product.productId);
+        return product.productId == this.productId;
+      })
+      let id = newcartData[0].id
+      console.log(productId);
+      if(productId){
+      this.userCartServ.removeFromCart(id);
+       this.productAlreadyBought.set(false);
+        this.popUp2.set(true);
+        setTimeout(() => {
+          this.popUp2.set(false)
+        }, 1500);
+      }
+
+    }
+   
   }
 }

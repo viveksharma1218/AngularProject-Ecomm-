@@ -24,21 +24,38 @@ export class UserCart {
   }
 
   // Loads initial data from localStorage (guarded for SSR)
-  private loadInitialCart(): void {
+   loadInitialCart(): void {
     if (isPlatformBrowser(this.platformId)) { 
-      const cartItem = localStorage.getItem('localCart');
-      //check if cartitem is not undefined
-      if (cartItem) {
-        try {
-          const parsedData = JSON.parse(cartItem);
-          // .length was not so we used this
-          if (Array.isArray(parsedData)) {
-            this._cartData.set(parsedData); 
+      //here we have two situation 
+      // first: if user is not logged in than products can be found in localStorage
+      // Second: if user is logged in than products can be found in json server.
+      let user = localStorage.getItem('user');
+      if(!user){
+          const cartItem = localStorage.getItem('localCart');
+          //check if cartitem is not undefined
+          if (cartItem) {
+            try {
+              const parsedData = JSON.parse(cartItem);
+              // .length was not so we used this
+              if (Array.isArray(parsedData)) {
+                this._cartData.set(parsedData); 
+              }
+            } catch (e) {
+              console.error("Error parsing local storage cart data:", e);
+            }
           }
-        } catch (e) {
-          console.error("Error parsing local storage cart data:", e);
+      }
+      else{
+        if(user){
+              let parsedUser = JSON.parse(user);
+              if(Array.isArray(parsedUser)){
+                let userId = parsedUser[0].id;
+              this.getCartList(userId)
+              }
+              
         }
       }
+        
     }
   }
 
@@ -86,7 +103,20 @@ export class UserCart {
     }
   }
   addToCart(cartData:cartData){
-    return this.http.post('http://localhost:3000/cart',cartData)
+    return this.http.post('http://localhost:3000/cart',cartData,{observe:'response'}).subscribe(
+      (response)=>{
+        console.log(response)
+           if(response.status === 201){
+
+            let user = localStorage.getItem('user');
+            if(user){
+              let parsedUser = JSON.parse(user);
+              let userId = parsedUser[0].id;
+              this.getCartList(userId)
+            }
+           }
+      }
+    )
   }
   getCartList(userId:string){
     return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
@@ -96,4 +126,19 @@ export class UserCart {
         }
       })
   }
+  removeFromCart(cartId:number){
+    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe(
+      (response)=>{
+           if(response.status === 200 || response.status === 204){
+            let user = localStorage.getItem('user');
+            if(user){
+              let parsedUser = JSON.parse(user);
+              let userId = parsedUser[0].id;
+              this.getCartList(userId)
+            }
+           }
+      }
+    )
+  }
+
 }

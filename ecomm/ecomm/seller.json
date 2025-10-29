@@ -85,6 +85,27 @@
       "email": "user8@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
+    },
+    {
+      "id": "8e1d",
+      "name": "user10",
+      "email": "user10@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "c8e9",
+      "name": "user11",
+      "email": "user11@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "c4e4",
+      "name": "user12",
+      "email": "user12@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     }
   ],
   "products": [
@@ -8146,155 +8167,88 @@
   ],
   "cart": [
     {
-      "id": "8de1",
+      "id": "71e7",
       "name": "Zenith Pro Laptop 14-inch",
       "price": 1199.99,
       "category": "Electronics",
       "color": "Space Gray",
       "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
       "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 4,
-      "productId": 1,
-      "userId": "a3f6"
-    },
-    {
-      "id": "d0b0",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 9,
-      "productId": "2"
-    },
-    {
-      "id": "a8ba",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 3,
-      "productId": "2"
-    },
-    {
-      "id": "fa56",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 4,
-      "productId": "2"
-    },
-    {
-      "id": "34c3",
-      "name": "Cologne Spray",
-      "price": "75",
-      "category": "Fragrances",
-      "color": "Clear",
-      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
-      "description": "Fresh woody cologne for men",
-      "quantity": 3,
-      "productId": "1232"
-    },
-    {
-      "id": "c355",
-      "name": "Modern Leather Sofa",
-      "price": "1899",
-      "category": "Furniture",
-      "color": "Brown",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
-      "description": "Luxurious 3-seater leather sofa with premium comfort",
       "quantity": 5,
-      "productId": "1001"
+      "userId": "a3f6",
+      "productId": "1"
     },
     {
-      "id": "0ebb",
-      "name": "4K Quantum LED 55-inch TV",
-      "price": 799.99,
-      "category": "Electronics",
+      "id": "c9a0",
+      "name": "Concealer Palette",
+      "price": "32",
+      "category": "Makeup",
+      "color": "Multicolor",
+      "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+      "description": "6-shade cream concealer palette",
+      "quantity": 5,
+      "userId": "a3f6",
+      "productId": "1212"
+    },
+    {
+      "id": "d028",
+      "name": "Organic Face Oil",
+      "price": "38",
+      "category": "Organic & Natural Products",
+      "color": "Amber",
+      "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+      "description": "100% organic rosehip facial oil",
+      "quantity": 7,
+      "userId": "a3f6",
+      "productId": "1271"
+    },
+    {
+      "id": "09be",
+      "name": "Designer Silk Dress",
+      "price": "1200",
+      "category": "Designer Fashion",
       "color": "Black",
-      "imageUrl": "https://placehold.co/600x400/000000/ffffff?text=4K+QLED+TV",
-      "description": "Stunning color depth and contrast with built-in smart capabilities.",
-      "quantity": 3,
-      "userId": "a3f6",
-      "productId": "4"
-    },
-    {
-      "id": "e76c",
-      "name": "Wireless Mechanical Keyboard",
-      "price": 95,
-      "category": "Electronics",
-      "color": "White",
-      "imageUrl": "https://placehold.co/600x400/D97706/ffffff?text=Mechanical+KB",
-      "description": "Tactile key switches with customizable RGB backlighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
+      "description": "Evening gown from luxury fashion house",
       "quantity": 4,
       "userId": "a3f6",
-      "productId": "6"
+      "productId": "1646"
     },
     {
-      "id": "695e",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 12,
-      "userId": "a3f6",
-      "productId": "2"
-    },
-    {
-      "id": "f298",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 1,
-      "productId": 2,
-      "userId": "a3f6"
-    },
-    {
-      "id": "629e",
-      "name": "Pocket Power Bank 10000mAh",
-      "price": 35.95,
-      "category": "Electronics",
-      "color": "Matte Black",
-      "imageUrl": "https://placehold.co/600x400/5B21B6/ffffff?text=Power+Bank",
-      "description": "Compact and fast charging external battery for all mobile devices.",
-      "quantity": 3,
-      "productId": 5,
-      "userId": "1b48"
-    },
-    {
-      "id": "fb9b",
-      "name": "Seedless Grapes",
-      "price": "6.99",
-      "category": "Fresh Produce",
-      "color": "Purple",
-      "imageUrl": "/images/grapes.jpg",
-      "description": "Sweet seedless purple grapes",
-      "quantity": 4,
-      "productId": 109,
-      "userId": "1b48"
-    },
-    {
-      "id": "9cfb",
+      "id": "61c8",
       "name": "Zenith Pro Laptop 14-inch",
       "price": 1199.99,
       "category": "Electronics",
       "color": "Space Gray",
       "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
       "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 3,
-      "productId": 1,
-      "userId": "a3f6"
+      "quantity": 4,
+      "userId": "c4e4",
+      "productId": "1"
+    },
+    {
+      "id": "feec",
+      "name": "Retinol Night Cream",
+      "price": "48",
+      "category": "Skincare",
+      "color": "White",
+      "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+      "description": "Anti-aging retinol cream for overnight renewal",
+      "quantity": 2,
+      "userId": "c4e4",
+      "productId": "1202"
+    },
+    {
+      "id": "5576",
+      "name": "Volleyball",
+      "price": "35",
+      "category": "Team Sports",
+      "color": "Blue/White",
+      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
+      "description": "Indoor/outdoor volleyball",
+      "quantity": 1,
+      "userId": "c4e4",
+      "productId": "1373"
     }
   ]
 }

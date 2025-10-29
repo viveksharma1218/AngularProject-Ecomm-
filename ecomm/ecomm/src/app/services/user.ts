@@ -1,4 +1,4 @@
-import { Injectable,inject } from '@angular/core';
+import { Injectable,inject,signal } from '@angular/core';
 import { logIn, product, SellerAuthInterface,cartData } from '../interfaces/sellerAuth-interface';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -9,6 +9,7 @@ import { UserCart } from './user-cart';
   providedIn: 'root'
 })
 export class User {
+  userId = signal('')
   router = inject(Router)
   http = inject(HttpClient)
   invalidUser:boolean = false;
@@ -20,7 +21,10 @@ export class User {
       (data)=>{
         if(data){
           localStorage.setItem('user',JSON.stringify(data.body));
-           this.localCartToJson();
+          setTimeout(() => {
+              this.localCartToJson(); 
+          }, 1500);
+        
           this.router.navigate(['']);
         }
       }
@@ -80,9 +84,7 @@ export class User {
               // if there are 5 products than we are making 5 requests 
               // so we made delay for each request
               setTimeout(() => {
-                this.userCartServ.addToCart(cartData).subscribe((data)=>{
-                  console.log(data);
-                });
+                this.userCartServ.addToCart(cartData);
               }, 500);
             
               
