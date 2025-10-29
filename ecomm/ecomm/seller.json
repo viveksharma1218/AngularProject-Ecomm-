@@ -71,6 +71,20 @@
       "email": "user@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
+    },
+    {
+      "id": "8bf9",
+      "name": "user7",
+      "email": "user7@gmai.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "3d35",
+      "name": "user8",
+      "email": "user8@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     }
   ],
   "products": [
@@ -8132,40 +8146,118 @@
   ],
   "cart": [
     {
-      "id": "884d",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
+      "id": "9cc3",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
       "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 1,
-      "productId": 2,
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
+      "quantity": 4,
+      "productId": 1,
       "userId": "a3f6"
     },
     {
-      "id": "9e68",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
+      "id": "e950",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
       "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 1,
-      "productId": 2,
-      "userId": "a3f6"
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
+      "quantity": 6,
+      "productId": "1"
     },
     {
-      "id": "4b4c",
+      "id": "ee51",
+      "name": "Weighted Blanket",
+      "price": "95",
+      "category": "Wellness & Relaxation",
+      "color": "Gray",
+      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      "description": "15lb weighted blanket for anxiety relief",
+      "quantity": 5,
+      "productId": "1322"
+    },
+    {
+      "id": "43fa",
+      "name": "Bedtime Stories",
+      "price": "15",
+      "category": "Children's Books",
+      "color": "Blue",
+      "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+      "description": "Collection of bedtime stories",
+      "quantity": 9,
+      "productId": "1532"
+    },
+    {
+      "id": "6612",
       "name": "Aura Noise-Cancelling Headphones",
       "price": 249.5,
       "category": "Electronics",
       "color": "Midnight Blue",
       "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
       "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 1,
-      "productId": 2,
-      "userId": "a3f6"
+      "quantity": 5,
+      "productId": "2"
+    },
+    {
+      "id": "edbe",
+      "name": "Silver Necklace",
+      "price": "85",
+      "category": "Jewelry & Watches",
+      "color": "Silver",
+      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
+      "description": "Sterling silver pendant necklace",
+      "quantity": 5,
+      "productId": "1151"
+    },
+    {
+      "id": "cd5a",
+      "name": "Non-Stick Cookware Set",
+      "price": "299",
+      "category": "Kitchen & Dining",
+      "color": "Black",
+      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      "description": "10-piece non-stick cookware set",
+      "quantity": 4,
+      "productId": "1021"
+    },
+    {
+      "id": "9d3b",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
+      "category": "Electronics",
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
+      "quantity": 5,
+      "productId": "1",
+      "userId": "3d35"
+    },
+    {
+      "id": "012d",
+      "name": "Liquid Foundation",
+      "price": "42",
+      "category": "Makeup",
+      "color": "Beige",
+      "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
+      "description": "Buildable coverage liquid foundation",
+      "quantity": 4,
+      "productId": "1211",
+      "userId": "3d35"
+    },
+    {
+      "id": "0e09",
+      "name": "Men's Running Shoes",
+      "price": "89",
+      "category": "Shoes & Footwear",
+      "color": "Black",
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "description": "Lightweight running shoes for men",
+      "quantity": 4,
+      "productId": "1131",
+      "userId": "3d35"
     }
   ]
 }

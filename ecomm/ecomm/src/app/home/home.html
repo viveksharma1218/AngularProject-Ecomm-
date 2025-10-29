@@ -1,24 +1,14 @@
 <div id="carouselExample" class="carousel slide">
  
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="i.jpg" class="d-block w-100 crouselImage" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h4>Check latest I Phone</h4>
-          <p><strong>Price: </strong> 1500
-               <strong> Color: </strong> White
-               <button (click)="getproductDetail(1)">Buy</button>
-            </p>
-      </div>
-    </div>
-    @for (product of productWithPic; track $index) {
-    <div class="carousel-item">
-        <img [src]="product.picPath"  class="d-block w-100 crouselImage" alt="this is product image">
+    @for (product of popularProducts; track $index) {
+    <div class="carousel-item" [class.active]="$index === 0">
+        <img src="./3.jpg"  class="d-block w-100 crouselImage"  alt="this is product image">
         <div class="carousel-caption d-none d-md-block">
-            <h4>{{product.product.name}}</h4>
-            <p><strong>Price: </strong>{{product.product.price}}
-               <strong> Color: </strong>{{product.product.color}} 
-               <button (click)="getproductDetail(product.product.id)">Buy</button>
+            <h4>{{product.name}}</h4>
+            <p><strong>Price: </strong>{{product.price}}
+               <strong> Color: </strong>{{product.color}} 
+               <button (click)="getproductDetail(product.id)">Buy</button>
             </p>
         </div>
     </div>
@@ -69,7 +59,7 @@
         <div class="box" >
             
         <div class="Image">
-            <img src="/3.jpg"  alt="i phone image" class="image">
+            <img src="./3.jpg"  alt="i phone image" class="image">
         </div>
         <div class="Name">{{product.name}}</div>
         <div class="Price"><strong>Price:</strong>{{product.price}}</div>
