@@ -1,0 +1,58 @@
+h3{
+    padding-left: 35%;
+}
+.container{
+    width:100% !important;
+    height:530px;
+    margin:10px;
+    display: flex;
+    gap:2%;
+    overflow: hidden;
+
+}
+    .Box1{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    overflow:scroll;
+    }
+    .Box1::-webkit-scrollbar{
+        display: none;
+    }
+    .box1{
+        width:100%;
+        height:220px;
+        display: flex;
+        gap: 2%;
+    }
+    .box1 .image{
+        flex:1;
+        height: 100%;
+    }
+    .box1 .image img{
+        height: 100%;
+    }
+    .box1 .info{
+        flex:2.5;
+        height:100%;
+    }
+    .box1 .info p {
+        margin:5px;
+    }
+    .box1 button{
+        margin-left:60%;
+    }
+
+    .Box2{
+    width:28%;
+    height: 100%;
+    }
+    .Box2 h4{
+        padding-left:30%;
+        margin-bottom: 35px;
+    }
+    .Box2 h5{
+        margin:20px 0;
+    }
