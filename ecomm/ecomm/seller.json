@@ -39,36 +39,36 @@
     },
     {
       "id": "9f17",
-      "name": "user1",
-      "email": "",
-      "password": "",
-      "repeatPassword": ""
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     },
     {
       "id": "be68",
       "name": "user1",
-      "email": "user@gmail.com",
+      "email": "user1@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     },
     {
       "id": "a2dd",
       "name": "user3",
-      "email": "user@gmail.com",
+      "email": "user3@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     },
     {
       "id": "1b48",
-      "name": "user4@gmail.com",
-      "email": "user@gmail.com",
+      "name": "user4",
+      "email": "user4@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     },
     {
       "id": "ee06",
       "name": "user5",
-      "email": "user@gmail.com",
+      "email": "user5@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
     },
@@ -8146,7 +8146,7 @@
   ],
   "cart": [
     {
-      "id": "9cc3",
+      "id": "8de1",
       "name": "Zenith Pro Laptop 14-inch",
       "price": 1199.99,
       "category": "Electronics",
@@ -8158,106 +8158,143 @@
       "userId": "a3f6"
     },
     {
-      "id": "e950",
-      "name": "Zenith Pro Laptop 14-inch",
-      "price": 1199.99,
-      "category": "Electronics",
-      "color": "Space Gray",
-      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
-      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 6,
-      "productId": "1"
-    },
-    {
-      "id": "ee51",
-      "name": "Weighted Blanket",
-      "price": "95",
-      "category": "Wellness & Relaxation",
-      "color": "Gray",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
-      "description": "15lb weighted blanket for anxiety relief",
-      "quantity": 5,
-      "productId": "1322"
-    },
-    {
-      "id": "43fa",
-      "name": "Bedtime Stories",
-      "price": "15",
-      "category": "Children's Books",
-      "color": "Blue",
-      "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
-      "description": "Collection of bedtime stories",
-      "quantity": 9,
-      "productId": "1532"
-    },
-    {
-      "id": "6612",
+      "id": "d0b0",
       "name": "Aura Noise-Cancelling Headphones",
       "price": 249.5,
       "category": "Electronics",
       "color": "Midnight Blue",
       "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
       "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 5,
+      "quantity": 9,
       "productId": "2"
     },
     {
-      "id": "edbe",
-      "name": "Silver Necklace",
-      "price": "85",
-      "category": "Jewelry & Watches",
-      "color": "Silver",
-      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400",
-      "description": "Sterling silver pendant necklace",
-      "quantity": 5,
-      "productId": "1151"
+      "id": "a8ba",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 3,
+      "productId": "2"
     },
     {
-      "id": "cd5a",
-      "name": "Non-Stick Cookware Set",
-      "price": "299",
-      "category": "Kitchen & Dining",
-      "color": "Black",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
-      "description": "10-piece non-stick cookware set",
+      "id": "fa56",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
       "quantity": 4,
-      "productId": "1021"
+      "productId": "2"
     },
     {
-      "id": "9d3b",
+      "id": "34c3",
+      "name": "Cologne Spray",
+      "price": "75",
+      "category": "Fragrances",
+      "color": "Clear",
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+      "description": "Fresh woody cologne for men",
+      "quantity": 3,
+      "productId": "1232"
+    },
+    {
+      "id": "c355",
+      "name": "Modern Leather Sofa",
+      "price": "1899",
+      "category": "Furniture",
+      "color": "Brown",
+      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      "description": "Luxurious 3-seater leather sofa with premium comfort",
+      "quantity": 5,
+      "productId": "1001"
+    },
+    {
+      "id": "0ebb",
+      "name": "4K Quantum LED 55-inch TV",
+      "price": 799.99,
+      "category": "Electronics",
+      "color": "Black",
+      "imageUrl": "https://placehold.co/600x400/000000/ffffff?text=4K+QLED+TV",
+      "description": "Stunning color depth and contrast with built-in smart capabilities.",
+      "quantity": 3,
+      "userId": "a3f6",
+      "productId": "4"
+    },
+    {
+      "id": "e76c",
+      "name": "Wireless Mechanical Keyboard",
+      "price": 95,
+      "category": "Electronics",
+      "color": "White",
+      "imageUrl": "https://placehold.co/600x400/D97706/ffffff?text=Mechanical+KB",
+      "description": "Tactile key switches with customizable RGB backlighting.",
+      "quantity": 4,
+      "userId": "a3f6",
+      "productId": "6"
+    },
+    {
+      "id": "695e",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 12,
+      "userId": "a3f6",
+      "productId": "2"
+    },
+    {
+      "id": "f298",
+      "name": "Aura Noise-Cancelling Headphones",
+      "price": 249.5,
+      "category": "Electronics",
+      "color": "Midnight Blue",
+      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
+      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": "a3f6"
+    },
+    {
+      "id": "629e",
+      "name": "Pocket Power Bank 10000mAh",
+      "price": 35.95,
+      "category": "Electronics",
+      "color": "Matte Black",
+      "imageUrl": "https://placehold.co/600x400/5B21B6/ffffff?text=Power+Bank",
+      "description": "Compact and fast charging external battery for all mobile devices.",
+      "quantity": 3,
+      "productId": 5,
+      "userId": "1b48"
+    },
+    {
+      "id": "fb9b",
+      "name": "Seedless Grapes",
+      "price": "6.99",
+      "category": "Fresh Produce",
+      "color": "Purple",
+      "imageUrl": "/images/grapes.jpg",
+      "description": "Sweet seedless purple grapes",
+      "quantity": 4,
+      "productId": 109,
+      "userId": "1b48"
+    },
+    {
+      "id": "9cfb",
       "name": "Zenith Pro Laptop 14-inch",
       "price": 1199.99,
       "category": "Electronics",
       "color": "Space Gray",
       "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
       "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 5,
-      "productId": "1",
-      "userId": "3d35"
-    },
-    {
-      "id": "012d",
-      "name": "Liquid Foundation",
-      "price": "42",
-      "category": "Makeup",
-      "color": "Beige",
-      "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
-      "description": "Buildable coverage liquid foundation",
-      "quantity": 4,
-      "productId": "1211",
-      "userId": "3d35"
-    },
-    {
-      "id": "0e09",
-      "name": "Men's Running Shoes",
-      "price": "89",
-      "category": "Shoes & Footwear",
-      "color": "Black",
-      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
-      "description": "Lightweight running shoes for men",
-      "quantity": 4,
-      "productId": "1131",
-      "userId": "3d35"
+      "quantity": 3,
+      "productId": 1,
+      "userId": "a3f6"
     }
   ]
 }

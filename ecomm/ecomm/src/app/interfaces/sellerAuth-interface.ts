@@ -15,8 +15,10 @@ export interface product{
     color:string,
     imageUrl:string,
     description:string,
+    productId:number | null,
     id:number,
     quantity?:number;
+
 }
 export interface productWithPic {
   product: product;

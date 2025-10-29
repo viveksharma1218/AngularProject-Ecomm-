@@ -232,5 +232,6 @@ export class Header implements OnInit ,OnChanges{
     this.router.navigate(['/']);
     this.userName = 'Profile';
     this.headerType.set('default');
+    this.userCartServ._cartData.set([]);
   }
 }

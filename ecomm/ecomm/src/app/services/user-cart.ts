@@ -10,7 +10,7 @@ export class UserCart {
   private platformId = inject(PLATFORM_ID);
   
   // Writable signal for internal use
-  private _cartData: WritableSignal<product[]> = signal([]);
+  public _cartData: WritableSignal<product[]> = signal([]);
   
   // Public read-only signal for components to consume
   public readonly cartData = this._cartData.asReadonly();
@@ -87,5 +87,13 @@ export class UserCart {
   }
   addToCart(cartData:cartData){
     return this.http.post('http://localhost:3000/cart',cartData)
+  }
+  getCartList(userId:string){
+    return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
+      {observe:'response'}).subscribe((result)=>{
+        if(result && result.body){
+          this._cartData.set(result.body);
+        }
+      })
   }
 }

@@ -58,17 +58,22 @@ export class User {
         //console.log('localCartToJson called');
         let localData = localStorage.getItem('localCart');
         let user = localStorage.getItem('user');
+        let parsedLocalData:product ;
+        let parsedUser:any;
+        let userId:any;
         if(localData && user){
-          let parsedLocalData:product = JSON.parse(localData);
-          let parsedUser = JSON.parse(user);
-          let userId = parsedUser.id;
+          parsedLocalData = JSON.parse(localData);
+          parsedUser = JSON.parse(user);
+          
   
-          if(Array.isArray(parsedLocalData)){
+          if(Array.isArray(parsedLocalData) && Array.isArray(parsedUser)){
+            userId = parsedUser[0].id;
             parsedLocalData.forEach((product:product,index)=>{
               let cartData:cartData = {
                 ...product,
-                productId:product.id,
                 userId:userId,
+                productId:product.id
+                
               }
               delete cartData.id;
               // for each product we are making request 
@@ -88,5 +93,9 @@ export class User {
               }
   
         }
+        setTimeout(() => {
+          this.userCartServ.getCartList(userId);
+        }, 2000);
+        
       }
 }
