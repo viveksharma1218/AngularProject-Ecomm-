@@ -11,7 +11,7 @@
         <div class="Color"><strong>Color : </strong>{{product.color}}</div>
         <div class="Category"><strong>Category : </strong>{{product.category}}</div>
         <div class="description"><strong>Description : </strong>{{product.description}}</div>
-        <div><button (click)="getProductDetail(product.id)" class="btn btn-primary">Buy Now</button></div>
+        <div><button (click)="product.id && getProductDetail(product.id)" class="btn btn-primary">Buy Now</button></div>
     </div>
     }
    

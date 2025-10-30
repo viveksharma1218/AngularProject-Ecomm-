@@ -5,7 +5,7 @@
             
         <div class="Image">
             <img src="/3.jpg"  alt="i phone image" class="image">
-            <button (click)="deleteProduct(product.id)" class="deleteButton">
+            <button (click)="product.id && deleteProduct(product.id)" class="deleteButton">
                 <fa-icon [icon]="Icon" />Delete</button>
             <button  class="EditButton" routerLink="/seller-update-product/{{product.id}}">
                 <fa-icon [icon]="editIcon" />Edit</button>    

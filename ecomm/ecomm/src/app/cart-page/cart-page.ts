@@ -1,10 +1,11 @@
 import { Component,inject,OnInit } from '@angular/core';
 import { UserCart } from '../services/user-cart';
 import { cartSummary, product } from '../interfaces/sellerAuth-interface';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'ec-cart-page',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './cart-page.html',
   styleUrl: './cart-page.css'
 })

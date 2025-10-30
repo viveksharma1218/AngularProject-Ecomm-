@@ -1,0 +1,60 @@
+<h3>Checkout</h3>
+<div class="container">
+    <div class="checkoutForm">
+        <form class="example-form">
+            <h4>Add Shipping Address</h4>
+                 <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter Your Name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Enter Your Email Address">
+            </mat-form-field>
+            <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title> Fill Your Address </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Address</mat-label>
+                        <input matInput placeholder="Enter Your Email Address">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>City</mat-label>
+                        <input matInput placeholder="Enter Your Email Address">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <mat-label>State</mat-label>
+                        <input matInput placeholder="Enter Your Email Address">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Pincode</mat-label>
+                        <input matInput placeholder="Enter Your Email Address">
+                    </mat-form-field>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+    <div class="checkoutInfo">
+        <h3>Total Amount</h3>
+        <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title> Payment methods </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p><a>Google Pay</a></p>
+                    <p><a>Phone Pay</a></p>
+                    <p><a>Paytm</a></p>
+                    <p><a>Debit Card</a></p>
+                    <p><a>Credit Card</a></p>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+    </div>
+</div>

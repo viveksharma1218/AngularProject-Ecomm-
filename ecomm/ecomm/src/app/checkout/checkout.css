@@ -1,0 +1,36 @@
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+h3{
+    text-align: center;
+    margin-top:20px;
+}
+.container{
+    width:70%;
+    height:490px;
+    display: flex;
+    gap:3%;
+
+}
+.checkoutForm{
+    height:100%;
+    flex:1;
+    overflow:scroll;
+}
+.checkoutForm button{
+    margin: 10px 0;
+}
+.checkoutForm::-webkit-scrollbar{
+    display: none;
+}
+.checkoutInfo{
+    height:100%;
+    flex:1.8;
+    display: flex;
+    flex-direction: column;
+}
+
