@@ -1,6 +1,6 @@
 import { Injectable, signal, WritableSignal, PLATFORM_ID, inject,computed } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { cartData, product } from '../interfaces/sellerAuth-interface';
+import { product } from '../interfaces/sellerAuth-interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
@@ -9,14 +9,13 @@ export class UserCart {
   // full explainaiton in googledoc angular
   private platformId = inject(PLATFORM_ID);
   
-  // Writable signal for internal use
-  public _cartData: WritableSignal<product[]> = signal([]);
+
   
   // Public read-only signal for components to consume
-  public readonly cartData = this._cartData.asReadonly();
+  public  cartData = signal<product[]>([]);
 
   // number of products
-  public readonly cartItemCount = computed(() => this._cartData().length);
+  public readonly cartItemCount = computed(() => this.cartData().length);
 
   private http = inject(HttpClient);
   constructor() {
@@ -24,13 +23,13 @@ export class UserCart {
   }
 
   // Loads initial data from localStorage (guarded for SSR)
-   loadInitialCart(): void {
+  private loadInitialCart(): void {
     if (isPlatformBrowser(this.platformId)) { 
       //here we have two situation 
       // first: if user is not logged in than products can be found in localStorage
       // Second: if user is logged in than products can be found in json server.
       let user = localStorage.getItem('user');
-      if(!user){
+      if(user){
           const cartItem = localStorage.getItem('localCart');
           //check if cartitem is not undefined
           if (cartItem) {
@@ -38,7 +37,7 @@ export class UserCart {
               const parsedData = JSON.parse(cartItem);
               // .length was not so we used this
               if (Array.isArray(parsedData)) {
-                this._cartData.set(parsedData); 
+                this.cartData.set(parsedData); 
               }
             } catch (e) {
               console.error("Error parsing local storage cart data:", e);
@@ -48,13 +47,10 @@ export class UserCart {
       else{
         if(user){
               let parsedUser = JSON.parse(user);
-              if(Array.isArray(parsedUser)){
-                let userId = parsedUser[0].id;
+              let userId = parsedUser[0].id;
               this.getCartList(userId)
-              }
-              
         }
-      }
+    }
         
     }
   }
@@ -82,7 +78,7 @@ export class UserCart {
       localStorage.setItem('localCart', JSON.stringify(cart));
       
       // 2. 🔑 CRITICAL FIX: Update the Signal to notify all consumers
-      this._cartData.set(cart);
+      this.cartData.set(cart);
       //console.log(`Signal updated. New cart size: ${cart.length}`);
     }
   }
@@ -98,11 +94,11 @@ export class UserCart {
           item.id !== productId
         })
         localStorage.setItem('localCart',JSON.stringify(newCartData))
-        this._cartData.set(newCartData);
+        this.cartData.set(newCartData);
       }
     }
   }
-  addToCart(cartData:cartData){
+  addToCart(cartData:product){
     return this.http.post('http://localhost:3000/cart',cartData,{observe:'response'}).subscribe(
       (response)=>{
         console.log(response)
@@ -122,7 +118,7 @@ export class UserCart {
     return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
       {observe:'response'}).subscribe((result)=>{
         if(result && result.body){
-          this._cartData.set(result.body);
+          this.cartData.set(result.body);
         }
       })
   }
@@ -140,5 +136,4 @@ export class UserCart {
       }
     )
   }
-
 }

@@ -13,7 +13,7 @@ import { Homepagination } from '../services/homepagination';
 })
 export class Home implements OnInit{
   AllProducts= signal<product[] | undefined>([]);
-  popularProducts!:product[];
+  popularProducts:product[] = [];
   productPics:string[] = [
     '3.jpg','3.jpg','3.jpg','3.jpg','3.jpg','3.jpg','3.jpg','3.jpg','3.jpg','3.jpg',];
   productWithPic:productWithPic[] = [];

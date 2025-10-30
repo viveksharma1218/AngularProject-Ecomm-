@@ -1,5 +1,5 @@
 import { Injectable,inject,signal } from '@angular/core';
-import { logIn, product, SellerAuthInterface,cartData } from '../interfaces/sellerAuth-interface';
+import { logIn, product, SellerAuthInterface } from '../interfaces/sellerAuth-interface';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter } from 'stream';
@@ -73,7 +73,7 @@ export class User {
           if(Array.isArray(parsedLocalData) && Array.isArray(parsedUser)){
             userId = parsedUser[0].id;
             parsedLocalData.forEach((product:product,index)=>{
-              let cartData:cartData = {
+              let cartData:product = {
                 ...product,
                 userId:userId,
                 productId:product.id

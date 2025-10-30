@@ -1,6 +1,6 @@
 import { Component,inject,signal,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {cartData, product } from '../interfaces/sellerAuth-interface';
+import {product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
 import { map,combineLatest } from 'rxjs';
 import { UserCart } from '../services/user-cart';
@@ -13,7 +13,7 @@ import { isString } from 'util';
   styleUrl: './product-detail.css'
 })
 export class ProductDetail implements OnInit {
-  productId: number | null=0;
+  productId: number=0;
   product !: product ;
   allProduct:product[] | undefined = [];
   route = inject(ActivatedRoute);
@@ -31,7 +31,7 @@ export class ProductDetail implements OnInit {
         const productId$ = this.route.paramMap.pipe(
             map(param => {
                 const idString = param.get('productId');
-                return idString ? +idString : null;
+                return idString ? +idString : undefined;
             })
         );
 
@@ -41,15 +41,19 @@ export class ProductDetail implements OnInit {
             this.allProductServ.allProducts$ // Stream 2: The full product array
         ]).subscribe(([productId, productsData]) => {
             // This block runs ONLY when both productId and productsData have a value.
-            
+            if(productId && productsData){ 
             this.productId = productId;
             this.allProduct = productsData;
+            }
             
-
-                 this.getProduct(this.productId, this.allProduct);
-            
+            if(this.productId){
+              this.getProduct(this.productId, this.allProduct);
+            }    
         });
-        this.isProductAlreadyBought(this.productId);
+        if(this.productId){
+          this.isProductAlreadyBought(this.productId);
+        }
+        
 
     }
   getProduct(id:number | null,products:product[] | undefined){
@@ -89,7 +93,7 @@ export class ProductDetail implements OnInit {
         // let's get user data first
           let parsedUserData = JSON.parse(userData)[0].id;
           //console.log(typeof(parsedUserData));
-          let cartData:cartData = {
+          let cartData:product = {
             ...this.product,
             productId:this.productId
             ,userId:parsedUserData
@@ -142,7 +146,7 @@ export class ProductDetail implements OnInit {
         //console.log('this is cart data',cartData)
         if(cartData.length){
            let matchedProduct = cartData.filter((product:product)=>{
-          product.productId = this.productId
+          product.productId == this.productId
         })
          setTimeout(() => {
             if(matchedProduct){
@@ -165,7 +169,10 @@ export class ProductDetail implements OnInit {
 
     //first: without login products will be saved inside localStorage
     if(!localStorage.getItem('user')){
-       this.userCartServ.localRemoveFromCart(this.productId)
+      if(this.productId){
+             this.userCartServ.localRemoveFromCart(this.productId);
+      }
+  
     this.productAlreadyBought.set(false);
     this.popUp2.set(true);
     setTimeout(() => {
@@ -193,7 +200,7 @@ export class ProductDetail implements OnInit {
       })
       let id = newcartData[0].id
       console.log(productId);
-      if(productId){
+      if(productId && id){
       this.userCartServ.removeFromCart(id);
        this.productAlreadyBought.set(false);
         this.popUp2.set(true);

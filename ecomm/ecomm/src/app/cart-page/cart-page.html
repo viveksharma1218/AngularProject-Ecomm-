@@ -11,33 +11,35 @@
 <div class="container">
    
     <div class="Box1">
-        <div class="box1">
+        @for(product of cartData; track $index){
+            <div class="box1">
             <div class="image">
                 <img src="./3.jpg">
             </div>
             <div class="info">
-                <h5>Product Name</h5>
-                <h6>Product Price</h6>
-                <p>id:</p>
-                <p>Category</p>
-                <p>Color:</p>
-                <p>Description:</p>
-                <p>Qty:</p>
+                <h5>Product Name:{{product.name}}</h5>
+                <h6>Product Price{{product.price}}</h6>
+                <p>id:{{product.id}}</p>
+                <p>Category{{product.category}}</p>
+                <p>Color:{{product.color}}</p>
+                <p>Description:{{product.description}}</p>
+                <p>Qty:{{product.quantity}}</p>
                 <button class="btn btn-danger">Remove from Cart</button>
             </div>
             
         </div>
+        }
+        
          
 
     </div>
     <div class="Box2">
         <h4>Summary</h4>
-        <h5>Cart Total:</h5>
-        <h5>Total Tax</h5>
-        <h5>Delivery Charges</h5>
-        <h5>Discount:</h5>
-        <h5>Total Amount:</h5>
-        <h5>10000</h5>
+        <h5>Cart Total: {{cartSummary.price}}</h5>
+        <h5>Total Tax {{cartSummary.tax}}</h5>
+        <h5>Delivery Charges{{cartSummary.delivery}}</h5>
+        <h5>Discount: {{cartSummary.discount}}</h5>
+        <h5>Total Amount: {{cartSummary.total}}</h5>
     </div>
 
 </div>

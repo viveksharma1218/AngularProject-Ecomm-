@@ -8,7 +8,7 @@
             <h4>{{product.name}}</h4>
             <p><strong>Price: </strong>{{product.price}}
                <strong> Color: </strong>{{product.color}} 
-               <button (click)="getproductDetail(product.id)">Buy</button>
+               <button (click)="product.id && getproductDetail(product.id)">Buy</button>
             </p>
         </div>
     </div>
@@ -66,7 +66,7 @@
         <div class="Color"><strong>Color:</strong>{{product.color}}</div>
         <div class="Category"><strong>Category:</strong>{{product.category}}</div>
         <div class="description"><strong>Description:</strong>{{product.description}}</div>
-        <button class="btn btn-primary" (click)="getproductDetail(product.id)">Buy</button>
+        <button class="btn btn-primary" (click)="product.id && getproductDetail(product.id)">Buy</button>
     </div>
     }
     
