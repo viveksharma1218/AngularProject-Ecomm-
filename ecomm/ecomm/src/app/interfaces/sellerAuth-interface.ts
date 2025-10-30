@@ -33,3 +33,15 @@ export interface cartSummary{
     delivery:number,
     total:number
 }
+
+export interface orderData{
+    email : string,
+    phone:number,
+    name:string,
+    line1:'',
+    city:'',
+    state:''
+    pincode:number,
+    userId:string,
+    price:number
+}

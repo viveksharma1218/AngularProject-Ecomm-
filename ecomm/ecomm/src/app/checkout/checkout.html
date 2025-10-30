@@ -1,48 +1,81 @@
 <h3>Checkout</h3>
 <div class="container">
     <div class="checkoutForm">
-        <form class="example-form">
+        <form class="example-form" [formGroup]="checkoutForm" (ngSubmit)="orderNow(checkoutForm.value)">
             <h4>Add Shipping Address</h4>
                  <mat-form-field class="example-full-width">
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Enter Your Name">
+                <input matInput placeholder="Enter Your Name" formControlName="name">
+                @if(checkoutForm.get('name')?.hasError('required')){
+                    <mat-error>Name is Required</mat-error>
+                }
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Mobile No.</mat-label>
+                <input matInput placeholder="Enter Your Mobile Number" formControlName="phone">
+                @if(checkoutForm.get('phone')?.hasError('required')){
+                    <mat-error>Name is Required</mat-error>
+                }
             </mat-form-field>
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="Enter Your Email Address">
+                <input matInput placeholder="Enter Your Email Address"
+                formControlName="email">
+                @if(checkoutForm.get('email')?.hasError('required')){
+                    <mat-error>Email is Required</mat-error>
+                }
             </mat-form-field>
-            <mat-accordion>
+            <div formGroupName="address">
+                <mat-accordion>
                 <mat-expansion-panel hideToggle>
                         <mat-expansion-panel-header>
                         <mat-panel-title> Fill Your Address </mat-panel-title>
                     </mat-expansion-panel-header>
                     <mat-form-field class="example-full-width">
                         <mat-label>Address</mat-label>
-                        <input matInput placeholder="Enter Your Email Address">
+                        <input matInput placeholder="Enter Your Email Address"
+                        formControlName="line1">
+                        @if(checkoutForm.get('address.line1')?.hasError('required')){
+                            <mat-error>Address is Required</mat-error>
+                        }
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width">
                         <mat-label>City</mat-label>
-                        <input matInput placeholder="Enter Your Email Address">
+                        <input matInput placeholder="Enter Your City Name"
+                        formControlName="city">
+                        @if(checkoutForm.get('address.city')?.hasError('required')){
+                            <mat-error>City name is Required</mat-error>
+                        }
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width">
                         <mat-label>State</mat-label>
-                        <input matInput placeholder="Enter Your Email Address">
+                        <input matInput placeholder="Enter Your State Address"
+                        formControlName="state">
+                        @if(checkoutForm.get('address.state')?.hasError('required')){
+                            <mat-error>State Name is Required</mat-error>
+                        }
                     </mat-form-field>
                     <mat-form-field class="example-full-width">
                         <mat-label>Pincode</mat-label>
-                        <input matInput placeholder="Enter Your Email Address">
+                        <input matInput placeholder="Enter Your Pincode"
+                        formControlName="pincode">
+                        @if(checkoutForm.get('address.pincode')?.hasError('required')){
+                            <mat-error>Pincode is Required</mat-error>
+                        }
                     </mat-form-field>
                 </mat-expansion-panel>
             </mat-accordion>
-            <button class="btn btn-primary">Submit</button>
+            </div>
+            
+            <button class="btn btn-primary" [disabled]="checkoutForm.invalid">Order Now</button>
         </form>
 
     </div>
 
     <div class="checkoutInfo">
-        <h3>Total Amount</h3>
+        <h3>Total Amount:{{totalPrice}}</h3>
         <mat-accordion>
                 <mat-expansion-panel hideToggle>
                         <mat-expansion-panel-header>
@@ -55,6 +88,16 @@
                     <p><a>Credit Card</a></p>
                 </mat-expansion-panel>
             </mat-accordion>
-
     </div>
+    
 </div>
+@if(popup()){
+     <div class="popupBox">
+        <div class="popup">
+            <h3>Order Placed</h3>
+            <h5>Now Page is redirecting to Home</h5>
+        </div>     
+    </div>
+}
+
+

@@ -30,7 +30,7 @@ export class CartPage implements OnInit{
         if(Array.isArray(parsedData)){
           userId = parsedData[0].id;
         }
-        console.log('this is user Id',userId);
+        //console.log('this is user Id',userId);
         this.userCartServ.getCartList(userId);
         setTimeout(() => {
           let cartData = this.userCartServ.cartData();
@@ -41,7 +41,7 @@ export class CartPage implements OnInit{
                if(product.quantity){
                 // + sign before product is converting it into number data type
                 price = price + (+product.price * product.quantity);
-                console.log(price);
+                //console.log(price);
                 this.cartSummary.price = price;
                 this.cartSummary.discount = 50;
                 this.cartSummary.delivery = 100;

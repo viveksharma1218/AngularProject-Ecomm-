@@ -1,6 +1,6 @@
 import { Injectable, signal, WritableSignal, PLATFORM_ID, inject,computed } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { product } from '../interfaces/sellerAuth-interface';
+import { orderData, product } from '../interfaces/sellerAuth-interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
@@ -135,5 +135,8 @@ export class UserCart {
            }
       }
     )
+  }
+  orderNow(data:orderData){
+    return this.http.post('http://localhost:3000/order',data,{observe:'response'})
   }
 }
