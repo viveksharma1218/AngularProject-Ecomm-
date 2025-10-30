@@ -21,7 +21,7 @@
     margin:0;
 }
 .searchBox{
-    width:50%;
+    width:40%;
     display: flex;
     gap:3px;
 }
@@ -37,7 +37,7 @@
    background-color: rgb(211, 205, 205) !important;
 }
 .linksBox{
-    width:30%;
+    width:38%;
     display:flex;
     gap:3%;
 }

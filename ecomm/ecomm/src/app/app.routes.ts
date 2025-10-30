@@ -10,6 +10,7 @@ import { ProductDetail } from './product-detail/product-detail';
 import { UserAuth } from './user-auth/user-auth';
 import { CartPage } from './cart-page/cart-page';
 import { Checkout } from './checkout/checkout';
+import { Myorders } from './myorders/myorders';
 
 export const routes: Routes = [
     {   path:'', 
@@ -34,6 +35,10 @@ export const routes: Routes = [
     {
         path:'checkout',
         component:Checkout
+    },
+    {
+        path:'my-orders',
+        component:Myorders
     },
     //paths for seller must have name 'seller' because we are 
     // using this for dynamic header
