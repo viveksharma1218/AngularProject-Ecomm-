@@ -2,6 +2,7 @@ import { Injectable, signal, WritableSignal, PLATFORM_ID, inject,computed } from
 import { isPlatformBrowser } from '@angular/common';
 import { orderData, product } from '../interfaces/sellerAuth-interface';
 import { HttpClient } from '@angular/common/http';
+import { tap, switchMap, of } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class UserCart {
@@ -105,7 +106,7 @@ export class UserCart {
   addToCart(cartData:product){
     return this.http.post('http://localhost:3000/cart',cartData,{observe:'response'}).subscribe(
       (response)=>{
-        console.log(response)
+        //console.log(response)
            if(response.status === 201){
 
             let user = localStorage.getItem('user');
@@ -121,26 +122,36 @@ export class UserCart {
   getCartList(userId:string){
     
     return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
-      {observe:'response'}).subscribe((result)=>{
-        if(result && result.body){
-          this.cartData.set(result.body);
-        }
-      })
-  }
-  removeFromCart(cartId:number){
-    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe(
-      (response)=>{
-           if(response.status === 200 || response.status === 204){
-            let user = localStorage.getItem('user');
-            if(user){
-              let parsedUser = JSON.parse(user);
-              let userId = parsedUser[0].id;
-              this.getCartList(userId)
+      {observe:'response'}).pipe(
+        tap(
+            (result)=>{
+              if(result && result.body){
+                this.cartData.set(result.body);
+              }
+              else {
+                  this.cartData.set([]); // Set to empty array if no data
+              }
             }
-           }
-      }
-    )
+        ))
   }
+  removeFromCart(cartId: number) {
+    return this.http.delete('http://localhost:3000/cart/' + cartId, { observe: 'response' }).pipe(
+        // The service needs switchMap to delete, then wait for the list to be fetched
+        switchMap((response) => {
+            if (response.status === 200 || response.status === 204) {
+                let user = localStorage.getItem('user');
+                if (user) {
+                    let parsedUser = JSON.parse(user);
+                    let userId = parsedUser[0].id;
+                    // Return the Observable from getCartList. This Observable will emit the new cart data.
+                    return this.getCartList(userId); 
+                }
+            }
+            // If deletion fails or user is null, return an empty Observable (or throw error)
+            return of(null); 
+        })
+    );
+}
   orderNow(data:orderData){
     return this.http.post('http://localhost:3000/order',data,{observe:'response'})
   }

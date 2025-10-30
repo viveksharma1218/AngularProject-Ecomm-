@@ -24,7 +24,7 @@
                 <p>Color:{{product.color}}</p>
                 <p>Description:{{product.description}}</p>
                 <p>Qty:{{product.quantity}}</p>
-                <button class="btn btn-danger">Remove from Cart</button>
+                <button class="btn btn-danger"  (click)="product.id &&removeFromCart(product.id)">Remove from Cart</button>
             </div>
             
         </div>

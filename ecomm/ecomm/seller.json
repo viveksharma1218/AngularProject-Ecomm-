@@ -8165,43 +8165,6 @@
       "id": "1745"
     }
   ],
-  "cart": [
-    {
-      "id": "61c8",
-      "name": "Zenith Pro Laptop 14-inch",
-      "price": 1199.99,
-      "category": "Electronics",
-      "color": "Space Gray",
-      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
-      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 4,
-      "userId": "c4e4",
-      "productId": "1"
-    },
-    {
-      "id": "feec",
-      "name": "Retinol Night Cream",
-      "price": "48",
-      "category": "Skincare",
-      "color": "White",
-      "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
-      "description": "Anti-aging retinol cream for overnight renewal",
-      "quantity": 2,
-      "userId": "c4e4",
-      "productId": "1202"
-    },
-    {
-      "id": "5576",
-      "name": "Volleyball",
-      "price": "35",
-      "category": "Team Sports",
-      "color": "Blue/White",
-      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400",
-      "description": "Indoor/outdoor volleyball",
-      "quantity": 1,
-      "userId": "c4e4",
-      "productId": "1373"
-    }
-  ],
+  "cart": [],
   "order": []
 }
