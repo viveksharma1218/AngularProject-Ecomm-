@@ -5,7 +5,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { JsonPipe } from '@angular/common';
 import { UserCart } from '../services/user-cart';
-import { orderData } from '../interfaces/sellerAuth-interface';
+import { orderData, product } from '../interfaces/sellerAuth-interface';
 import { faTurkishLiraSign } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 
@@ -22,6 +22,7 @@ import { Router } from '@angular/router';
   styleUrl: './checkout.css'
 })
 export class Checkout implements OnInit {
+  cartData!:product[] ;
   totalPrice:number = 0;
   checkoutForm!:FormGroup;
   fb  =  inject(FormBuilder)
@@ -55,6 +56,7 @@ export class Checkout implements OnInit {
         this.userCartServ.getCartList(userId);
         setTimeout(() => {
           let cartData = this.userCartServ.cartData();
+          this.cartData = cartData;
           if(cartData){
             let price = 0;
             cartData.forEach((product)=>{
@@ -87,6 +89,17 @@ export class Checkout implements OnInit {
         userId:userId,
         price:this.totalPrice
       }
+      //with placing order we are removing items from cart one by one because json 
+      // server cannot delete many items at one time
+      // products will be removed from cart and will go to order
+      if(Array.isArray(this.cartData)){
+          this.cartData.forEach((data)=>{
+            setTimeout(() => {
+              data.id && this.userCartServ.deleteCartItems(data.id)
+            }, 700);
+          })
+      }
+
       this.userCartServ.orderNow(orderData).subscribe(
         (response)=>{
           console.log(response);
@@ -98,6 +111,7 @@ export class Checkout implements OnInit {
           
         }
       );
+
     }
   }
 

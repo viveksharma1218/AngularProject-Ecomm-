@@ -163,4 +163,19 @@ export class UserCart {
       }
     }
   }
+
+  deleteCartItems(cartId:number){
+    return this.http.delete('http://localhost:3000/cart/'+cartId,{observe:'response'}).subscribe(
+      (response)=>{
+           if(response.status === 200 || response.status === 204){
+            let user = localStorage.getItem('user');
+            if(user){
+              let parsedUser = JSON.parse(user);
+              let userId = parsedUser[0].id;
+              this.getCartList(userId)
+            }
+           }
+      }
+    )
+  }
 }

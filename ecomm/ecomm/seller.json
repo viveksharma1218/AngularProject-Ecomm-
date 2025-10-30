@@ -8167,54 +8167,6 @@
   ],
   "cart": [
     {
-      "id": "71e7",
-      "name": "Zenith Pro Laptop 14-inch",
-      "price": 1199.99,
-      "category": "Electronics",
-      "color": "Space Gray",
-      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
-      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 5,
-      "userId": "a3f6",
-      "productId": "1"
-    },
-    {
-      "id": "c9a0",
-      "name": "Concealer Palette",
-      "price": "32",
-      "category": "Makeup",
-      "color": "Multicolor",
-      "imageUrl": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400",
-      "description": "6-shade cream concealer palette",
-      "quantity": 5,
-      "userId": "a3f6",
-      "productId": "1212"
-    },
-    {
-      "id": "d028",
-      "name": "Organic Face Oil",
-      "price": "38",
-      "category": "Organic & Natural Products",
-      "color": "Amber",
-      "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
-      "description": "100% organic rosehip facial oil",
-      "quantity": 7,
-      "userId": "a3f6",
-      "productId": "1271"
-    },
-    {
-      "id": "09be",
-      "name": "Designer Silk Dress",
-      "price": "1200",
-      "category": "Designer Fashion",
-      "color": "Black",
-      "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
-      "description": "Evening gown from luxury fashion house",
-      "quantity": 4,
-      "userId": "a3f6",
-      "productId": "1646"
-    },
-    {
       "id": "61c8",
       "name": "Zenith Pro Laptop 14-inch",
       "price": 1199.99,
@@ -8249,42 +8201,6 @@
       "quantity": 1,
       "userId": "c4e4",
       "productId": "1373"
-    },
-    {
-      "id": "b9aa",
-      "name": "Zenith Pro Laptop 14-inch",
-      "price": 1199.99,
-      "category": "Electronics",
-      "color": "Space Gray",
-      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
-      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
-      "quantity": 1,
-      "userId": "a3f6",
-      "productId": "1"
-    },
-    {
-      "id": "e006",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
-      "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
-      "quantity": 3,
-      "productId": 2,
-      "userId": "a3f6"
-    },
-    {
-      "id": "e28e",
-      "name": "Pocket Power Bank 10000mAh",
-      "price": 35.95,
-      "category": "Electronics",
-      "color": "Matte Black",
-      "imageUrl": "https://placehold.co/600x400/5B21B6/ffffff?text=Power+Bank",
-      "description": "Compact and fast charging external battery for all mobile devices.",
-      "quantity": 4,
-      "productId": 5,
-      "userId": "a3f6"
     }
   ],
   "order": [
@@ -8301,6 +8217,34 @@
       },
       "userId": "a3f6",
       "price": 13118.24
+    },
+    {
+      "id": "9e4b",
+      "email": "vivek@gmail.com",
+      "phone": "1212121212",
+      "name": "vivek",
+      "address": {
+        "line1": "address",
+        "city": "city",
+        "state": "state",
+        "pincode": "121212"
+      },
+      "userId": "a3f6",
+      "price": 13118.24
+    },
+    {
+      "id": "67f7",
+      "email": "kl",
+      "phone": "12121212121",
+      "name": "new",
+      "address": {
+        "line1": "saf",
+        "city": "fsdafsd",
+        "state": "fsdafsd",
+        "pincode": "fsdfasdf"
+      },
+      "userId": "a3f6",
+      "price": 3424.9700000000003
     }
   ]
 }
