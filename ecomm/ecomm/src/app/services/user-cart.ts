@@ -178,4 +178,8 @@ export class UserCart {
       }
     )
   }
+
+  cancelOrder(id:string){
+        return this.http.delete('http://localhost:3000/order/'+id,{observe:'response'})
+  }
 }

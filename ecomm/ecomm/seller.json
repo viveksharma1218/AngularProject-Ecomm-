@@ -8203,48 +8203,5 @@
       "productId": "1373"
     }
   ],
-  "order": [
-    {
-      "id": "b038",
-      "email": "email.com",
-      "phone": "1212121212",
-      "name": "vivek",
-      "address": {
-        "line1": "address",
-        "city": "city",
-        "state": "state",
-        "pincode": "121212"
-      },
-      "userId": "a3f6",
-      "price": 13118.24
-    },
-    {
-      "id": "9e4b",
-      "email": "vivek@gmail.com",
-      "phone": "1212121212",
-      "name": "vivek",
-      "address": {
-        "line1": "address",
-        "city": "city",
-        "state": "state",
-        "pincode": "121212"
-      },
-      "userId": "a3f6",
-      "price": 13118.24
-    },
-    {
-      "id": "67f7",
-      "email": "kl",
-      "phone": "12121212121",
-      "name": "new",
-      "address": {
-        "line1": "saf",
-        "city": "fsdafsd",
-        "state": "fsdafsd",
-        "pincode": "fsdfasdf"
-      },
-      "userId": "a3f6",
-      "price": 3424.9700000000003
-    }
-  ]
+  "order": []
 }

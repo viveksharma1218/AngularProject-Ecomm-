@@ -15,7 +15,19 @@ export class Myorders implements OnInit{
   constructor(){}
 
   ngOnInit(): void {
-      this.userCartServ.getOrderData().subscribe(
+   this.getOrderList()
+  }
+
+  cancelOrder(id:string){
+   id && this.userCartServ.cancelOrder(id).subscribe(
+      (response)=>{
+        this.getOrderList()
+      }
+    )
+  }
+
+  getOrderList(){
+       this.userCartServ.getOrderData().subscribe(
         (data)=>{
           this.orderData = data;
         }

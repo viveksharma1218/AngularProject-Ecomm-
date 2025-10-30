@@ -6,7 +6,8 @@
             <div class="orderId box">Order Id: {{data.id}}</div>
             <div class="price box">price:{{data.price}}</div>
             <div class="status box">status:</div>
-            <div class=" cancel box"><button class="btn btn-danger">Cancel Order</button></div>
+            <div class=" cancel box"><button class="btn btn-danger"
+                (click)="data.id && cancelOrder(data.id)">Cancel Order</button></div>
     </div>
     }
 
