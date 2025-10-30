@@ -5,6 +5,9 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class UserCart {
+
+  userId = signal(0);
+
   // these was error localStorage is not defined so we are using platformid and is platformBrowser
   // full explainaiton in googledoc angular
   private platformId = inject(PLATFORM_ID);
@@ -19,6 +22,7 @@ export class UserCart {
 
   private http = inject(HttpClient);
   constructor() {
+    this.getUserId();
     this.loadInitialCart();
   }
 
@@ -115,6 +119,7 @@ export class UserCart {
     )
   }
   getCartList(userId:string){
+    
     return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
       {observe:'response'}).subscribe((result)=>{
         if(result && result.body){
@@ -138,5 +143,24 @@ export class UserCart {
   }
   orderNow(data:orderData){
     return this.http.post('http://localhost:3000/order',data,{observe:'response'})
+  }
+  // we will have order data of all users. here we are getting orders of one user
+  getOrderData(){
+
+       return this.http.get<orderData[]>(`http://localhost:3000/order?userId=${this.userId()}`);
+    
+
+   
+  }
+
+  getUserId(){
+    let user =localStorage.getItem('user');
+    if(user){
+      let parsedUserData = JSON.parse(user);
+      if(Array.isArray(parsedUserData)){
+        let userid = parsedUserData[0].id;
+        this.userId.set(userid);
+      }
+    }
   }
 }
