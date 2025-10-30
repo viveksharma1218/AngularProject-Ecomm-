@@ -1,7 +1,7 @@
-import { Component,inject,OnInit } from '@angular/core';
+import { Component,inject,OnInit,signal } from '@angular/core';
 import { UserCart } from '../services/user-cart';
 import { cartSummary, product } from '../interfaces/sellerAuth-interface';
-import { RouterLink } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 
 @Component({
   selector: 'ec-cart-page',
@@ -10,6 +10,7 @@ import { RouterLink } from "@angular/router";
   styleUrl: './cart-page.css'
 })
 export class CartPage implements OnInit{
+  popup = signal(false);
   cartData:product[] | undefined =[];
   cartSummary :cartSummary= {
     price:0,
@@ -18,7 +19,7 @@ export class CartPage implements OnInit{
     delivery:0,
     total:0
   }
-
+  router = inject(Router);
   userCartServ = inject(UserCart)
   constructor(){}
 
@@ -79,7 +80,17 @@ export class CartPage implements OnInit{
             this.cartSummary.tax = 50;
             this.cartSummary.total = price - (50 + 100 + 50);
         }
+        
+        if(!(this.cartData && this.cartData.length)){
+          this.popup.set(true);
+          setTimeout(() => {
+            this.popup.set(false);
+            this.router.navigate(['']);
+          },1500);
+          
+        }
       });
     }
+
 }
 }

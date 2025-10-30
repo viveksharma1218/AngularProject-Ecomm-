@@ -56,3 +56,26 @@ h3{
     .Box2 h5{
         margin:20px 0;
     }
+    .popupBox{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgb(72, 64, 64,.3);
+    }
+    .popupbox{
+        position:fixed;
+        top:30%;
+        left:40%;
+        width:300px;
+        height:100px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+    .popupbox h3{
+        color:red
+    }
