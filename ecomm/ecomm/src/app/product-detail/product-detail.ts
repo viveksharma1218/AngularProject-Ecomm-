@@ -2,7 +2,7 @@ import { Component,inject,signal,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
-import { map,combineLatest } from 'rxjs';
+import { map, combineLatest, filter } from 'rxjs';
 import { UserCart } from '../services/user-cart';
 import { isString } from 'util';
 
@@ -141,23 +141,29 @@ export class ProductDetail implements OnInit {
         }
        
         //console.log('this is user id',userId)
-        this.userCartServ.getCartList(userId);
-        let cartData = this.userCartServ.cartData();
-        //console.log('this is cart data',cartData)
-        if(cartData.length){
-           let matchedProduct = cartData.filter((product:product)=>{
-          product.productId == this.productId
+        this.userCartServ.getCartList(userId).subscribe({
+          next:(response)=>{
+            if(response && response.body){
+              const cartData = response.body;
+              console.log('cart data received', cartData);
+
+              const matchedProduct = cartData.find(
+                (product:product)=>{
+                  product.productId == productid || product.id == productid
+              })
+              console.log('matched product',matchedProduct);
+              this.productAlreadyBought.set(!!matchedProduct);
+            }
+          },
+          error: (error) => {
+                console.error('Error fetching cart data:', error);
+                this.productAlreadyBought.set(false);
+          }
         })
-         setTimeout(() => {
-            if(matchedProduct){
-          console.log(matchedProduct);
-          this.productAlreadyBought.set(true);
-        }
-         }, 100);
-        }
-       
-       
-       }
+    }
+    else{
+      this.productAlreadyBought.set(false);
+    }
     
    
    
