@@ -5,15 +5,15 @@ import { product } from '../interfaces/sellerAuth-interface';
   providedIn: 'root'
 })
 export class Homepagination {
-  private allProducts=signal<product[] | undefined>([]);
+  private allProducts=signal<product[]>([]);
  currentPage = signal<number>(1);
   private pageSize = signal<number>(50);
 
   currentProducts = signal<product[]>([]);
   totalPages  = signal<number>(0);
 
-  setProduct(product:product[] | undefined){
-    this.allProducts.set(product);
+  setProduct(product:product[]){
+    product && this.allProducts.set(product);
     this.totalPages.set(Math.ceil(product!.length/this.pageSize()));
     this.updateCurrentProducts();
   }

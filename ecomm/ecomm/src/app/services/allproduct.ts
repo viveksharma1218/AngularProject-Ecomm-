@@ -10,7 +10,7 @@ export class Allproduct {
   // we are making get call many times in application now we use this property 
   // to save all products after making get request inside header and we can use this anywhere
 
-  private allProductsSubject = new BehaviorSubject<product[] | undefined>([]);
+  private allProductsSubject = new BehaviorSubject<product[] | undefined>(undefined);
   public allProducts$: Observable<product[] | undefined> = this.allProductsSubject.asObservable();
 
   // this is all products list so if we delete some product we can copy paste these

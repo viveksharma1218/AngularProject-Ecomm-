@@ -4,10 +4,12 @@ import { SellerAddProduct } from '../services/seller-add-product';
 import { Allproduct } from '../services/allproduct';
 import { Router } from '@angular/router';
 import { Homepagination } from '../services/homepagination';
+import { filter } from 'rxjs';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'ec-home',
-  imports: [],
+  imports: [JsonPipe],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
@@ -21,22 +23,29 @@ export class Home implements OnInit{
   private route = inject(Router);
   paginationServ = inject(Homepagination);
   constructor(private productServ:SellerAddProduct,){
-     this.AllproductServ.allProducts$.subscribe(data => {
-      this.AllProducts.set(data);
-    }); 
+
   }
 
   ngOnInit(): void {
       this.getProduct();
+    this.setupProductSubscription();
       //this.getAllProduct();
-      this.combineProduct(); 
-      this.paginationServ.setProduct(this.AllProducts())
+      //this.combineProduct(); 
      
   }
   getProduct(){
     this.productServ.popularProducts().subscribe((data)=>{
       this.popularProducts = data;
     })
+  }
+   private setupProductSubscription(): void {
+    this.AllproductServ.allProducts$.pipe(
+      filter(data => data !== undefined && data !== null && data.length > 0)
+    ).subscribe(data => {
+      console.log('Filtered data:', data);
+      this.AllProducts.set(data);
+      data && this.paginationServ.setProduct(data);
+    });
   }
   // getAllProduct(){
   //   this.productServ.productList().subscribe((data)=>{
@@ -45,17 +54,17 @@ export class Home implements OnInit{
 
   //   })
   // }
-  combineProduct(){
-    let combinedList :productWithPic[] = [];
-    const length = Math.min(this.popularProducts.length, this.productPics.length);
-    for(let i=0; i<length; i++){
-      combinedList.push({
-        product:this.popularProducts[i],
-        picPath:this.productPics[i]
-    })
-    }
-    this.productWithPic = combinedList;
-  }
+  // combineProduct(){
+  //   let combinedList :productWithPic[] = [];
+  //   const length = Math.min(this.popularProducts.length, this.productPics.length);
+  //   for(let i=0; i<length; i++){
+  //     combinedList.push({
+  //       product:this.popularProducts[i],
+  //       picPath:this.productPics[i]
+  //   })
+  //   }
+  //   this.productWithPic = combinedList;
+  // }
   getproductDetail(id:number){
     this.route.navigate(['detail',id])
   }
