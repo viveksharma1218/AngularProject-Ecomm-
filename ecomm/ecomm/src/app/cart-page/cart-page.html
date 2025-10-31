@@ -11,7 +11,7 @@
 <div class="container">
    
     <div class="Box1">
-        @for(product of cartData; track $index){
+        @for(product of cartData(); track $index){
             <div class="box1">
             <div class="image">
                 <img src="./3.jpg">
@@ -45,10 +45,9 @@
 
 </div>
 @if(popup()){
-    <div class="popupBox">
-        <div class="popupbox">
-            <h3>Cart is Empty</h3>
+    <div class="popUp1">
+        <div>
+            <h2>Cart is Empty</h2>
         </div>
     </div>
 }
-

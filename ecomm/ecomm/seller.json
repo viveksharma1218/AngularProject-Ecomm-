@@ -8167,15 +8167,15 @@
   ],
   "cart": [
     {
-      "id": "46f5",
-      "name": "Aura Noise-Cancelling Headphones",
-      "price": 249.5,
+      "id": "7532",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
       "category": "Electronics",
-      "color": "Midnight Blue",
-      "imageUrl": "https://placehold.co/600x400/991B1C/ffffff?text=Aura+Headphones",
-      "description": "Industry-leading noise cancellation with 30 hours of playback.",
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
       "quantity": 1,
-      "productId": 2,
+      "productId": 1,
       "userId": "a3f6"
     }
   ],

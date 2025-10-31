@@ -11,7 +11,7 @@ import { Router, RouterLink } from "@angular/router";
 })
 export class CartPage implements OnInit{
   popup = signal(false);
-  cartData:product[] | undefined =[];
+  cartData=signal<product[]>([]);
   cartSummary :cartSummary= {
     price:0,
     discount:0,
@@ -56,41 +56,67 @@ export class CartPage implements OnInit{
         userId = parsedUserData[0].id;
       }
       // We subscribe directly here to update the component properties
-      this.userCartServ.getCartList(userId).subscribe((result) => {
-        // This subscription ensures the cartData signal has been updated.
-        // Now, we retrieve the fresh data from the signal and perform calculations.
-        let cartData = this.userCartServ.cartData();
-        
-        if (cartData) {
-            // **CRITICAL:** Use a Signal for cartData in the component for better reactivity
-            // For now, using direct assignment:
-            this.cartData = cartData;
-            
-            let price = 0;
-            cartData.forEach((product) => {
-                if (product.quantity) {
-                    price = price + (+product.price * product.quantity);
-                }
-            });
-            
-            // Update summary properties
-            this.cartSummary.price = price;
-            this.cartSummary.discount = 50;
-            this.cartSummary.delivery = 100;
-            this.cartSummary.tax = 50;
-            this.cartSummary.total = price - (50 + 100 + 50);
-        }
-        
-        if(!(this.cartData && this.cartData.length)){
-          this.popup.set(true);
-          setTimeout(() => {
-            this.popup.set(false);
-            this.router.navigate(['']);
-          },1500);
-          
+      this.userCartServ.getCartList(userId).subscribe({
+        next: (result)=>{
+          let cartData = result.body || [];
+          this.cartData.set(cartData);
+          this.calculateCartSummary(cartData);
+          this.checkEmptyCart(cartData);
+        },
+        error:(error)=>{
+          this.handleLocalStorageCart();
         }
       });
     }
 
+}
+
+// Helper method to calculate cart summary
+private calculateCartSummary(cartData: product[]) {
+  let price = 0;
+  
+  cartData.forEach((product) => {
+    if (product.quantity) {
+      price = price + (+product.price * product.quantity);
+    }
+  });
+  
+  this.cartSummary.price = price;
+  this.cartSummary.discount = 50;
+  this.cartSummary.delivery = 100;
+  this.cartSummary.tax = 50;
+  this.cartSummary.total = price - (50 + 100 + 50);
+}
+
+// Helper method to check empty cart
+private checkEmptyCart(cartData: product[]) {
+  if (!cartData || cartData.length === 0) {
+    this.popup.set(true);
+    setTimeout(() => {
+      this.popup.set(false);
+      this.router.navigate(['']);
+    }, 1500);
+  }
+}
+
+// Method to handle localStorage cart (if user is not logged in)
+private handleLocalStorageCart() {
+  const localCart = localStorage.getItem('localCart');
+  if (localCart) {
+    try {
+      const cartData: product[] = JSON.parse(localCart);
+      this.cartData.set(cartData);
+      this.calculateCartSummary(cartData);
+      this.checkEmptyCart(cartData);
+    } catch (error) {
+      console.error('Error parsing local cart:', error);
+      this.cartData.set([]);
+      this.calculateCartSummary([]);
+    }
+  } else {
+    this.cartData.set([]);
+    this.calculateCartSummary([]);
+    this.checkEmptyCart([]);
+  }
 }
 }
