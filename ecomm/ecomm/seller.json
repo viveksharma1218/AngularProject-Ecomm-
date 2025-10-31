@@ -106,6 +106,48 @@
       "email": "user12@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
+    },
+    {
+      "id": "fc10",
+      "name": "user15",
+      "email": "user15@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "b76e",
+      "name": "user20",
+      "email": "user20@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "e09d",
+      "name": "user25@gmail.com",
+      "email": "user25@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "9cd1",
+      "name": "user35",
+      "email": "user35@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "9aa7",
+      "name": "user35",
+      "email": "user35@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "78cb",
+      "name": "user40",
+      "email": "user40@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     }
   ],
   "products": [
@@ -8165,7 +8207,56 @@
       "id": "1745"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "89c4",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
+      "category": "Electronics",
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
+      "quantity": 3,
+      "userId": "fc10",
+      "productId": "1"
+    },
+    {
+      "id": "c944",
+      "name": "Men's Formal Shirt",
+      "price": "45",
+      "category": "Men's Clothing",
+      "color": "White",
+      "imageUrl": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",
+      "description": "Slim fit formal dress shirt",
+      "quantity": 3,
+      "userId": "fc10",
+      "productId": "1103"
+    },
+    {
+      "id": "c4c4",
+      "name": "Men's Denim Jeans",
+      "price": "59",
+      "category": "Men's Clothing",
+      "color": "Blue",
+      "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400",
+      "description": "Classic fit denim jeans for men",
+      "quantity": 3,
+      "userId": "fc10",
+      "productId": "1102"
+    },
+    {
+      "id": "6bd6",
+      "name": "Zenith Pro Laptop 14-inch",
+      "price": 1199.99,
+      "category": "Electronics",
+      "color": "Space Gray",
+      "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
+      "description": "Ultra-thin laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals.",
+      "quantity": 3,
+      "userId": "78cb",
+      "productId": "1"
+    }
+  ],
   "order": [
     {
       "id": "8bfb",

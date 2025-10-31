@@ -20,10 +20,13 @@ export class User {
     this.http.post('http://localhost:3000/users',user,{observe:'response'}).subscribe(
       (data)=>{
         if(data){
-          localStorage.setItem('user',JSON.stringify(data.body));
+          // we are using data.body because it will have auto generated id
+          // that will be used when we will create cartData that have userId property
+          localStorage.setItem('user',JSON.stringify([data.body]));
+          this.invalidUser = false;
           setTimeout(() => {
               this.localCartToJson(); 
-          }, 1500);
+          }, 500);
         
           this.router.navigate(['']);
         }
@@ -49,7 +52,10 @@ export class User {
           localStorage.setItem('user',JSON.stringify(data.body));
           this.router.navigate(['/']);
           this.invalidUser = false;
-          this.localCartToJson()
+          setTimeout(() => {
+          this.localCartToJson();
+          }, 500);
+
         }
         else{
           this.invalidUser = true;
@@ -84,7 +90,9 @@ export class User {
               // if there are 5 products than we are making 5 requests 
               // so we made delay for each request
               setTimeout(() => {
-                this.userCartServ.addToCart(cartData);
+                this.userCartServ.addToCart(cartData).subscribe(
+                  (data)=>{console.log(data)}
+                );
               }, 500);
             
               

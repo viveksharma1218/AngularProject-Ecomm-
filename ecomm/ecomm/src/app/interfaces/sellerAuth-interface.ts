@@ -3,6 +3,7 @@ export interface SellerAuthInterface{
     email:string,
     password:string,
     repeatPassword:string,
+    id?:string,
 }
 export interface logIn{
     email:string,
