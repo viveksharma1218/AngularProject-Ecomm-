@@ -1,6 +1,7 @@
-import { Component,inject,OnInit } from '@angular/core';
+import { Component,inject,OnInit,signal } from '@angular/core';
 import { UserCart } from '../services/user-cart';
 import { orderData } from '../interfaces/sellerAuth-interface';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'ec-myorders',
@@ -10,7 +11,7 @@ import { orderData } from '../interfaces/sellerAuth-interface';
 })
 export class Myorders implements OnInit{
   userCartServ = inject(UserCart);
-  orderData : orderData[] = [];
+  orderData = signal<orderData[]>([]);
 
   constructor(){}
 
@@ -27,11 +28,18 @@ export class Myorders implements OnInit{
   }
 
   getOrderList(){
-       this.userCartServ.getOrderData().subscribe(
-        (data)=>{
-          this.orderData = data;
+       this.userCartServ.getOrderData().subscribe({
+        next: (response)=>{
+          if(response && response.body){
+            this.orderData.set(response.body);
+          }
+          else{
+            this.orderData.set([]);
+          }
+        },
+        error:(error)=>{
+          this.orderData.set([]);
         }
-      )
+       })
   }
-
 }

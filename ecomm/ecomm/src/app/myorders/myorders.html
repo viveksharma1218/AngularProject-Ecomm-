@@ -1,6 +1,6 @@
 <h3>My Orders</h3>
 <div class="container">
-    @for(data of orderData; track $index){
+    @for(data of orderData(); track $index){
     <div class="Box">
             <div class="icon box"> <img src="./cart.png"></div>
             <div class="orderId box">Order Id: {{data.id}}</div>

@@ -23,7 +23,7 @@ import { Router } from '@angular/router';
 })
 export class Checkout implements OnInit {
   cartData!:product[] ;
-  totalPrice:number = 0;
+  totalPrice = signal(0);
   checkoutForm!:FormGroup;
   fb  =  inject(FormBuilder)
   userCartServ = inject (UserCart);
@@ -64,7 +64,7 @@ export class Checkout implements OnInit {
                 // + sign before product is converting it into number data type
                 price = price + (+product.price * product.quantity);
                 //console.log(price);
-                this.totalPrice = price-(50+100+50);
+                this.totalPrice.set(price-(50+100+50));
               }
             })
           }
@@ -87,7 +87,7 @@ export class Checkout implements OnInit {
       let orderData: orderData= {
         ...data,
         userId:userId,
-        price:this.totalPrice
+        price:this.totalPrice()
       }
       //with placing order we are removing items from cart one by one because json 
       // server cannot delete many items at one time

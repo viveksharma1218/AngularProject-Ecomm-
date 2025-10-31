@@ -157,11 +157,7 @@ export class UserCart {
   }
   // we will have order data of all users. here we are getting orders of one user
   getOrderData(){
-
-       return this.http.get<orderData[]>(`http://localhost:3000/order?userId=${this.userId()}`);
-    
-
-   
+    return this.http.get<orderData[]>(`http://localhost:3000/order?userId=${this.userId()}`,{observe:'response'});
   }
 
   getUserId(){
