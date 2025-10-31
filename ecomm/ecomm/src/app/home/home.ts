@@ -1,10 +1,10 @@
-import { Component,OnInit,inject,signal} from '@angular/core';
+import { ChangeDetectorRef, Component,OnInit,inject,signal} from '@angular/core';
 import { product,productWithPic } from '../interfaces/sellerAuth-interface';
 import { SellerAddProduct } from '../services/seller-add-product';
 import { Allproduct } from '../services/allproduct';
 import { Router } from '@angular/router';
 import { Homepagination } from '../services/homepagination';
-import { filter } from 'rxjs';
+import { catchError, filter, of } from 'rxjs';
 import { JsonPipe } from '@angular/common';
 
 @Component({
@@ -22,27 +22,41 @@ export class Home implements OnInit{
   private AllproductServ = inject(Allproduct)
   private route = inject(Router);
   paginationServ = inject(Homepagination);
+  popularProductsLoaded = signal<boolean>(false); // Track loading state
+  private cdr = inject(ChangeDetectorRef);
   constructor(private productServ:SellerAddProduct,){
 
   }
 
   ngOnInit(): void {
-      this.getProduct();
+   
     this.setupProductSubscription();
       //this.getAllProduct();
       //this.combineProduct(); 
+      console.log(this.popularProducts);
+         this.getProduct();
      
   }
   getProduct(){
-    this.productServ.popularProducts().subscribe((data)=>{
+        this.popularProductsLoaded.set(false); // Reset loading state
+    this.productServ.popularProducts().pipe(
+      catchError(error => {
+        console.error('Error fetching popular products:', error);
+        this.popularProductsLoaded.set(true); // Mark as loaded even on error
+        return of([]); // Return empty array on error
+      })
+    ).subscribe((data) => {
       this.popularProducts = data;
-    })
+      this.popularProductsLoaded.set(true); // Mark as loaded
+      this.cdr.detectChanges();
+      console.log('Popular products loaded:', this.popularProducts);
+    });
   }
    private setupProductSubscription(): void {
     this.AllproductServ.allProducts$.pipe(
       filter(data => data !== undefined && data !== null && data.length > 0)
     ).subscribe(data => {
-      console.log('Filtered data:', data);
+      //console.log('data:', data);
       this.AllProducts.set(data);
       data && this.paginationServ.setProduct(data);
     });

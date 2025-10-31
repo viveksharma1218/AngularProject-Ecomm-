@@ -8165,6 +8165,31 @@
       "id": "1745"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "3278",
+      "name": "Organic Red Apples",
+      "price": "4.99",
+      "category": "Fresh Produce",
+      "color": "Red",
+      "imageUrl": "/images/apples.jpg",
+      "description": "Fresh organic red apples, sweet and crisp",
+      "quantity": 1,
+      "productId": 101,
+      "userId": "a3f6"
+    },
+    {
+      "id": "7e3d",
+      "name": "Organic Red Apples",
+      "price": "4.99",
+      "category": "Fresh Produce",
+      "color": "Red",
+      "imageUrl": "/images/apples.jpg",
+      "description": "Fresh organic red apples, sweet and crisp",
+      "quantity": 1,
+      "productId": 101,
+      "userId": "a3f6"
+    }
+  ],
   "order": []
 }
