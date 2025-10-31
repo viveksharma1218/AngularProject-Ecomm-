@@ -9,7 +9,7 @@ import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'ec-home',
-  imports: [JsonPipe],
+  imports: [],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
