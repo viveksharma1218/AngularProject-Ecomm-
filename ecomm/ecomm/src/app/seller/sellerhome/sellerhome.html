@@ -1,6 +1,36 @@
+<div class="paginationBox">
+     <!--pagination -->
+     <!-- Pagination Controls -->
+      <div class="pagination">
+        <button (click)="prevPage()" 
+                [disabled]="paginationServ.currentPage() === 1">
+          Previous
+        </button>
+        
+        <span class="page-info">
+          Page {{ paginationServ.currentPage() }} of {{ paginationServ.totalPages() }}
+        </span>
+        
+        <button (click)="nextPage()" 
+                [disabled]="paginationServ.currentPage() === paginationServ.totalPages()">
+          Next
+        </button>
+      </div>
 
+      <!-- Page Numbers -->
+      <div class="page-numbers">
+        @for(page of getPageNumbers(); track $index){
+           <button 
+                (click)="goToPage(page)"
+                [class.active]="page === paginationServ.currentPage()">
+          {{ page }}
+        </button>
+        }
+       
+      </div>
+    </div>
 <div class="container" >
-    @for(product of productList();track $index){
+    @for(product of paginationServ.currentProducts();track $index){
         <div class="box" >
             
         <div class="Image">
@@ -126,3 +156,34 @@
     </div>
 </div>
 }
+<div class="paginationBox">
+     <!--pagination -->
+     <!-- Pagination Controls -->
+      <div class="pagination">
+        <button (click)="prevPage()" 
+                [disabled]="paginationServ.currentPage() === 1">
+          Previous
+        </button>
+        
+        <span class="page-info">
+          Page {{ paginationServ.currentPage() }} of {{ paginationServ.totalPages() }}
+        </span>
+        
+        <button (click)="nextPage()" 
+                [disabled]="paginationServ.currentPage() === paginationServ.totalPages()">
+          Next
+        </button>
+      </div>
+
+      <!-- Page Numbers -->
+      <div class="page-numbers">
+        @for(page of getPageNumbers(); track $index){
+           <button 
+                (click)="goToPage(page)"
+                [class.active]="page === paginationServ.currentPage()">
+          {{ page }}
+        </button>
+        }
+       
+      </div>
+    </div>

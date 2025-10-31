@@ -20,6 +20,20 @@
       "email": "newUser@gmail.com",
       "password": "1212",
       "repeatPassword": "1212"
+    },
+    {
+      "id": "b097",
+      "name": "newuser",
+      "email": "newuser@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
+    },
+    {
+      "id": "e1c7",
+      "name": "seller5",
+      "email": "seller5@gmail.com",
+      "password": "1212",
+      "repeatPassword": "1212"
     }
   ],
   "users": [
@@ -154,7 +168,7 @@
     {
       "id": "1",
       "name": "Zenith Pro Laptop 14-inch",
-      "price": 1199.99,
+      "price": "11111",
       "category": "Electronics",
       "color": "Space Gray",
       "imageUrl": "https://placehold.co/600x400/1E3A8A/ffffff?text=Zenith+Laptop",
@@ -172,7 +186,7 @@
     {
       "id": "3",
       "name": "Chrono Smartwatch Series 7",
-      "price": "1",
+      "price": "22222222",
       "category": "Electronics",
       "color": "Starlight",
       "imageUrl": "https://placehold.co/600x400/059669/ffffff?text=Chrono+Watch",

@@ -33,7 +33,7 @@ export class Home implements OnInit{
     this.setupProductSubscription();
       //this.getAllProduct();
       //this.combineProduct(); 
-      console.log(this.popularProducts);
+      //console.log(this.popularProducts);
          this.getProduct();
      
   }

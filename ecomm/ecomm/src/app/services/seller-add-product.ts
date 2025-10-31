@@ -2,11 +2,15 @@ import { Injectable } from '@angular/core';
 import { AddProduct } from '../seller/add-product/add-product';
 import { product } from '../interfaces/sellerAuth-interface';
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable,tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SellerAddProduct {
+
+  private productUpdated = new BehaviorSubject<string>('');
+  productUpdated$ = this.productUpdated.asObservable()
   
   constructor(private http:HttpClient){}
   AddProduct(data:product){
@@ -16,13 +20,23 @@ export class SellerAddProduct {
     return this.http.get<undefined | product[]>('http://localhost:3000/products')
   }
   deleteProduct(id:number){
-    return this.http.delete(`http://localhost:3000/products/${id}`)
+    return this.http.delete(`http://localhost:3000/products/${id}`).pipe(
+      tap(()=>{
+        // notify product deleted
+        this.productUpdated.next('product deleted');
+      })
+    )
   }
   getOneProduct(id:string){
     return this.http.get<product>(`http://localhost:3000/products/${id}`)
   }
   updateProduct(product:product){
-    return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
+    return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product).pipe(
+      tap(()=>{
+        // notify product updated
+        this.productUpdated.next('product updated')
+      })
+    )
   }
   // this url will get only products or 10 Objects 
   popularProducts(){

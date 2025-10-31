@@ -36,6 +36,9 @@
 .searchBox button:hover{
    background-color: rgb(211, 205, 205) !important;
 }
+.searchBarLinks{
+  cursor:pointer;
+}
 .linksBox{
     width:38%;
     display:flex;

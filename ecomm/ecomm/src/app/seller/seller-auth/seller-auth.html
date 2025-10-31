@@ -3,7 +3,7 @@
 <!-- This is Sign Up form for seller-->
  @if(signUpVisible){
     <div class="sellerAuthBox">
-    <h1>Seller Registration Form</h1>
+    <h3>Seller Registration Form</h3>
     <form [formGroup]="signUpForm" (ngSubmit)="sellerSignUp()">
         <div>
             <mat-form-field class="example-full-width">
@@ -68,7 +68,7 @@
 <!--This is login form for seller-->
 @if(logInVisible){
     <div class="sellerAuthBox logInBox">
-    <h1>Seller Login Form</h1>
+    <h3>Seller Login Form</h3>
     <form [formGroup]="logInForm" (ngSubmit)="sellerLogIn()">
        
         <div>
