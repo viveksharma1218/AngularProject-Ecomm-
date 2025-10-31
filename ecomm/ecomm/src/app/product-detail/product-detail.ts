@@ -1,6 +1,6 @@
 import { Component,inject,signal,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {product } from '../interfaces/sellerAuth-interface';
+import { orderData, product } from '../interfaces/sellerAuth-interface';
 import { Allproduct } from '../services/allproduct';
 import { map, combineLatest, filter } from 'rxjs';
 import { UserCart } from '../services/user-cart';
@@ -42,6 +42,7 @@ export class ProductDetail implements OnInit {
         ]).subscribe(([productId, productsData]) => {
             // This block runs ONLY when both productId and productsData have a value.
             if(productId && productsData){ 
+              console.log('this is product id ', productId);
             this.productId = productId;
             this.allProduct = productsData;
             }
@@ -72,45 +73,48 @@ export class ProductDetail implements OnInit {
       this.productQuantity++;
      }
   }
-  addToCart(){
+  addToCart() {
   let userData = localStorage.getItem('user');
-    if(this.product){
-            this.product.quantity = this.productQuantity;
-            // now we have quantity in product object
-            //console.log(this.product);
-            // we are making this condition if user is not logged in 
-            // else statment will handle if user is logged in 
-      if(!userData){
-          this.userCartServ.localAddToCart(this.product);
-          this.productAlreadyBought.set(true);
-          this.popUp1.set(true);
-          setTimeout(() => {
-          this.popUp1.set(false);
-          },1500);
+  if (!this.product) return;
+
+  this.product.quantity = this.productQuantity;
+
+  if (!userData) {
+    // Local storage case
+    this.userCartServ.localAddToCart(this.product);
+    this.productAlreadyBought.set(true);
+    this.popUp1.set(true);
+    setTimeout(() => {
+      this.popUp1.set(false);
+    }, 1500);
+  } else {
+    // Server case - user is logged in
+    let parsedUserData = JSON.parse(userData)[0].id;
+    let cartData: product = {
+      ...this.product,
+      productId: this.productId,
+      userId: parsedUserData
+    };
+    delete cartData.id;
+
+    // Call addToCart and it will automatically refresh cart list
+    this.userCartServ.addToCart(cartData).subscribe({
+      next: (response) => {
+        this.productAlreadyBought.set(true);
+        this.popUp3.set(true);
+        setTimeout(() => {
+          this.popUp3.set(false);
+        }, 1500);
+        
+        // Optional: Manually call getCartList if you want to ensure it's refreshed
+        this.userCartServ.getCartList(parsedUserData).subscribe();
+      },
+      error: (error) => {
+        console.error('Error adding to cart:', error);
       }
-      else{
-        //console.log('user is logged in ')
-        // let's get user data first
-          let parsedUserData = JSON.parse(userData)[0].id;
-          //console.log(typeof(parsedUserData));
-          let cartData:product = {
-            ...this.product,
-            productId:this.productId
-            ,userId:parsedUserData
-          }
-          // now we will delete id property because json will give unique id automatically.
-          // for this we made this property optional.
-          delete cartData.id;
-          this.userCartServ.addToCart(cartData);
-              this.productAlreadyBought.set(true);
-              this.popUp3.set(true);
-              setTimeout(() => {
-                this.popUp3.set(false);
-              }, 1500);
-      }
-     
-    }
+    });
   }
+}
   isProductAlreadyBought(productid:number | null){
     // 1. Guard against null ID
     if (productid == null) {
@@ -147,10 +151,16 @@ export class ProductDetail implements OnInit {
               const cartData = response.body;
               console.log('cart data received', cartData);
 
-              const matchedProduct = cartData.find(
-                (product:product)=>{
-                  product.productId == productid || product.id == productid
-              })
+              let matchedProduct;
+              if(Array.isArray(cartData)){
+                cartData.forEach(
+                  (product:product)=>{
+                    if(product.productId == this.productId){
+                      matchedProduct = product
+                    }
+                  }
+                )
+              }
               console.log('matched product',matchedProduct);
               this.productAlreadyBought.set(!!matchedProduct);
             }
@@ -168,54 +178,75 @@ export class ProductDetail implements OnInit {
    
    
   }
-   removeFromCart(productId:number | null){
-    // there are two situations 
-    // first if product is inside local Storage
-    // Second if product is inside json server
+  removeFromCart(productId: number | null) {
+  if (!productId) {
+    console.error('No product ID provided');
+    return;
+  }
 
-    //first: without login products will be saved inside localStorage
-    if(!localStorage.getItem('user')){
-      if(this.productId){
-             this.userCartServ.localRemoveFromCart(this.productId);
-      }
-  
+  // First situation: product is inside localStorage (user not logged in)
+  if (!localStorage.getItem('user')) {
+    if (this.productId) {
+      this.userCartServ.localRemoveFromCart(this.productId);
+    }
     this.productAlreadyBought.set(false);
     this.popUp2.set(true);
     setTimeout(() => {
-      this.popUp2.set(false)
+      this.popUp2.set(false);
     }, 1500);
-    }
-    // Second: when products are in json server
-    else{
-      console.log('this is product id',this.productId);
-      let user = localStorage.getItem('user');
-      let userId;
-      if(user){
-        let parsedUser = JSON.parse(user);
-        userId = parsedUser[0].id;
-      }
-      console.log('this is user id ',userId);
-      console.log('this is product is ', this.productId);
-      console.log(typeof(userId));
-      this.userCartServ.getCartList(userId);
-      let cartData = this.userCartServ.cartData();
-      console.log(cartData);
-      let newcartData = cartData.filter((product)=>{
-        console.log('this is cart product id',product.productId);
-        return product.productId == this.productId;
-      })
-      let id = newcartData[0].id
-      console.log(productId);
-      if(productId && id){
-      this.userCartServ.removeFromCart(id);
-       this.productAlreadyBought.set(false);
-        this.popUp2.set(true);
-        setTimeout(() => {
-          this.popUp2.set(false)
-        }, 1500);
-      }
-
-    }
-   
+    return;
   }
+
+  // Second situation: when products are in json server
+  let user = localStorage.getItem('user');
+  if (!user) return;
+
+  let parsedUser = JSON.parse(user);
+  let userId = parsedUser[0].id;
+
+  // First get the cart list to find the cart item ID
+  this.userCartServ.getCartList(userId).subscribe({
+    next: (data) => {
+      let cartData = data.body;
+      console.log('Cart data received:', cartData);
+      
+      if (cartData && Array.isArray(cartData)) {
+        const cartItem = cartData.find((product: product) => 
+          product.productId == this.productId
+        );
+
+        console.log('Found cart item:', cartItem);
+
+        if (cartItem && cartItem.id) {
+          // Call removeFromCart - it will automatically refresh cart list
+          this.userCartServ.removeFromCart(cartItem.id).subscribe({
+            next: (response) => {
+              if (response && response.body) {
+                console.log('Successfully removed from cart');
+                this.productAlreadyBought.set(false);
+                this.popUp2.set(true);
+                setTimeout(() => {
+                  this.popUp2.set(false);
+                }, 1500);
+                
+                // Optional: Manually call getCartList to ensure refresh
+                this.userCartServ.getCartList(userId).subscribe();
+              } else {
+                console.error('Failed to remove from cart');
+              }
+            },
+            error: (error) => {
+              console.error('Error removing from cart:', error);
+            }
+          });
+        } else {
+          console.error('Product not found in cart');
+        }
+      }
+    },
+    error: (error) => {
+      console.error('Error fetching cart data:', error);
+    }
+  });
+}
 }

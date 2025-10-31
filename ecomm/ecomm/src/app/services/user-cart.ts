@@ -103,22 +103,22 @@ export class UserCart {
       }
     }
   }
-  addToCart(cartData:product){
-    return this.http.post('http://localhost:3000/cart',cartData,{observe:'response'}).subscribe(
-      (response)=>{
-        //console.log(response)
-           if(response.status === 201){
-
-            let user = localStorage.getItem('user');
-            if(user){
-              let parsedUser = JSON.parse(user);
-              let userId = parsedUser[0].id;
-              this.getCartList(userId)
-            }
-           }
+  addToCart(cartData: product) {
+  return this.http.post('http://localhost:3000/cart', cartData, { observe: 'response' }).pipe(
+    switchMap((response) => {
+      if (response.status === 201) {
+        let user = localStorage.getItem('user');
+        if (user) {
+          let parsedUser = JSON.parse(user);
+          let userId = parsedUser[0].id;
+          // Refresh cart list after adding
+          return this.getCartList(userId);
+        }
       }
-    )
-  }
+      return of(response);
+    })
+  );
+}
   getCartList(userId:string){
     
     return this.http.get<product[]>(`http://localhost:3000/cart?userId=${userId}`,
