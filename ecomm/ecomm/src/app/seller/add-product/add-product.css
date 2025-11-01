@@ -8,7 +8,6 @@
   width: 100%;
 }
 .sellerAddProductFormBox{
-  margin-top:50px;
     width:400px;
     margin-left:350px;
 }
@@ -40,14 +39,15 @@ button:disabled{
   position:fixed;
   top:220px;
   left:35%;
-  background-color: rgb(161, 161, 215);
-  width:350px;
+  background-color: aqua;
+  width:400px;
   height:110px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1001;
+  padding-top:20px;
 }
 .background{
      position: fixed; 

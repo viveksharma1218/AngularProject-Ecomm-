@@ -146,16 +146,6 @@
         <div class="description"></div>
     </div> -->
 </div>
-@if(deleteMessage()){
-    <div class="deleteProductMessageBox">
-    <h3>Product Will be deleted Permanently</h3>
-    <h3>Still want to continue</h3>
-    <div class="buttonBox">
-        <button (click)="continue()">Continue</button>
-        <button (click)="cancal()">Cancal</button> 
-    </div>
-</div>
-}
 <div class="paginationBox">
      <!--pagination -->
      <!-- Pagination Controls -->
@@ -187,3 +177,14 @@
        
       </div>
     </div>
+
+@if(deleteMessage()){
+    <div class="deleteProductMessageBox">
+    <h3>Product Will be deleted Permanently</h3>
+    <h5>Still want to continue</h5>
+    <div class="buttonBox">
+        <button (click)="continue()" class="btn btn-danger">Continue</button>
+        <button (click)="cancal()" class="btn btn-primary">Cancal</button> 
+    </div>
+</div>
+}

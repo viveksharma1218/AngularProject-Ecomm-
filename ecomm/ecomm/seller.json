@@ -186,7 +186,7 @@
     {
       "id": "3",
       "name": "Chrono Smartwatch Series 7",
-      "price": "22222222",
+      "price": "1211",
       "category": "Electronics",
       "color": "Starlight",
       "imageUrl": "https://placehold.co/600x400/059669/ffffff?text=Chrono+Watch",
@@ -7834,13 +7834,13 @@
       "id": "1702"
     },
     {
+      "id": "1703",
       "name": "Wood Burned Art",
-      "price": "45",
+      "price": "1211212121212",
       "category": "Artisan Home Decor",
       "color": "Wood",
       "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
-      "description": "Pyrography art on reclaimed wood slice",
-      "id": "1703"
+      "description": "Pyrography art on reclaimed wood slice"
     },
     {
       "name": "Hand-Painted Coasters",
