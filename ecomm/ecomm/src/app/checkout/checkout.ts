@@ -44,9 +44,15 @@ export class Checkout implements OnInit {
           pincode:[,Validators.required]
         })
       })
-      // get total price or amount
+     this.getInitialDetails();
+
+  }
+
+  getInitialDetails(){
+     // get total price or amount
        let userData = localStorage.getItem('user');
-      let userId;
+       if(userData){
+          let userId;
       if(userData){
         let parsedData = JSON.parse(userData);
         if(Array.isArray(parsedData)){
@@ -72,7 +78,23 @@ export class Checkout implements OnInit {
 
         
       }
-
+       }
+       else{
+        let localCartData = localStorage.getItem('localCart');
+        if(localCartData){
+          let ParsedData = JSON.parse(localCartData);
+          this.cartData = ParsedData;
+          let price = 0;
+            this.cartData.forEach((product)=>{
+               if(product.quantity){
+                // + sign before product is converting it into number data type
+                price = price + (+product.price * product.quantity);
+                //console.log(price);
+                this.totalPrice.set(price-(50+100+50));
+              }
+            })
+        }
+       }
   }
   // we are using this data type only once so i put whole object inside parenthesis
   orderNow(data:{email : string,phone:number,name:string,line1:'',city:'',state:'',pincode:number}){

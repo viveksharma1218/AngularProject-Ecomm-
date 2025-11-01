@@ -49,7 +49,7 @@ export class Home implements OnInit{
       this.popularProducts = data;
       this.popularProductsLoaded.set(true); // Mark as loaded
       this.cdr.detectChanges();
-      console.log('Popular products loaded:', this.popularProducts);
+      //console.log('Popular products loaded:', this.popularProducts);
     });
   }
    private setupProductSubscription(): void {

@@ -46,28 +46,34 @@ export class CartPage implements OnInit{
 
   loadDetails() {
     let userData = localStorage.getItem('user');
-    let userId;
-    
-    // ... logic to get userId ...
-    if (userData) {
-      // ... parsedData logic ...
-      let parsedUserData = JSON.parse(userData);
-      if(Array.isArray(parsedUserData)){
-        userId = parsedUserData[0].id;
-      }
-      // We subscribe directly here to update the component properties
-      this.userCartServ.getCartList(userId).subscribe({
-        next: (result)=>{
-          let cartData = result.body || [];
-          this.cartData.set(cartData);
-          this.calculateCartSummary(cartData);
-          this.checkEmptyCart(cartData);
-        },
-        error:(error)=>{
-          this.handleLocalStorageCart();
+    if(userData){
+          let userId;
+        
+        // ... logic to get userId ...
+        if (userData) {
+          // ... parsedData logic ...
+          let parsedUserData = JSON.parse(userData);
+          if(Array.isArray(parsedUserData)){
+            userId = parsedUserData[0].id;
+          }
+          // We subscribe directly here to update the component properties
+          this.userCartServ.getCartList(userId).subscribe({
+            next: (result)=>{
+              let cartData = result.body || [];
+              this.cartData.set(cartData);
+              this.calculateCartSummary(cartData);
+              this.checkEmptyCart(cartData);
+            },
+            error:(error)=>{
+              this.handleLocalStorageCart();
+            }
+          });
         }
-      });
     }
+    else{
+      this.handleLocalStorageCart()
+    }
+   
 
 }
 

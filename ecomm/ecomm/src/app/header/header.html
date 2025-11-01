@@ -13,8 +13,6 @@
         <div class="linksBox">
             <button routerLink="seller-auth">Seller</button>
             <button routerLink="user-auth">Login/SignUp</button>
-            <button routerLink="my-orders">My Orders</button>
-            <button routerLink="cart-page" >Cart{{userCartServ.cartItemCount()}}</button>
             <button (mouseenter)="showFullWeatherinfo()" (mouseleave)="hideFullWeatherinfo()">
                 {{ location()?.address ?? 'Getting Location...' }}
                 {{location()?.weather?.temperature  ?? '--'}}°C

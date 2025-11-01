@@ -18,7 +18,6 @@
         <p>Description : {{product.description}}</p>
     </div>
     <div class="thirdBox">
-        <button class="btn btn-primary">Buy Now</button>
         @if(productAlreadyBought()){
             <button class="btn btn-primary" (click)="removeFromCart(productId)">Remove From Cart</button>
         }
